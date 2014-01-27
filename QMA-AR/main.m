@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "QMAAppDelegate.h"
 
 int main(int argc, char * argv[])

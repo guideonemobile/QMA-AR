@@ -1,10 +1,3 @@
-//
-//  QMAAppDelegate.m
-//  QMA-AR
-//
-//  Created by User Guest on 1/27/14.
-//  Copyright (c) 2014 GuideOne. All rights reserved.
-//
 
 #import "QMAAppDelegate.h"
 

@@ -13,14 +13,14 @@
 		041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B161896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B1A1896A2200061A3E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B191896A2200061A3E2 /* main.m */; };
 		041B0B1E1896A2200061A3E2 /* QMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */; };
-		041B0B211896A2200061A3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B1F1896A2200061A3E2 /* Main.storyboard */; };
-		041B0B241896A2200061A3E2 /* QMAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B231896A2200061A3E2 /* QMAViewController.m */; };
+		041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B1F1896A2200061A3E2 /* Main_iPhone.storyboard */; };
 		041B0B261896A2200061A3E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B251896A2200061A3E2 /* Images.xcassets */; };
 		041B0B2D1896A2200061A3E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B2C1896A2200061A3E2 /* XCTest.framework */; };
 		041B0B2E1896A2200061A3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0D1896A2200061A3E2 /* Foundation.framework */; };
 		041B0B2F1896A2200061A3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B111896A2200061A3E2 /* UIKit.framework */; };
 		041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B351896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B381896A2200061A3E2 /* QMA_ARTests.m */; };
+		041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +44,15 @@
 		041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMA-AR-Prefix.pch"; sourceTree = "<group>"; };
 		041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMAAppDelegate.h; sourceTree = "<group>"; };
 		041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMAAppDelegate.m; sourceTree = "<group>"; };
-		041B0B201896A2200061A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		041B0B221896A2200061A3E2 /* QMAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMAViewController.h; sourceTree = "<group>"; };
-		041B0B231896A2200061A3E2 /* QMAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMAViewController.m; sourceTree = "<group>"; };
+		041B0B201896A2200061A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		041B0B251896A2200061A3E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		041B0B2B1896A2200061A3E2 /* QMA-ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QMA-ARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B0B2C1896A2200061A3E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		041B0B341896A2200061A3E2 /* QMA-ARTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMA-ARTests-Info.plist"; sourceTree = "<group>"; };
 		041B0B361896A2200061A3E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		041B0B381896A2200061A3E2 /* QMA_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMA_ARTests.m; sourceTree = "<group>"; };
+		041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAWelcomeVC.h; path = _Code/QMAWelcomeVC.h; sourceTree = "<group>"; };
+		041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAWelcomeVC.m; path = _Code/QMAWelcomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +112,9 @@
 		041B0B131896A2200061A3E2 /* QMA-AR */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */,
-				041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */,
-				041B0B1F1896A2200061A3E2 /* Main.storyboard */,
-				041B0B221896A2200061A3E2 /* QMAViewController.h */,
-				041B0B231896A2200061A3E2 /* QMAViewController.m */,
-				041B0B251896A2200061A3E2 /* Images.xcassets */,
+				041B0B431896A4130061A3E2 /* Core Data */,
+				041B0B421896A3F30061A3E2 /* View */,
+				041B0B441896A50D0061A3E2 /* Controller */,
 				041B0B141896A2200061A3E2 /* Supporting Files */,
 			);
 			path = "QMA-AR";
@@ -128,8 +125,6 @@
 			children = (
 				041B0B151896A2200061A3E2 /* QMA-AR-Info.plist */,
 				041B0B161896A2200061A3E2 /* InfoPlist.strings */,
-				041B0B191896A2200061A3E2 /* main.m */,
-				041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +145,43 @@
 				041B0B351896A2200061A3E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		041B0B421896A3F30061A3E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041B0B251896A2200061A3E2 /* Images.xcassets */,
+				041B0B1F1896A2200061A3E2 /* Main_iPhone.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		041B0B431896A4130061A3E2 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		041B0B441896A50D0061A3E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041B0B451896A57F0061A3E2 /* System */,
+				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
+				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		041B0B451896A57F0061A3E2 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */,
+				041B0B191896A2200061A3E2 /* main.m */,
+				041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */,
+				041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +263,7 @@
 			files = (
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
-				041B0B211896A2200061A3E2 /* Main.storyboard in Resources */,
+				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				041B0B1E1896A2200061A3E2 /* QMAAppDelegate.m in Sources */,
+				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
-				041B0B241896A2200061A3E2 /* QMAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +315,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		041B0B1F1896A2200061A3E2 /* Main.storyboard */ = {
+		041B0B1F1896A2200061A3E2 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				041B0B201896A2200061A3E2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		041B0B351896A2200061A3E2 /* InfoPlist.strings */ = {
