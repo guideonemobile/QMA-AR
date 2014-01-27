@@ -21,6 +21,22 @@
 		041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B351896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B381896A2200061A3E2 /* QMA_ARTests.m */; };
 		041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */; };
+		041B0B4A1896AFEA0061A3E2 /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */; };
+		041B0B571896B0BE0061A3E2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4B1896B0BE0061A3E2 /* AssetsLibrary.framework */; };
+		041B0B581896B0BE0061A3E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4C1896B0BE0061A3E2 /* AVFoundation.framework */; };
+		041B0B591896B0BE0061A3E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4D1896B0BE0061A3E2 /* CFNetwork.framework */; };
+		041B0B5A1896B0BE0061A3E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4E1896B0BE0061A3E2 /* CoreLocation.framework */; };
+		041B0B5B1896B0BE0061A3E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4F1896B0BE0061A3E2 /* CoreMedia.framework */; };
+		041B0B5C1896B0BE0061A3E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B501896B0BE0061A3E2 /* CoreMotion.framework */; };
+		041B0B5D1896B0BE0061A3E2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B511896B0BE0061A3E2 /* CoreVideo.framework */; };
+		041B0B5E1896B0BE0061A3E2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B521896B0BE0061A3E2 /* MediaPlayer.framework */; };
+		041B0B5F1896B0BE0061A3E2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B531896B0BE0061A3E2 /* OpenGLES.framework */; };
+		041B0B601896B0BE0061A3E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B541896B0BE0061A3E2 /* QuartzCore.framework */; };
+		041B0B611896B0BE0061A3E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B551896B0BE0061A3E2 /* Security.framework */; };
+		041B0B621896B0BE0061A3E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B561896B0BE0061A3E2 /* SystemConfiguration.framework */; };
+		041B0B651896B13D0061A3E2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B631896B13D0061A3E2 /* libc++.dylib */; };
+		041B0B661896B13D0061A3E2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B641896B13D0061A3E2 /* libz.dylib */; };
+		041B0B691896B8600061A3E2 /* QMACyclopsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B681896B8600061A3E2 /* QMACyclopsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +69,23 @@
 		041B0B381896A2200061A3E2 /* QMA_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMA_ARTests.m; sourceTree = "<group>"; };
 		041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAWelcomeVC.h; path = _Code/QMAWelcomeVC.h; sourceTree = "<group>"; };
 		041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAWelcomeVC.m; path = _Code/QMAWelcomeVC.m; sourceTree = "<group>"; };
+		041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WikitudeSDK.framework; path = "QMA-AR/_Code/ThirdParty/WikitudeSDK.framework"; sourceTree = "<group>"; };
+		041B0B4B1896B0BE0061A3E2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		041B0B4C1896B0BE0061A3E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		041B0B4D1896B0BE0061A3E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		041B0B4E1896B0BE0061A3E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		041B0B4F1896B0BE0061A3E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		041B0B501896B0BE0061A3E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		041B0B511896B0BE0061A3E2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		041B0B521896B0BE0061A3E2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		041B0B531896B0BE0061A3E2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		041B0B541896B0BE0061A3E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		041B0B551896B0BE0061A3E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		041B0B561896B0BE0061A3E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		041B0B631896B13D0061A3E2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		041B0B641896B13D0061A3E2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		041B0B671896B8600061A3E2 /* QMACyclopsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACyclopsVC.h; path = _Code/QMACyclopsVC.h; sourceTree = "<group>"; };
+		041B0B681896B8600061A3E2 /* QMACyclopsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMACyclopsVC.m; path = _Code/QMACyclopsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +93,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041B0B651896B13D0061A3E2 /* libc++.dylib in Frameworks */,
+				041B0B661896B13D0061A3E2 /* libz.dylib in Frameworks */,
+				041B0B571896B0BE0061A3E2 /* AssetsLibrary.framework in Frameworks */,
+				041B0B581896B0BE0061A3E2 /* AVFoundation.framework in Frameworks */,
+				041B0B591896B0BE0061A3E2 /* CFNetwork.framework in Frameworks */,
+				041B0B5A1896B0BE0061A3E2 /* CoreLocation.framework in Frameworks */,
+				041B0B5B1896B0BE0061A3E2 /* CoreMedia.framework in Frameworks */,
+				041B0B5C1896B0BE0061A3E2 /* CoreMotion.framework in Frameworks */,
+				041B0B5D1896B0BE0061A3E2 /* CoreVideo.framework in Frameworks */,
+				041B0B5E1896B0BE0061A3E2 /* MediaPlayer.framework in Frameworks */,
+				041B0B5F1896B0BE0061A3E2 /* OpenGLES.framework in Frameworks */,
+				041B0B601896B0BE0061A3E2 /* QuartzCore.framework in Frameworks */,
+				041B0B611896B0BE0061A3E2 /* Security.framework in Frameworks */,
+				041B0B621896B0BE0061A3E2 /* SystemConfiguration.framework in Frameworks */,
 				041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */,
+				041B0B4A1896AFEA0061A3E2 /* WikitudeSDK.framework in Frameworks */,
 				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
 				041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
 			);
@@ -101,9 +149,24 @@
 		041B0B0C1896A2200061A3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				041B0B631896B13D0061A3E2 /* libc++.dylib */,
+				041B0B641896B13D0061A3E2 /* libz.dylib */,
+				041B0B4B1896B0BE0061A3E2 /* AssetsLibrary.framework */,
+				041B0B4C1896B0BE0061A3E2 /* AVFoundation.framework */,
+				041B0B4D1896B0BE0061A3E2 /* CFNetwork.framework */,
 				041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */,
+				041B0B4E1896B0BE0061A3E2 /* CoreLocation.framework */,
+				041B0B4F1896B0BE0061A3E2 /* CoreMedia.framework */,
+				041B0B501896B0BE0061A3E2 /* CoreMotion.framework */,
+				041B0B511896B0BE0061A3E2 /* CoreVideo.framework */,
+				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				041B0B521896B0BE0061A3E2 /* MediaPlayer.framework */,
+				041B0B531896B0BE0061A3E2 /* OpenGLES.framework */,
+				041B0B551896B0BE0061A3E2 /* Security.framework */,
+				041B0B561896B0BE0061A3E2 /* SystemConfiguration.framework */,
+				041B0B541896B0BE0061A3E2 /* QuartzCore.framework */,
 				041B0B111896A2200061A3E2 /* UIKit.framework */,
+				041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */,
 				041B0B2C1896A2200061A3E2 /* XCTest.framework */,
 			);
 			name = Frameworks;
@@ -169,6 +232,8 @@
 				041B0B451896A57F0061A3E2 /* System */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
+				041B0B671896B8600061A3E2 /* QMACyclopsVC.h */,
+				041B0B681896B8600061A3E2 /* QMACyclopsVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -284,6 +349,7 @@
 			files = (
 				041B0B1E1896A2200061A3E2 /* QMAAppDelegate.m in Sources */,
 				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
+				041B0B691896B8600061A3E2 /* QMACyclopsVC.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,12 +475,19 @@
 		041B0B3D1896A2200061A3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,12 +495,19 @@
 		041B0B3E1896A2200061A3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

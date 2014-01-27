@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="663" y="196"/>
         </scene>
-        <!--View Controller-->
+        <!--CyclopsVC-->
         <scene sceneID="c3m-wv-mEF">
             <objects>
-                <viewController id="89o-2V-KNI" sceneMemberID="viewController">
+                <viewController id="89o-2V-KNI" customClass="QMACyclopsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F6M-uc-1eF"/>
                         <viewControllerLayoutGuide type="bottom" id="FfH-N8-V55"/>
@@ -48,9 +48,19 @@
                     <view key="view" contentMode="scaleToFill" id="mha-X1-Jun">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSG-2m-yHs" userLabel="WTArchitectView" customClass="WTArchitectView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="w68-JH-6Xv"/>
+                    <connections>
+                        <outlet property="architectView" destination="sSG-2m-yHs" id="U2Y-R0-BNI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Qf-7ST" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
