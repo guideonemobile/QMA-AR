@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="663" y="196"/>
         </scene>
-        <!--View Controller-->
+        <!--Hardware Controller-->
         <scene sceneID="c3m-wv-mEF">
             <objects>
-                <viewController id="89o-2V-KNI" sceneMemberID="viewController">
+                <viewController id="89o-2V-KNI" customClass="HardwareController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F6M-uc-1eF"/>
                         <viewControllerLayoutGuide type="bottom" id="FfH-N8-V55"/>
