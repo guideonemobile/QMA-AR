@@ -21,6 +21,14 @@
 		041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B351896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B381896A2200061A3E2 /* QMA_ARTests.m */; };
 		041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */; };
+		04622CB0189AF57E001BB1F2 /* libpointcloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CAF189AF57E001BB1F2 /* libpointcloud.a */; };
+		04622CB2189AFF53001BB1F2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CB1189AFF53001BB1F2 /* Accelerate.framework */; };
+		04622CB4189AFF73001BB1F2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CB3189AFF73001BB1F2 /* CoreMotion.framework */; };
+		04622CB6189AFF8C001BB1F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CB5189AFF8C001BB1F2 /* QuartzCore.framework */; };
+		04622CB8189AFFBC001BB1F2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CB7189AFFBC001BB1F2 /* CoreMedia.framework */; };
+		04622CBA189B0004001BB1F2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CB9189B0004001BB1F2 /* CoreVideo.framework */; };
+		04622CBC189B001C001BB1F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CBB189B001C001BB1F2 /* AVFoundation.framework */; };
+		04622CBE189B0030001BB1F2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04622CBD189B0030001BB1F2 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		041B0B381896A2200061A3E2 /* QMA_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMA_ARTests.m; sourceTree = "<group>"; };
 		041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAWelcomeVC.h; path = _Code/QMAWelcomeVC.h; sourceTree = "<group>"; };
 		041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAWelcomeVC.m; path = _Code/QMAWelcomeVC.m; sourceTree = "<group>"; };
+		04622CAF189AF57E001BB1F2 /* libpointcloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpointcloud.a; path = "QMA-AR/_Code/ThirdParty/libpointcloud.a"; sourceTree = "<group>"; };
+		04622CB1189AFF53001BB1F2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		04622CB3189AFF73001BB1F2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		04622CB5189AFF8C001BB1F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04622CB7189AFFBC001BB1F2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		04622CB9189B0004001BB1F2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		04622CBB189B001C001BB1F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04622CBD189B0030001BB1F2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +76,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04622CB0189AF57E001BB1F2 /* libpointcloud.a in Frameworks */,
+				04622CB2189AFF53001BB1F2 /* Accelerate.framework in Frameworks */,
+				04622CBC189B001C001BB1F2 /* AVFoundation.framework in Frameworks */,
+				04622CB8189AFFBC001BB1F2 /* CoreMedia.framework in Frameworks */,
+				04622CB4189AFF73001BB1F2 /* CoreMotion.framework in Frameworks */,
+				04622CBA189B0004001BB1F2 /* CoreVideo.framework in Frameworks */,
 				041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */,
-				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
 				041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
+				04622CBE189B0030001BB1F2 /* OpenGLES.framework in Frameworks */,
+				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
+				04622CB6189AFF8C001BB1F2 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +125,18 @@
 		041B0B0C1896A2200061A3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				04622CAF189AF57E001BB1F2 /* libpointcloud.a */,
+				04622CB1189AFF53001BB1F2 /* Accelerate.framework */,
+				04622CBB189B001C001BB1F2 /* AVFoundation.framework */,
 				041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */,
+				04622CB7189AFFBC001BB1F2 /* CoreMedia.framework */,
+				04622CB3189AFF73001BB1F2 /* CoreMotion.framework */,
+				04622CB9189B0004001BB1F2 /* CoreVideo.framework */,
+				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				04622CBD189B0030001BB1F2 /* OpenGLES.framework */,
 				041B0B111896A2200061A3E2 /* UIKit.framework */,
 				041B0B2C1896A2200061A3E2 /* XCTest.framework */,
+				04622CB5189AFF8C001BB1F2 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,8 +400,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -403,18 +436,26 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
 		041B0B3D1896A2200061A3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,12 +463,19 @@
 		041B0B3E1896A2200061A3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -493,6 +541,7 @@
 				041B0B3E1896A2200061A3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041B0B3F1896A2200061A3E2 /* Build configuration list for PBXNativeTarget "QMA-ARTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +550,7 @@
 				041B0B411896A2200061A3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
