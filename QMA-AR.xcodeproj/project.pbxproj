@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0414F1BA189B189B009CC481 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0414F1B8189B189B009CC481 /* main.m */; };
+		0414F1BB189B189B009CC481 /* QMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0414F1B9189B189B009CC481 /* QMAAppDelegate.m */; };
+		0414F1C4189B19A1009CC481 /* image_target_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1BD189B19A1009CC481 /* image_target_1.jpg */; };
+		0414F1C5189B19A1009CC481 /* image_target_1.model in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1BE189B19A1009CC481 /* image_target_1.model */; };
+		0414F1C6189B19A1009CC481 /* image_target_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1BF189B19A1009CC481 /* image_target_2.jpg */; };
+		0414F1C7189B19A1009CC481 /* image_target_2.model in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C0189B19A1009CC481 /* image_target_2.model */; };
+		0414F1C8189B19A1009CC481 /* pointcloud-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C1189B19A1009CC481 /* pointcloud-logo.png */; };
+		0414F1C9189B19A1009CC481 /* trackpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C2189B19A1009CC481 /* trackpoint.png */; };
+		0414F1CA189B19A1009CC481 /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C3189B19A1009CC481 /* ui.png */; };
 		041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0D1896A2200061A3E2 /* Foundation.framework */; };
 		041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */; };
 		041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B111896A2200061A3E2 /* UIKit.framework */; };
@@ -32,8 +41,6 @@
 		04622CCC189B0353001BB1F2 /* PointCloudApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04622CC6189B0353001BB1F2 /* PointCloudApplication.cpp */; };
 		04622CCD189B0353001BB1F2 /* TestApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04622CC8189B0353001BB1F2 /* TestApp.cpp */; };
 		04622CCE189B0353001BB1F2 /* TextureUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04622CCA189B0353001BB1F2 /* TextureUtilities.cpp */; };
-		04622CD1189B08A4001BB1F2 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04622CD0189B08A4001BB1F2 /* main.mm */; };
-		04622CD3189B0905001BB1F2 /* QMAAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04622CD2189B0905001BB1F2 /* QMAAppDelegate.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0414F1B8189B189B009CC481 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0414F1B9189B189B009CC481 /* QMAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAAppDelegate.m; sourceTree = "<group>"; };
+		0414F1BD189B19A1009CC481 /* image_target_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_target_1.jpg; path = _Resources/ThirdParty/image_target_1.jpg; sourceTree = "<group>"; };
+		0414F1BE189B19A1009CC481 /* image_target_1.model */ = {isa = PBXFileReference; lastKnownFileType = file; name = image_target_1.model; path = _Resources/ThirdParty/image_target_1.model; sourceTree = "<group>"; };
+		0414F1BF189B19A1009CC481 /* image_target_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_target_2.jpg; path = _Resources/ThirdParty/image_target_2.jpg; sourceTree = "<group>"; };
+		0414F1C0189B19A1009CC481 /* image_target_2.model */ = {isa = PBXFileReference; lastKnownFileType = file; name = image_target_2.model; path = _Resources/ThirdParty/image_target_2.model; sourceTree = "<group>"; };
+		0414F1C1189B19A1009CC481 /* pointcloud-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pointcloud-logo.png"; path = "_Resources/ThirdParty/pointcloud-logo.png"; sourceTree = "<group>"; };
+		0414F1C2189B19A1009CC481 /* trackpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trackpoint.png; path = _Resources/ThirdParty/trackpoint.png; sourceTree = "<group>"; };
+		0414F1C3189B19A1009CC481 /* ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui.png; path = _Resources/ThirdParty/ui.png; sourceTree = "<group>"; };
 		041B0B0A1896A2200061A3E2 /* QMA-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QMA-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B0B0D1896A2200061A3E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,8 +99,6 @@
 		04622CCA189B0353001BB1F2 /* TextureUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextureUtilities.cpp; path = _Code/ThirdParty/TextureUtilities.cpp; sourceTree = "<group>"; };
 		04622CCB189B0353001BB1F2 /* TextureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureUtilities.h; path = _Code/ThirdParty/TextureUtilities.h; sourceTree = "<group>"; };
 		04622CCF189B03A8001BB1F2 /* PointCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointCloud.h; path = _Code/ThirdParty/PointCloud.h; sourceTree = "<group>"; };
-		04622CD0189B08A4001BB1F2 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		04622CD2189B0905001BB1F2 /* QMAAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMAAppDelegate.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0414F1BC189B1987009CC481 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0414F1BD189B19A1009CC481 /* image_target_1.jpg */,
+				0414F1BE189B19A1009CC481 /* image_target_1.model */,
+				0414F1BF189B19A1009CC481 /* image_target_2.jpg */,
+				0414F1C0189B19A1009CC481 /* image_target_2.model */,
+				0414F1C1189B19A1009CC481 /* pointcloud-logo.png */,
+				0414F1C2189B19A1009CC481 /* trackpoint.png */,
+				0414F1C3189B19A1009CC481 /* ui.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		041B0B011896A2200061A3E2 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +188,7 @@
 		041B0B131896A2200061A3E2 /* QMA-AR */ = {
 			isa = PBXGroup;
 			children = (
+				0414F1BC189B1987009CC481 /* Resources */,
 				041B0B431896A4130061A3E2 /* Core Data */,
 				041B0B421896A3F30061A3E2 /* View */,
 				041B0B441896A50D0061A3E2 /* Controller */,
@@ -226,9 +255,9 @@
 			isa = PBXGroup;
 			children = (
 				041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */,
-				04622CD0189B08A4001BB1F2 /* main.mm */,
+				0414F1B8189B189B009CC481 /* main.m */,
 				041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */,
-				04622CD2189B0905001BB1F2 /* QMAAppDelegate.mm */,
+				0414F1B9189B189B009CC481 /* QMAAppDelegate.m */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -329,7 +358,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
+				0414F1C6189B19A1009CC481 /* image_target_2.jpg in Resources */,
+				0414F1C7189B19A1009CC481 /* image_target_2.model in Resources */,
+				0414F1C5189B19A1009CC481 /* image_target_1.model in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
+				0414F1CA189B19A1009CC481 /* ui.png in Resources */,
+				0414F1C8189B19A1009CC481 /* pointcloud-logo.png in Resources */,
+				0414F1C4189B19A1009CC481 /* image_target_1.jpg in Resources */,
+				0414F1C9189B19A1009CC481 /* trackpoint.png in Resources */,
 				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,10 +388,10 @@
 				04622CC4189B0284001BB1F2 /* GLView.m in Sources */,
 				04622CCE189B0353001BB1F2 /* TextureUtilities.cpp in Sources */,
 				04622CC5189B0284001BB1F2 /* HardwareController.mm in Sources */,
-				04622CD1189B08A4001BB1F2 /* main.mm in Sources */,
-				04622CD3189B0905001BB1F2 /* QMAAppDelegate.mm in Sources */,
 				04622CCC189B0353001BB1F2 /* PointCloudApplication.cpp in Sources */,
 				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
+				0414F1BA189B189B009CC481 /* main.m in Sources */,
+				0414F1BB189B189B009CC481 /* QMAAppDelegate.m in Sources */,
 				04622CCD189B0353001BB1F2 /* TestApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,20 +446,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_CONSTANT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = NO;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_INT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -456,20 +492,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_CONSTANT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = NO;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_INT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -496,7 +532,7 @@
 		041B0B3D1896A2200061A3E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -504,7 +540,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
@@ -520,7 +556,7 @@
 		041B0B3E1896A2200061A3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -528,7 +564,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",

@@ -23,40 +23,8 @@
 @synthesize device_motion_available;
 @synthesize pointcloudApplication;
 
-- (void)startCamera {
-    [self.captureSession startRunning];
-	restartingCamera = NO;
-}
-
-- (void) restartCamera {
-	if (self.restartingCamera)
-		return;
-	
-	restartingCamera = YES;
-	
-	if ([self.captureSession isRunning])
-		[self.captureSession stopRunning];
-	
-	[self startCamera];
-}
-
--(void)eventHandler:(id)data {
-    if ([[data name] isEqualToString:@"AVCaptureSessionRuntimeErrorNotification"]) {
-		[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(restartCamera) userInfo:nil repeats:NO];
-    } else if ([[data name] isEqualToString:@"AVCaptureSessionInterruptionEndedNotification"]) {
-        [self.captureSession startRunning];
-    }
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {		
-		[self.view setFrame:[[UIScreen mainScreen] bounds]];
-    }
-	
-    return self;
-}
-
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 	
 	self.restartingCamera = NO;
@@ -64,8 +32,8 @@
 	self.device_motion_available = NO;
 	
 	[UIApplication sharedApplication].statusBarHidden = NO;
-	self.navigationController.navigationBar.barStyle = UIBarStyleBlack; 
-		
+	self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
 	CGRect rect = [[UIScreen mainScreen] bounds];
 	
 	glView = [[GLView alloc] initWithFrame:rect];
@@ -104,6 +72,41 @@
 		[self.motionManager startDeviceMotionUpdates];
 	}
 }
+
+- (void)startCamera {
+    [self.captureSession startRunning];
+	restartingCamera = NO;
+}
+
+- (void) restartCamera {
+	if (self.restartingCamera)
+		return;
+	
+	restartingCamera = YES;
+	
+	if ([self.captureSession isRunning])
+		[self.captureSession stopRunning];
+	
+	[self startCamera];
+}
+
+-(void)eventHandler:(id)data {
+    if ([[data name] isEqualToString:@"AVCaptureSessionRuntimeErrorNotification"]) {
+		[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(restartCamera) userInfo:nil repeats:NO];
+    } else if ([[data name] isEqualToString:@"AVCaptureSessionInterruptionEndedNotification"]) {
+        [self.captureSession startRunning];
+    }
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {		
+		[self.view setFrame:[[UIScreen mainScreen] bounds]];
+    }
+	
+    return self;
+}
+
+
 
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
