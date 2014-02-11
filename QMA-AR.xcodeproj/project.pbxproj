@@ -37,6 +37,9 @@
 		041B0B651896B13D0061A3E2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B631896B13D0061A3E2 /* libc++.dylib */; };
 		041B0B661896B13D0061A3E2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B641896B13D0061A3E2 /* libz.dylib */; };
 		041B0B691896B8600061A3E2 /* QMACyclopsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B681896B8600061A3E2 /* QMACyclopsVC.m */; };
+		04E3829618AAB85700B41D83 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829318AAB85700B41D83 /* assets */; };
+		04E3829718AAB85700B41D83 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829418AAB85700B41D83 /* index.html */; };
+		04E3829818AAB85700B41D83 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829518AAB85700B41D83 /* js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		041B0B641896B13D0061A3E2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		041B0B671896B8600061A3E2 /* QMACyclopsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACyclopsVC.h; path = _Code/QMACyclopsVC.h; sourceTree = "<group>"; };
 		041B0B681896B8600061A3E2 /* QMACyclopsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMACyclopsVC.m; path = _Code/QMACyclopsVC.m; sourceTree = "<group>"; };
+		04E3829318AAB85700B41D83 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "QMA-AR/_Targets/assets"; sourceTree = "<group>"; };
+		04E3829418AAB85700B41D83 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = "QMA-AR/_Targets/index.html"; sourceTree = "<group>"; };
+		04E3829518AAB85700B41D83 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = "QMA-AR/_Targets/js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +181,7 @@
 		041B0B131896A2200061A3E2 /* QMA-AR */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B431896A4130061A3E2 /* Core Data */,
+				04E3823A18AA578B00B41D83 /* Model */,
 				041B0B421896A3F30061A3E2 /* View */,
 				041B0B441896A50D0061A3E2 /* Controller */,
 				041B0B141896A2200061A3E2 /* Supporting Files */,
@@ -247,6 +253,26 @@
 				041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		04E3823A18AA578B00B41D83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E3829918AAB97F00B41D83 /* Target */,
+				041B0B431896A4130061A3E2 /* Core Data */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04E3829918AAB97F00B41D83 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				04E3829418AAB85700B41D83 /* index.html */,
+				04E3829518AAB85700B41D83 /* js */,
+				04E3829318AAB85700B41D83 /* assets */,
+			);
+			name = Target;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +352,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E3829718AAB85700B41D83 /* index.html in Resources */,
+				04E3829818AAB85700B41D83 /* js in Resources */,
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
+				04E3829618AAB85700B41D83 /* assets in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
 				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
 			);
@@ -573,6 +602,7 @@
 				041B0B3E1896A2200061A3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041B0B3F1896A2200061A3E2 /* Build configuration list for PBXNativeTarget "QMA-ARTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +611,7 @@
 				041B0B411896A2200061A3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -45,21 +45,6 @@
     [self.architectView stop]; //Stop camera
 }
 
-#pragma mark - WTArchitectView Setup
-
-- (void)setupWTArchitectView {
-    
-    if ([WTArchitectView isDeviceSupportedForARMode:WTARMode_Geo]) {
-        //This method allows us to pass a string containing the license key and a CMMotionManager instance.
-        //If the application has already initialized a CMMotionManager, that instance should be used here.
-        //Otherwise, the motionManager parameter should be nil
-        [self.architectView initializeWithKey:nil motionManager:nil];
-        
-    } else {
-        NSLog(@"This device does not support ARchitect Worlds. Please see WTArchitectView's class reference for a list of requirements.");
-    }
-}
-
 #pragma mark - UIApplication Notifications
 
 - (void)appDidEnterBackground:(UIApplication *)application {
@@ -70,8 +55,30 @@
     [self.architectView start];
 }
 
+#pragma mark - WTArchitectView Setup
 
 
 
+- (void)setupWTArchitectView {
+    
+    if ([WTArchitectView isDeviceSupportedForARMode:WTARMode_Geo]) {
+        
+        //This method allows us to pass a string containing the license key and a CMMotionManager instance.
+        //If the application has already initialized a CMMotionManager, that instance should be used here.
+        //Otherwise, the motionManager parameter should be nil
+        [self.architectView initializeWithKey:nil motionManager:nil];
+        
+        //Load targets
+        NSURL *architectWorldUrl = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"html"];
+        if (architectWorldUrl) {
+            [self.architectView loadArchitectWorldFromUrl:architectWorldUrl];
+        } else {
+            QMALog(@"Error: Could not find HTML file.");
+        }
+        
+    } else {
+        QMALog(@"Error: This device does not support ARchitect Worlds. Please see WTArchitectView's class reference for a list of requirements.");
+    }
+}
 
 @end
