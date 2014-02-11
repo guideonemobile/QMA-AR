@@ -5,7 +5,7 @@
  */
 
 #import "HardwareController.h"
-#include "TestApp.h"
+#include "QMACyclops.h"
 
 #import <AVFoundation/AVCaptureOutput.h>
 #import <CoreVideo/CVPixelBuffer.h>
@@ -30,16 +30,10 @@
 	self.restartingCamera = NO;
 	self.accelerometer_available = NO;
 	self.device_motion_available = NO;
-	
-	[UIApplication sharedApplication].statusBarHidden = NO;
-	self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
 	CGRect rect = [[UIScreen mainScreen] bounds];
-	
 	glView = [[GLView alloc] initWithFrame:rect];
-	
 	[self.glView.window setFrame:rect];
-	
 	[self.glView setFrame:[[UIScreen mainScreen] applicationFrame]];
     
     // Double the resolution on iPhone 4 and 4s etc.
@@ -106,13 +100,24 @@
     return self;
 }
 
-
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	CGPoint pt = [[touches anyObject] locationInView:self.glView];
+	if (pointcloudApplication) {
+		pointcloudApplication->on_touch_started(pt.x, pt.y);
+	}
+}
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint pt = [[touches anyObject] locationInView:self.glView];
 	if (pointcloudApplication) {
 		pointcloudApplication->on_touch_moved(pt.x, pt.y);
+	}
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+	CGPoint pt = [[touches anyObject] locationInView:self.glView];
+	if (pointcloudApplication) {
+		pointcloudApplication->on_touch_cancelled(pt.x, pt.y);
 	}
 }
 
@@ -122,23 +127,6 @@
 		pointcloudApplication->on_touch_ended(pt.x, pt.y);
 	}
 }
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	CGPoint pt = [[touches anyObject] locationInView:self.glView];
-	if (pointcloudApplication) {
-		pointcloudApplication->on_touch_started(pt.x, pt.y);
-	}	
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	CGPoint pt = [[touches anyObject] locationInView:self.glView];
-	if (pointcloudApplication) {
-		pointcloudApplication->on_touch_cancelled(pt.x, pt.y);
-	}	
-}
-
 
 #import <sys/utsname.h>
 
@@ -163,8 +151,10 @@ machineName()
 }
 
 - (void)drawView:(GLView*)view {
-	CVReturn lockResult = CVPixelBufferLockBaseAddress (self.pixelBuffer, 0);
-	if(lockResult == kCVReturnSuccess) {
+	
+    CVReturn lockResult = CVPixelBufferLockBaseAddress (self.pixelBuffer, 0);
+	
+    if(lockResult == kCVReturnSuccess) {
 		if (accelerometer_available) {
 			if (!motionManager.accelerometerActive)
 				[motionManager startAccelerometerUpdates];
@@ -344,7 +334,7 @@ machineName()
 		NSString* documentsDirectory = [paths objectAtIndex:0]; // User-accesible file system path 
 		NSString *resourcePath = [NSString stringWithFormat:@"%@/", [[NSBundle mainBundle] resourcePath]];
 
-		pointcloudApplication = new TestApp(self.glView.bounds.size.width, 
+		pointcloudApplication = new QMACyclops(self.glView.bounds.size.width,
 											self.glView.bounds.size.height, 
 											w,
 											h,

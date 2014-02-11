@@ -16,6 +16,7 @@
 		0414F1C8189B19A1009CC481 /* pointcloud-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C1189B19A1009CC481 /* pointcloud-logo.png */; };
 		0414F1C9189B19A1009CC481 /* trackpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C2189B19A1009CC481 /* trackpoint.png */; };
 		0414F1CA189B19A1009CC481 /* ui.png in Resources */ = {isa = PBXBuildFile; fileRef = 0414F1C3189B19A1009CC481 /* ui.png */; };
+		0414F1CD189B4820009CC481 /* QMACyclops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0414F1CB189B4820009CC481 /* QMACyclops.cpp */; };
 		041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0D1896A2200061A3E2 /* Foundation.framework */; };
 		041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */; };
 		041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B111896A2200061A3E2 /* UIKit.framework */; };
@@ -63,6 +64,8 @@
 		0414F1C1189B19A1009CC481 /* pointcloud-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pointcloud-logo.png"; path = "_Resources/ThirdParty/pointcloud-logo.png"; sourceTree = "<group>"; };
 		0414F1C2189B19A1009CC481 /* trackpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trackpoint.png; path = _Resources/ThirdParty/trackpoint.png; sourceTree = "<group>"; };
 		0414F1C3189B19A1009CC481 /* ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui.png; path = _Resources/ThirdParty/ui.png; sourceTree = "<group>"; };
+		0414F1CB189B4820009CC481 /* QMACyclops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QMACyclops.cpp; path = _Code/QMACyclops.cpp; sourceTree = "<group>"; };
+		0414F1CC189B4820009CC481 /* QMACyclops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACyclops.h; path = _Code/QMACyclops.h; sourceTree = "<group>"; };
 		041B0B0A1896A2200061A3E2 /* QMA-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QMA-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B0B0D1896A2200061A3E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -247,6 +250,8 @@
 				04622CBF189B0206001BB1F2 /* PointCloud */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
+				0414F1CC189B4820009CC481 /* QMACyclops.h */,
+				0414F1CB189B4820009CC481 /* QMACyclops.cpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
 				0414F1BA189B189B009CC481 /* main.m in Sources */,
 				0414F1BB189B189B009CC481 /* QMAAppDelegate.m in Sources */,
+				0414F1CD189B4820009CC481 /* QMACyclops.cpp in Sources */,
 				04622CCD189B0353001BB1F2 /* TestApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
