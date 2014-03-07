@@ -21,7 +21,6 @@
 		041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B351896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B381896A2200061A3E2 /* QMA_ARTests.m */; };
 		041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */; };
-		041B0B4A1896AFEA0061A3E2 /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */; };
 		041B0B571896B0BE0061A3E2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4B1896B0BE0061A3E2 /* AssetsLibrary.framework */; };
 		041B0B581896B0BE0061A3E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4C1896B0BE0061A3E2 /* AVFoundation.framework */; };
 		041B0B591896B0BE0061A3E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B4D1896B0BE0061A3E2 /* CFNetwork.framework */; };
@@ -40,6 +39,7 @@
 		04E3829618AAB85700B41D83 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829318AAB85700B41D83 /* assets */; };
 		04E3829718AAB85700B41D83 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829418AAB85700B41D83 /* index.html */; };
 		04E3829818AAB85700B41D83 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 04E3829518AAB85700B41D83 /* js */; };
+		25019E0C18C975930019C311 /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25019E0C18C975930019C311 /* WikitudeSDK.framework in Frameworks */,
 				041B0B651896B13D0061A3E2 /* libc++.dylib in Frameworks */,
 				041B0B661896B13D0061A3E2 /* libz.dylib in Frameworks */,
 				041B0B571896B0BE0061A3E2 /* AssetsLibrary.framework in Frameworks */,
@@ -114,7 +115,6 @@
 				041B0B611896B0BE0061A3E2 /* Security.framework in Frameworks */,
 				041B0B621896B0BE0061A3E2 /* SystemConfiguration.framework in Frameworks */,
 				041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */,
-				041B0B4A1896AFEA0061A3E2 /* WikitudeSDK.framework in Frameworks */,
 				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
 				041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
 			);
@@ -172,8 +172,8 @@
 				041B0B561896B0BE0061A3E2 /* SystemConfiguration.framework */,
 				041B0B541896B0BE0061A3E2 /* QuartzCore.framework */,
 				041B0B111896A2200061A3E2 /* UIKit.framework */,
-				041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */,
 				041B0B2C1896A2200061A3E2 /* XCTest.framework */,
+				041B0B491896AFEA0061A3E2 /* WikitudeSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -510,6 +510,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+					"/Users/JBD/Work/GuideOne/qma/QMA-AR/QMA-AR/_Code/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
@@ -530,6 +531,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/UserGuest/mobile/iOS/GuideOne/qma/ar/QMA-AR/QMA-AR/_Code/ThirdParty",
+					"/Users/JBD/Work/GuideOne/qma/QMA-AR/QMA-AR/_Code/ThirdParty",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
