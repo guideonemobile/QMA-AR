@@ -12,26 +12,27 @@
 		041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B111896A2200061A3E2 /* UIKit.framework */; };
 		041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B161896A2200061A3E2 /* InfoPlist.strings */; };
 		041B0B1A1896A2200061A3E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B191896A2200061A3E2 /* main.m */; };
-		041B0B1E1896A2200061A3E2 /* QMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */; };
 		041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B1F1896A2200061A3E2 /* Main_iPhone.storyboard */; };
 		041B0B261896A2200061A3E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B251896A2200061A3E2 /* Images.xcassets */; };
-		041B0B2D1896A2200061A3E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B2C1896A2200061A3E2 /* XCTest.framework */; };
-		041B0B2E1896A2200061A3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B0D1896A2200061A3E2 /* Foundation.framework */; };
-		041B0B2F1896A2200061A3E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B0B111896A2200061A3E2 /* UIKit.framework */; };
-		041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041B0B351896A2200061A3E2 /* InfoPlist.strings */; };
-		041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B381896A2200061A3E2 /* QMA_ARTests.m */; };
 		041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */; };
+		25019E1318CA1C800019C311 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1218CA1C800019C311 /* libz.dylib */; };
+		25019E1518CA1C8A0019C311 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1418CA1C8A0019C311 /* libxml2.dylib */; };
+		25019E1718CA1C9E0019C311 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1618CA1C9E0019C311 /* QuartzCore.framework */; };
+		25019E1918CA1CA90019C311 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1818CA1CA90019C311 /* CFNetwork.framework */; };
+		25019E1B18CA1CB40019C311 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1A18CA1CB40019C311 /* AudioToolbox.framework */; };
+		25019E1D18CA1CC00019C311 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1C18CA1CC00019C311 /* AVFoundation.framework */; };
+		25019E1F18CA1CCA0019C311 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E1E18CA1CCA0019C311 /* Security.framework */; };
+		25019E2118CA1CD50019C311 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E2018CA1CD50019C311 /* CoreMedia.framework */; };
+		25019E2318CA1CE10019C311 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E2218CA1CE10019C311 /* CoreLocation.framework */; };
+		25019E2518CA1CED0019C311 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E2418CA1CED0019C311 /* CoreMotion.framework */; };
+		25019E2718CA1CF80019C311 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25019E2618CA1CF80019C311 /* CoreVideo.framework */; };
+		250AD0E118D0EF1D0072D718 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250AD0E018D0EF1D0072D718 /* metaioSDK.framework */; };
+		250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0E318D0F9FE0072D718 /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0E518D0F9FE0072D718 /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */; };
+		250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */; };
+		250AD0F118D1199D0072D718 /* _Targets in Resources */ = {isa = PBXBuildFile; fileRef = 250AD0F018D1199D0072D718 /* _Targets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		041B0B301896A2200061A3E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 041B0B021896A2200061A3E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 041B0B091896A2200061A3E2;
-			remoteInfo = "QMA-AR";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		041B0B0A1896A2200061A3E2 /* QMA-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QMA-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,16 +44,31 @@
 		041B0B191896A2200061A3E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMA-AR-Prefix.pch"; sourceTree = "<group>"; };
 		041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QMAAppDelegate.h; sourceTree = "<group>"; };
-		041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMAAppDelegate.m; sourceTree = "<group>"; };
 		041B0B201896A2200061A3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		041B0B251896A2200061A3E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		041B0B2B1896A2200061A3E2 /* QMA-ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QMA-ARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B0B2C1896A2200061A3E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		041B0B341896A2200061A3E2 /* QMA-ARTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QMA-ARTests-Info.plist"; sourceTree = "<group>"; };
-		041B0B361896A2200061A3E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		041B0B381896A2200061A3E2 /* QMA_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QMA_ARTests.m; sourceTree = "<group>"; };
 		041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAWelcomeVC.h; path = _Code/QMAWelcomeVC.h; sourceTree = "<group>"; };
 		041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAWelcomeVC.m; path = _Code/QMAWelcomeVC.m; sourceTree = "<group>"; };
+		25019E1218CA1C800019C311 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		25019E1418CA1C8A0019C311 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		25019E1618CA1C9E0019C311 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		25019E1818CA1CA90019C311 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		25019E1A18CA1CB40019C311 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		25019E1C18CA1CC00019C311 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		25019E1E18CA1CCA0019C311 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		25019E2018CA1CD50019C311 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		25019E2218CA1CE10019C311 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25019E2418CA1CED0019C311 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		25019E2618CA1CF80019C311 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		250AD0E018D0EF1D0072D718 /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
+		250AD0E218D0F9FE0072D718 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = _Code/ThirdParty/Metaio/EAGLView.h; sourceTree = "<group>"; };
+		250AD0E318D0F9FE0072D718 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = _Code/ThirdParty/Metaio/EAGLView.mm; sourceTree = "<group>"; };
+		250AD0E418D0F9FE0072D718 /* MetaioSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaioSDKViewController.h; path = _Code/ThirdParty/Metaio/MetaioSDKViewController.h; sourceTree = "<group>"; };
+		250AD0E518D0F9FE0072D718 /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MetaioSDKViewController.mm; path = _Code/ThirdParty/Metaio/MetaioSDKViewController.mm; sourceTree = "<group>"; };
+		250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACyclopsVC.h; path = _Code/QMACyclopsVC.h; sourceTree = "<group>"; };
+		250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QMACyclopsVC.mm; path = _Code/QMACyclopsVC.mm; sourceTree = "<group>"; };
+		250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMAAppDelegate.mm; sourceTree = "<group>"; };
+		250AD0F018D1199D0072D718 /* _Targets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _Targets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,19 +76,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25019E1518CA1C8A0019C311 /* libxml2.dylib in Frameworks */,
+				25019E1318CA1C800019C311 /* libz.dylib in Frameworks */,
+				25019E1B18CA1CB40019C311 /* AudioToolbox.framework in Frameworks */,
+				25019E1D18CA1CC00019C311 /* AVFoundation.framework in Frameworks */,
+				25019E1918CA1CA90019C311 /* CFNetwork.framework in Frameworks */,
 				041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */,
-				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
+				25019E2318CA1CE10019C311 /* CoreLocation.framework in Frameworks */,
+				25019E2118CA1CD50019C311 /* CoreMedia.framework in Frameworks */,
+				25019E2518CA1CED0019C311 /* CoreMotion.framework in Frameworks */,
+				25019E2718CA1CF80019C311 /* CoreVideo.framework in Frameworks */,
 				041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041B0B281896A2200061A3E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041B0B2D1896A2200061A3E2 /* XCTest.framework in Frameworks */,
-				041B0B2F1896A2200061A3E2 /* UIKit.framework in Frameworks */,
-				041B0B2E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
+				250AD0E118D0EF1D0072D718 /* metaioSDK.framework in Frameworks */,
+				25019E1F18CA1CCA0019C311 /* Security.framework in Frameworks */,
+				25019E1718CA1C9E0019C311 /* QuartzCore.framework in Frameworks */,
+				041B0B121896A2200061A3E2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				041B0B131896A2200061A3E2 /* QMA-AR */,
-				041B0B321896A2200061A3E2 /* QMA-ARTests */,
 				041B0B0C1896A2200061A3E2 /* Frameworks */,
 				041B0B0B1896A2200061A3E2 /* Products */,
 			);
@@ -93,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				041B0B0A1896A2200061A3E2 /* QMA-AR.app */,
-				041B0B2B1896A2200061A3E2 /* QMA-ARTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +117,20 @@
 		041B0B0C1896A2200061A3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				25019E1418CA1C8A0019C311 /* libxml2.dylib */,
+				25019E1218CA1C800019C311 /* libz.dylib */,
+				25019E1A18CA1CB40019C311 /* AudioToolbox.framework */,
+				25019E1C18CA1CC00019C311 /* AVFoundation.framework */,
+				25019E1818CA1CA90019C311 /* CFNetwork.framework */,
 				041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */,
+				25019E2218CA1CE10019C311 /* CoreLocation.framework */,
+				25019E2018CA1CD50019C311 /* CoreMedia.framework */,
+				25019E2418CA1CED0019C311 /* CoreMotion.framework */,
+				25019E2618CA1CF80019C311 /* CoreVideo.framework */,
+				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				250AD0E018D0EF1D0072D718 /* metaioSDK.framework */,
+				25019E1618CA1C9E0019C311 /* QuartzCore.framework */,
+				25019E1E18CA1CCA0019C311 /* Security.framework */,
 				041B0B111896A2200061A3E2 /* UIKit.framework */,
 				041B0B2C1896A2200061A3E2 /* XCTest.framework */,
 			);
@@ -112,7 +140,7 @@
 		041B0B131896A2200061A3E2 /* QMA-AR */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B431896A4130061A3E2 /* Core Data */,
+				25DA481518D0E9CF00CF9CCF /* Model */,
 				041B0B421896A3F30061A3E2 /* View */,
 				041B0B441896A50D0061A3E2 /* Controller */,
 				041B0B141896A2200061A3E2 /* Supporting Files */,
@@ -125,24 +153,6 @@
 			children = (
 				041B0B151896A2200061A3E2 /* QMA-AR-Info.plist */,
 				041B0B161896A2200061A3E2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		041B0B321896A2200061A3E2 /* QMA-ARTests */ = {
-			isa = PBXGroup;
-			children = (
-				041B0B381896A2200061A3E2 /* QMA_ARTests.m */,
-				041B0B331896A2200061A3E2 /* Supporting Files */,
-			);
-			path = "QMA-ARTests";
-			sourceTree = "<group>";
-		};
-		041B0B331896A2200061A3E2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				041B0B341896A2200061A3E2 /* QMA-ARTests-Info.plist */,
-				041B0B351896A2200061A3E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,8 +177,11 @@
 			isa = PBXGroup;
 			children = (
 				041B0B451896A57F0061A3E2 /* System */,
+				250AD0E818D0FB9B0072D718 /* Metaio */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
+				250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */,
+				250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -179,9 +192,29 @@
 				041B0B1B1896A2200061A3E2 /* QMA-AR-Prefix.pch */,
 				041B0B191896A2200061A3E2 /* main.m */,
 				041B0B1C1896A2200061A3E2 /* QMAAppDelegate.h */,
-				041B0B1D1896A2200061A3E2 /* QMAAppDelegate.m */,
+				250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		250AD0E818D0FB9B0072D718 /* Metaio */ = {
+			isa = PBXGroup;
+			children = (
+				250AD0E218D0F9FE0072D718 /* EAGLView.h */,
+				250AD0E318D0F9FE0072D718 /* EAGLView.mm */,
+				250AD0E418D0F9FE0072D718 /* MetaioSDKViewController.h */,
+				250AD0E518D0F9FE0072D718 /* MetaioSDKViewController.mm */,
+			);
+			name = Metaio;
+			sourceTree = "<group>";
+		};
+		25DA481518D0E9CF00CF9CCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				250AD0F018D1199D0072D718 /* _Targets */,
+				041B0B431896A4130061A3E2 /* Core Data */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,24 +237,6 @@
 			productReference = 041B0B0A1896A2200061A3E2 /* QMA-AR.app */;
 			productType = "com.apple.product-type.application";
 		};
-		041B0B2A1896A2200061A3E2 /* QMA-ARTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 041B0B3F1896A2200061A3E2 /* Build configuration list for PBXNativeTarget "QMA-ARTests" */;
-			buildPhases = (
-				041B0B271896A2200061A3E2 /* Sources */,
-				041B0B281896A2200061A3E2 /* Frameworks */,
-				041B0B291896A2200061A3E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				041B0B311896A2200061A3E2 /* PBXTargetDependency */,
-			);
-			name = "QMA-ARTests";
-			productName = "QMA-ARTests";
-			productReference = 041B0B2B1896A2200061A3E2 /* QMA-ARTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,8 +247,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = GuideOne;
 				TargetAttributes = {
-					041B0B2A1896A2200061A3E2 = {
-						TestTargetID = 041B0B091896A2200061A3E2;
+					041B0B091896A2200061A3E2 = {
+						DevelopmentTeam = 72N2MY3SW3;
 					};
 				};
 			};
@@ -251,7 +266,6 @@
 			projectRoot = "";
 			targets = (
 				041B0B091896A2200061A3E2 /* QMA-AR */,
-				041B0B2A1896A2200061A3E2 /* QMA-ARTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,16 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
+				250AD0F118D1199D0072D718 /* _Targets in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
 				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041B0B291896A2200061A3E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041B0B371896A2200061A3E2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,29 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041B0B1E1896A2200061A3E2 /* QMAAppDelegate.m in Sources */,
-				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
+				250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041B0B271896A2200061A3E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041B0B391896A2200061A3E2 /* QMA_ARTests.m in Sources */,
+				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
+				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
+				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
+				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		041B0B311896A2200061A3E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 041B0B091896A2200061A3E2 /* QMA-AR */;
-			targetProxy = 041B0B301896A2200061A3E2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		041B0B161896A2200061A3E2 /* InfoPlist.strings */ = {
@@ -323,14 +317,6 @@
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		041B0B351896A2200061A3E2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041B0B361896A2200061A3E2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -338,9 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -353,7 +339,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -370,6 +357,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -377,9 +365,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -393,7 +381,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -403,6 +392,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -411,10 +401,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,53 +421,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
 				INFOPLIST_FILE = "QMA-AR/QMA-AR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		041B0B401896A2200061A3E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMA-AR.app/QMA-AR";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "QMA-ARTests/QMA-ARTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		041B0B411896A2200061A3E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QMA-AR.app/QMA-AR";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QMA-AR/QMA-AR-Prefix.pch";
-				INFOPLIST_FILE = "QMA-ARTests/QMA-ARTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -493,14 +455,7 @@
 				041B0B3E1896A2200061A3E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		041B0B3F1896A2200061A3E2 /* Build configuration list for PBXNativeTarget "QMA-ARTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				041B0B401896A2200061A3E2 /* Debug */,
-				041B0B411896A2200061A3E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

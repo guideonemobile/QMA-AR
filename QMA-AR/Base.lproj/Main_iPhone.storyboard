@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mBD-MP-RI2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mBD-MP-RI2">
     <dependencies>
-        <deployment version="1792" identifier="iOS"/>
+        <deployment version="1792" defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
@@ -10,17 +10,20 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="QMAWelcomeVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YZ9-6n-GHK"/>
-                        <viewControllerLayoutGuide type="bottom" id="OgN-ti-hN1"/>
+                        <viewControllerLayoutGuide type="top" id="8O6-JA-aT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlq-6f-ZFs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-BU-8DB">
-                                <rect key="frame" x="144" y="269" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-BU-8DB">
+                                <rect key="frame" x="128" y="269" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="On1-Xz-K0b"/>
+                                </constraints>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,31 +33,51 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U7O-BU-8DB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KCs-xK-k8E"/>
+                            <constraint firstAttribute="centerY" secondItem="U7O-BU-8DB" secondAttribute="centerY" id="Q9v-Cn-XlS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6dv-5u-0J9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="196"/>
+            <point key="canvasLocation" x="675" y="196"/>
         </scene>
-        <!--View Controller-->
+        <!--CyclopsVC-->
         <scene sceneID="c3m-wv-mEF">
             <objects>
-                <viewController id="89o-2V-KNI" sceneMemberID="viewController">
+                <viewController id="89o-2V-KNI" customClass="QMACyclopsVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F6M-uc-1eF"/>
-                        <viewControllerLayoutGuide type="bottom" id="FfH-N8-V55"/>
+                        <viewControllerLayoutGuide type="top" id="3mu-yS-KVT"/>
+                        <viewControllerLayoutGuide type="bottom" id="jHU-c2-kOz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mha-X1-Jun">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4E-RA-ifz" userLabel="EAGLView" customClass="EAGLView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D4E-RA-ifz" firstAttribute="leading" secondItem="mha-X1-Jun" secondAttribute="leading" id="28k-Hj-Faz"/>
+                            <constraint firstItem="D4E-RA-ifz" firstAttribute="top" secondItem="mha-X1-Jun" secondAttribute="top" id="pI4-zB-Xcc"/>
+                            <constraint firstAttribute="centerY" secondItem="D4E-RA-ifz" secondAttribute="centerY" id="qUg-wU-251"/>
+                            <constraint firstAttribute="centerX" secondItem="D4E-RA-ifz" secondAttribute="centerX" id="wNe-9y-20G"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w68-JH-6Xv"/>
+                    <connections>
+                        <outlet property="glView" destination="D4E-RA-ifz" id="NNu-0E-SjN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Qf-7ST" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="196"/>
+            <point key="canvasLocation" x="1096" y="196"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XKv-yt-COU">
