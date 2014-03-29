@@ -32,6 +32,9 @@
 		250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */; };
 		250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */; };
 		250AD0F118D1199D0072D718 /* _Targets in Resources */ = {isa = PBXBuildFile; fileRef = 250AD0F018D1199D0072D718 /* _Targets */; };
+		251CC03D18E72B7C002FDA84 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC03C18E72B7C002FDA84 /* Assets */; };
+		251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC03E18E72F56002FDA84 /* EventKit.framework */; };
+		251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC04018E72F7D002FDA84 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QMACyclopsVC.mm; path = _Code/QMACyclopsVC.mm; sourceTree = "<group>"; };
 		250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMAAppDelegate.mm; sourceTree = "<group>"; };
 		250AD0F018D1199D0072D718 /* _Targets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _Targets; sourceTree = "<group>"; };
+		251CC03C18E72B7C002FDA84 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		251CC03E18E72F56002FDA84 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		251CC04018E72F7D002FDA84 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +92,9 @@
 				25019E2118CA1CD50019C311 /* CoreMedia.framework in Frameworks */,
 				25019E2518CA1CED0019C311 /* CoreMotion.framework in Frameworks */,
 				25019E2718CA1CF80019C311 /* CoreVideo.framework in Frameworks */,
+				251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */,
 				041B0B0E1896A2200061A3E2 /* Foundation.framework in Frameworks */,
+				251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */,
 				250AD0E118D0EF1D0072D718 /* metaioSDK.framework in Frameworks */,
 				25019E1F18CA1CCA0019C311 /* Security.framework in Frameworks */,
 				25019E1718CA1C9E0019C311 /* QuartzCore.framework in Frameworks */,
@@ -127,7 +135,9 @@
 				25019E2018CA1CD50019C311 /* CoreMedia.framework */,
 				25019E2418CA1CED0019C311 /* CoreMotion.framework */,
 				25019E2618CA1CF80019C311 /* CoreVideo.framework */,
+				251CC03E18E72F56002FDA84 /* EventKit.framework */,
 				041B0B0D1896A2200061A3E2 /* Foundation.framework */,
+				251CC04018E72F7D002FDA84 /* MediaPlayer.framework */,
 				250AD0E018D0EF1D0072D718 /* metaioSDK.framework */,
 				25019E1618CA1C9E0019C311 /* QuartzCore.framework */,
 				25019E1E18CA1CCA0019C311 /* Security.framework */,
@@ -211,6 +221,7 @@
 		25DA481518D0E9CF00CF9CCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				251CC03C18E72B7C002FDA84 /* Assets */,
 				250AD0F018D1199D0072D718 /* _Targets */,
 				041B0B431896A4130061A3E2 /* Core Data */,
 			);
@@ -275,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251CC03D18E72B7C002FDA84 /* Assets in Resources */,
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
 				250AD0F118D1199D0072D718 /* _Targets in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,

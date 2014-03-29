@@ -1,65 +1,76 @@
 
 #import "QMACyclopsVC.h"
-#import "EAGLView.h"
 
-@interface QMACyclopsVC ()
+#import "EAGLView.h"
+#import <metaioSDK/GestureHandlerIOS.h>
+#import <metaioSDK/IARELInterpreterIOS.h>
+
+#include "TargetConditionals.h"		// to know if we're building for SIMULATOR
+#include <metaioSDK/IMetaioSDKIOS.h>
+#include <metaioSDK/IARELInterpreterIOS.h>
+#include <metaioSDK/GestureHandler.h>
+
+
+@interface QMACyclopsVC () <UIGestureRecognizerDelegate, IARELInterpreterIOSDelegate>
 
 @property (nonatomic, weak) IBOutlet EAGLView *glView;
+@property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
 
 @end
 
 
-static NSString *const kTrackingDataFileName = @"TrackingData_MarkerlessFast";
-static NSString *const kTrackingDataFilePath = @"_Targets/";
-
-static NSString *const kOverlayingImage = @"frame";
-static NSString *const kOverlayingImageFilePath = @"_Targets/";
-
-static NSString *const kFileTypeXML = @"xml";
-static NSString *const kFileTypePNG = @"png";
-
-
-@implementation QMACyclopsVC {
+@implementation QMACyclopsVC  {
     
-    metaio::IGeometry *m_imagePlane;
+    metaio::IARELInterpreterIOS *m_ArelInterpreter;
+	GestureHandlerIOS *m_pGestureHandlerIOS;
+	NSString *m_arelFile;
     
 }
-
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    //Load target tracking configuration file
+    NSString *arelConfigFilePath = [[NSBundle mainBundle] pathForResource:@"index"
+                                                                   ofType:@"xml"
+                                                              inDirectory:@"Assets"];
     
-    NSString *trackingDataFile = [[NSBundle mainBundle] pathForResource:kTrackingDataFileName
-																 ofType:kFileTypeXML
-															inDirectory:kTrackingDataFilePath];
+    m_arelFile = [[NSString alloc] initWithString:arelConfigFilePath];
     
-    if (!trackingDataFile) {
-        QMALog(@"Error opening %@ file", kTrackingDataFileName);
+    self.m_arelWebView.scrollView.bounces = NO;
+	
+    m_pGestureHandlerIOS = [[GestureHandlerIOS alloc] initWithSDK:m_metaioSDK
+														 withView:self.m_arelWebView
+													 withGestures:metaio::GestureHandler::GESTURE_ALL];
     
-    } else {
-        bool success = m_metaioSDK->setTrackingConfiguration([trackingDataFile UTF8String]);
-        if (!success) {
-            QMALog(@"Error loading the tracking configuration");
-        }
+    m_ArelInterpreter = metaio::CreateARELInterpreterIOS(self.m_arelWebView, self);
+	
+    m_ArelInterpreter->initialize( m_metaioSDK, m_pGestureHandlerIOS->m_pGestureHandler );
+    
+    m_ArelInterpreter->setRadarProperties(metaio::IGeometry::ANCHOR_TL, metaio::Vector3d(1), metaio::Vector3d(1));
+	
+	m_ArelInterpreter->registerDelegate(self);
+    
+}
+
+- (void)viewDidLayoutSubviews {
+	float scale = [UIScreen mainScreen].scale;
+	m_metaioSDK->resizeRenderer(self.glView.bounds.size.width*scale, self.glView.bounds.size.height*scale);
+}
+
+- (void)onSDKReady {
+	m_ArelInterpreter->loadARELFile([m_arelFile UTF8String]);
+}
+
+- (void)drawFrame {
+    
+	[glView setFramebuffer];
+    
+    if( m_ArelInterpreter ) {
+		m_ArelInterpreter->update();
     }
     
-    //Load image to superimpose on identified target
-    
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:kOverlayingImage
-														  ofType:kFileTypePNG
-													 inDirectory:kOverlayingImageFilePath];
-    
-    if (imagePath) {
-        m_imagePlane = m_metaioSDK->createGeometryFromImage([imagePath UTF8String]);
-		if (!m_imagePlane) {
-            QMALog(@"Error loading %@ overlaying image", kOverlayingImage);
-		} else {
-            m_imagePlane->setScale(metaio::Vector3d(3.0,3.0,3.0));
-        }
-    }
+    [glView presentFramebuffer];
 }
 
 @end

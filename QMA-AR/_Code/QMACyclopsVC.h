@@ -5,4 +5,6 @@
 
 @interface QMACyclopsVC : MetaioSDKViewController
 
+- (void)onSDKReady;
+
 @end
