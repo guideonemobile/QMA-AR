@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <results trackingurl="html/resources/TrackingData.zip">
   <arel><![CDATA[html/index.html]]></arel>
-  <object id="image2">
+  <object id="image5">
     <title><![CDATA[Google]]></title>
     <assets3d>
       <model><![CDATA[html/resources/5d1a8dcf7d33855f98fd7a355cd60b98/5d1a8dcf7d33855f98fd7a355cd60b98.zip]]></model>
       <transform>
         <translation>
-          <x>0.0000000000</x>
-          <y>0.0000000000</y>
+          <x>-377.4781188965</x>
+          <y>253.3875122070</y>
           <z>1.0000000000</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>47.6395034790</x>
+          <x>0.0000000000</x>
           <y>0.0000000000</y>
-          <z>0.0000000000</z>
+          <z>4.9524540901</z>
         </rotation>
         <scale>
-          <x>1.1530969143</x>
-          <y>1.1100825071</y>
-          <z>1.6682173014</z>
+          <x>2.0000000000</x>
+          <y>2.0000000000</y>
+          <z>2.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -32,25 +32,56 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image3">
+  <object id="image6">
     <title><![CDATA[Clock]]></title>
     <assets3d>
       <model><![CDATA[html/resources/396e05fdea28e40c10e33b70a3324074/396e05fdea28e40c10e33b70a3324074.zip]]></model>
       <transform>
         <translation>
-          <x>-71.6577529907</x>
-          <y>0.0000000000</y>
-          <z>120.7933883667</z>
+          <x>748.7554931641</x>
+          <y>494.0312500000</y>
+          <z>53.1397399902</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>62.1724090576</x>
+          <x>102.0759429932</x>
           <y>0.0000000000</y>
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>1.5952646732</x>
-          <y>1.4714325666</y>
+          <x>1.7307090759</x>
+          <y>1.4900135994</y>
           <z>1.9444444180</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>1</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="image7">
+    <title><![CDATA[image]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/e732a9d48912f7e183e6d12906c8c9b8/e732a9d48912f7e183e6d12906c8c9b8.zip]]></model>
+      <transform>
+        <translation>
+          <x>-216.3566131592</x>
+          <y>0.0000000000</y>
+          <z>-66.8037109375</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>1.2222952843</x>
+          <y>1.2082800865</y>
+          <z>1.8918918371</z>
         </scale>
       </transform>
       <properties>
@@ -63,56 +94,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image1">
-    <title><![CDATA[image]]></title>
+  <object id="image8">
+    <title><![CDATA[Google]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/e732a9d48912f7e183e6d12906c8c9b8/e732a9d48912f7e183e6d12906c8c9b8.zip]]></model>
+      <model><![CDATA[html/resources/5d1a8dcf7d33855f98fd7a355cd60b98/5d1a8dcf7d33855f98fd7a355cd60b98.zip]]></model>
       <transform>
         <translation>
-          <x>-219.5059051514</x>
-          <y>0.0000000000</y>
-          <z>1.0000000000</z>
+          <x>238.3270721436</x>
+          <y>-14.1452941895</y>
+          <z>-174.6472778320</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>-103.9897537231</x>
-          <y>0.0000000267</y>
-          <z>0.8622943163</z>
-        </rotation>
-        <scale>
-          <x>0.6942892075</x>
-          <y>0.9444876313</y>
-          <z>1.8918918371</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image4">
-    <title><![CDATA[Clock]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/396e05fdea28e40c10e33b70a3324074/396e05fdea28e40c10e33b70a3324074.zip]]></model>
-      <transform>
-        <translation>
-          <x>75.6729202271</x>
-          <y>0.0000000000</y>
-          <z>-26.3786621094</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>60.9462203979</x>
+          <x>87.6251907349</x>
           <y>0.0000000000</y>
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.9643737078</x>
-          <y>0.7986397147</y>
-          <z>1.9444444180</z>
+          <x>0.8435544968</x>
+          <y>1.3676228523</y>
+          <z>1.4923080206</z>
         </scale>
       </transform>
       <properties>
