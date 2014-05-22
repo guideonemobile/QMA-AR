@@ -32,9 +32,19 @@
 		250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */; };
 		250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */; };
 		250AD0F118D1199D0072D718 /* _Targets in Resources */ = {isa = PBXBuildFile; fileRef = 250AD0F018D1199D0072D718 /* _Targets */; };
+		250D9459192EA8C00034BB78 /* QMATarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D9458192EA8C00034BB78 /* QMATarget.m */; };
+		250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D945B192EA8D30034BB78 /* QMAPoi.m */; };
+		250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D945E192EA9490034BB78 /* QMATarget+Create.m */; };
+		250D9462192EA9630034BB78 /* QMAPoi+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D9461192EA9630034BB78 /* QMAPoi+Create.m */; };
+		250D9465192EABCC0034BB78 /* SharedManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D9464192EABCC0034BB78 /* SharedManagedDocument.m */; };
+		250D9467192EAC630034BB78 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D9466192EAC630034BB78 /* CoreData.framework */; };
+		250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */; };
+		250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D946F192EAF470034BB78 /* QMAPoiTBVC.m */; };
+		251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */; };
 		251CC03D18E72B7C002FDA84 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC03C18E72B7C002FDA84 /* Assets */; };
 		251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC03E18E72F56002FDA84 /* EventKit.framework */; };
 		251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC04018E72F7D002FDA84 /* MediaPlayer.framework */; };
+		2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,9 +82,27 @@
 		250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QMACyclopsVC.mm; path = _Code/QMACyclopsVC.mm; sourceTree = "<group>"; };
 		250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMAAppDelegate.mm; sourceTree = "<group>"; };
 		250AD0F018D1199D0072D718 /* _Targets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _Targets; sourceTree = "<group>"; };
+		250D9457192EA8C00034BB78 /* QMATarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMATarget.h; path = _Code/Database/QMATarget.h; sourceTree = "<group>"; };
+		250D9458192EA8C00034BB78 /* QMATarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMATarget.m; path = _Code/Database/QMATarget.m; sourceTree = "<group>"; };
+		250D945A192EA8D30034BB78 /* QMAPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoi.h; path = _Code/Database/QMAPoi.h; sourceTree = "<group>"; };
+		250D945B192EA8D30034BB78 /* QMAPoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoi.m; path = _Code/Database/QMAPoi.m; sourceTree = "<group>"; };
+		250D945D192EA9490034BB78 /* QMATarget+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QMATarget+Create.h"; path = "_Code/Database/QMATarget+Create.h"; sourceTree = "<group>"; };
+		250D945E192EA9490034BB78 /* QMATarget+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QMATarget+Create.m"; path = "_Code/Database/QMATarget+Create.m"; sourceTree = "<group>"; };
+		250D9460192EA9630034BB78 /* QMAPoi+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QMAPoi+Create.h"; path = "_Code/Database/QMAPoi+Create.h"; sourceTree = "<group>"; };
+		250D9461192EA9630034BB78 /* QMAPoi+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QMAPoi+Create.m"; path = "_Code/Database/QMAPoi+Create.m"; sourceTree = "<group>"; };
+		250D9463192EABCC0034BB78 /* SharedManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedManagedDocument.h; path = _Code/Database/SharedManagedDocument.h; sourceTree = "<group>"; };
+		250D9464192EABCC0034BB78 /* SharedManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharedManagedDocument.m; path = _Code/Database/SharedManagedDocument.m; sourceTree = "<group>"; };
+		250D9466192EAC630034BB78 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		250D946B192EAE9F0034BB78 /* QMACoreDataTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACoreDataTBVC.h; path = _Code/QMACoreDataTBVC.h; sourceTree = "<group>"; };
+		250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMACoreDataTBVC.m; path = _Code/QMACoreDataTBVC.m; sourceTree = "<group>"; };
+		250D946E192EAF470034BB78 /* QMAPoiTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiTBVC.h; path = _Code/QMAPoiTBVC.h; sourceTree = "<group>"; };
+		250D946F192EAF470034BB78 /* QMAPoiTBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiTBVC.m; path = _Code/QMAPoiTBVC.m; sourceTree = "<group>"; };
+		251293FB192EA5A0002585A3 /* QMA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QMA.xcdatamodel; sourceTree = "<group>"; };
 		251CC03C18E72B7C002FDA84 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		251CC03E18E72F56002FDA84 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		251CC04018E72F7D002FDA84 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAOnSiteVC.h; path = _Code/QMAOnSiteVC.h; sourceTree = "<group>"; };
+		2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAOnSiteVC.m; path = _Code/QMAOnSiteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +115,7 @@
 				25019E1B18CA1CB40019C311 /* AudioToolbox.framework in Frameworks */,
 				25019E1D18CA1CC00019C311 /* AVFoundation.framework in Frameworks */,
 				25019E1918CA1CA90019C311 /* CFNetwork.framework in Frameworks */,
+				250D9467192EAC630034BB78 /* CoreData.framework in Frameworks */,
 				041B0B101896A2200061A3E2 /* CoreGraphics.framework in Frameworks */,
 				25019E2318CA1CE10019C311 /* CoreLocation.framework in Frameworks */,
 				25019E2118CA1CD50019C311 /* CoreMedia.framework in Frameworks */,
@@ -130,6 +159,7 @@
 				25019E1A18CA1CB40019C311 /* AudioToolbox.framework */,
 				25019E1C18CA1CC00019C311 /* AVFoundation.framework */,
 				25019E1818CA1CA90019C311 /* CFNetwork.framework */,
+				250D9466192EAC630034BB78 /* CoreData.framework */,
 				041B0B0F1896A2200061A3E2 /* CoreGraphics.framework */,
 				25019E2218CA1CE10019C311 /* CoreLocation.framework */,
 				25019E2018CA1CD50019C311 /* CoreMedia.framework */,
@@ -161,8 +191,8 @@
 		041B0B141896A2200061A3E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				041B0B151896A2200061A3E2 /* QMA-AR-Info.plist */,
 				041B0B161896A2200061A3E2 /* InfoPlist.strings */,
+				041B0B151896A2200061A3E2 /* QMA-AR-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,22 +206,22 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		041B0B431896A4130061A3E2 /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Core Data";
-			sourceTree = "<group>";
-		};
 		041B0B441896A50D0061A3E2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				041B0B451896A57F0061A3E2 /* System */,
-				250AD0E818D0FB9B0072D718 /* Metaio */,
+				255108A0192E833C00208C35 /* Third Party */,
+				251293FD192EA742002585A3 /* Database */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
+				2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */,
+				2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */,
 				250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */,
 				250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */,
+				250D946B192EAE9F0034BB78 /* QMACoreDataTBVC.h */,
+				250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */,
+				250D946E192EAF470034BB78 /* QMAPoiTBVC.h */,
+				250D946F192EAF470034BB78 /* QMAPoiTBVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -218,12 +248,37 @@
 			name = Metaio;
 			sourceTree = "<group>";
 		};
+		251293FD192EA742002585A3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				250D9463192EABCC0034BB78 /* SharedManagedDocument.h */,
+				250D9464192EABCC0034BB78 /* SharedManagedDocument.m */,
+				250D9457192EA8C00034BB78 /* QMATarget.h */,
+				250D9458192EA8C00034BB78 /* QMATarget.m */,
+				250D945D192EA9490034BB78 /* QMATarget+Create.h */,
+				250D945E192EA9490034BB78 /* QMATarget+Create.m */,
+				250D945A192EA8D30034BB78 /* QMAPoi.h */,
+				250D945B192EA8D30034BB78 /* QMAPoi.m */,
+				250D9460192EA9630034BB78 /* QMAPoi+Create.h */,
+				250D9461192EA9630034BB78 /* QMAPoi+Create.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		255108A0192E833C00208C35 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				250AD0E818D0FB9B0072D718 /* Metaio */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
 		25DA481518D0E9CF00CF9CCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				251CC03C18E72B7C002FDA84 /* Assets */,
 				250AD0F018D1199D0072D718 /* _Targets */,
-				041B0B431896A4130061A3E2 /* Core Data */,
+				251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -255,7 +310,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = QMA;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GuideOne;
 				TargetAttributes = {
 					041B0B091896A2200061A3E2 = {
@@ -301,12 +356,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250D9462192EA9630034BB78 /* QMAPoi+Create.m in Sources */,
+				2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */,
 				250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */,
+				250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */,
+				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
+				250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */,
+				250D9459192EA8C00034BB78 /* QMATarget.m in Sources */,
 				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
+				250D9465192EABCC0034BB78 /* SharedManagedDocument.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
+				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,
+				251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -377,7 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -413,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: MergeSort DeLima (95GDP2D5WC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -433,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: MergeSort DeLima (95GDP2D5WC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -470,6 +540,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				251293FB192EA5A0002585A3 /* QMA.xcdatamodel */,
+			);
+			currentVersion = 251293FB192EA5A0002585A3 /* QMA.xcdatamodel */;
+			path = QMA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 041B0B021896A2200061A3E2 /* Project object */;
 }

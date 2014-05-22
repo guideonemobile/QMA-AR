@@ -10,11 +10,16 @@
 #include <metaioSDK/IARELInterpreterIOS.h>
 #include <metaioSDK/GestureHandler.h>
 
+#import "QMAPoiTBVC.h"
 
-@interface QMACyclopsVC () <UIGestureRecognizerDelegate, IARELInterpreterIOSDelegate>
+
+@interface QMACyclopsVC () <UIGestureRecognizerDelegate, IARELInterpreterIOSDelegate, UIWebViewDelegate>
 
 @property (nonatomic, weak) IBOutlet EAGLView *glView;
 @property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
+
+@property (nonatomic, weak) IBOutlet UIView *containerView;
+@property (nonatomic, weak) QMAPoiTBVC *poiTBVC;
 
 @end
 
@@ -27,17 +32,17 @@
     
 }
 
+#pragma mark - Metaio Boilerplate Code
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    NSString *arelConfigFilePath = [[NSBundle mainBundle] pathForResource:@"index"
-                                                                   ofType:@"xml"
-                                                              inDirectory:@"Assets"];
-    
-    m_arelFile = [[NSString alloc] initWithString:arelConfigFilePath];
-    
     self.m_arelWebView.scrollView.bounces = NO;
+    
+    m_arelFile = [[NSString alloc] initWithString:[[NSBundle mainBundle] pathForResource:@"index"
+                                                                                  ofType:@"xml"
+                                                                             inDirectory:@"Assets"]];
 	
     m_pGestureHandlerIOS = [[GestureHandlerIOS alloc] initWithSDK:m_metaioSDK
 														 withView:self.m_arelWebView
@@ -45,12 +50,11 @@
     
     m_ArelInterpreter = metaio::CreateARELInterpreterIOS(self.m_arelWebView, self);
 	
-    m_ArelInterpreter->initialize( m_metaioSDK, m_pGestureHandlerIOS->m_pGestureHandler );
+    m_ArelInterpreter->initialize(m_metaioSDK, m_pGestureHandlerIOS->m_pGestureHandler);
     
     m_ArelInterpreter->setRadarProperties(metaio::IGeometry::ANCHOR_TL, metaio::Vector3d(1), metaio::Vector3d(1));
 	
 	m_ArelInterpreter->registerDelegate(self);
-    
 }
 
 - (void)viewDidLayoutSubviews {
@@ -66,11 +70,38 @@
     
 	[glView setFramebuffer];
     
-    if( m_ArelInterpreter ) {
+    if (m_ArelInterpreter) {
 		m_ArelInterpreter->update();
     }
     
     [glView presentFramebuffer];
+}
+
+#pragma mark - Prepare for Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //This message is only sent once. It is used by the container view to load its referencing view controller
+    if ([segue.destinationViewController isKindOfClass:[QMAPoiTBVC class]]) {
+        self.poiTBVC = segue.destinationViewController;
+        self.poiTBVC.managedDocument = self.managedDocument;
+    }
+}
+
+#pragma mark - AREL Callback
+
+//This function is called from the AREL JavaScript code whenever targets start and stop being tracked
+-(bool)openWebsiteWithUrl:(NSString *)url inExternalApp:(bool)openInExternalApp {
+    
+    //Sample "url" parameter:
+    //targetUnloaded=Mattt
+    
+    NSArray *urlParts = [url componentsSeparatedByString:@"="];
+    
+    NSString *action = [urlParts firstObject];
+    NSString *target = [urlParts lastObject];
+    QMALog(@"%@ %@", action, target);
+    
+    return YES;
 }
 
 @end

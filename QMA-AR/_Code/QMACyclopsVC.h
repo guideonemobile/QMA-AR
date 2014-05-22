@@ -5,6 +5,8 @@
 
 @interface QMACyclopsVC : MetaioSDKViewController
 
+@property (nonatomic, weak) UIManagedDocument *managedDocument;
+
 - (void)onSDKReady;
 
 @end
