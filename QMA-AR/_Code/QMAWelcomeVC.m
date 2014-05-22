@@ -31,7 +31,6 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    //self.locationManager.distanceFilter = 10;
     [self.locationManager startUpdatingLocation];
 }
 

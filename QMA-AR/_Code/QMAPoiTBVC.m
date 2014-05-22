@@ -27,7 +27,7 @@
     
     static NSString *cellIdentifier = @"POICell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = @"Bosco";
+    cell.textLabel.text = @"Sample Text";
     
     return cell;
 }

@@ -1,7 +1,6 @@
 
 #import "QMAOnSiteVC.h"
 #import <AVFoundation/AVFoundation.h>
-#import "QMACyclopsVC.h"
 
 
 @interface QMAOnSiteVC ()
