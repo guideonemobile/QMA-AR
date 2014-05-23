@@ -26,18 +26,19 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     
     [super viewDidLoad];
     
-    self.museumLocation = [[CLLocation alloc] initWithLatitude:qmaLat longitude:qmaLon];
-    
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    
     //In the application's property list (InfoPlist.string), the UIApplicationExitsOnSuspend key is set to
     //YES. This forces the app termination on exit (we want the application to always start from the
     //beginning so we can check the user's location and direct him accordingly every time the app is launched).
     //That being the case, we clean all old VCs that are sitting in the navigation controller's stack on
     //every new launch
     [self.navigationController popToRootViewControllerAnimated:NO];
+    
+    self.museumLocation = [[CLLocation alloc] initWithLatitude:qmaLat longitude:qmaLon];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    self.locationManager.distanceFilter = 100; //Without setting this property, the locationManager:didUpdateToLocation:fromLocation: delegate method gets called twice, even though we call stopUpdatingLocation in it
     
     [self.locationManager startUpdatingLocation];
 }
@@ -74,6 +75,9 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     
     [SharedManagedDocument managedDocumentWithBlock:^(UIManagedDocument *managedDocument) {
         
+        //If this is the first time the app is being used, pre-load database with information
+        //from property list
+
         [managedDocument saveToURL:managedDocument.fileURL
                   forSaveOperation:UIDocumentSaveForOverwriting
                  completionHandler:^(BOOL success) {
