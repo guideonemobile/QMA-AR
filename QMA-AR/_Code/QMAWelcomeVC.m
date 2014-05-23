@@ -31,6 +31,10 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    
+    //When relaunching, removed old VCs from stack
+    self.navigationController.viewControllers = @[[self.navigationController.viewControllers firstObject]];
+    
     [self.locationManager startUpdatingLocation];
 }
 
@@ -43,7 +47,15 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     [self.locationManager stopUpdatingLocation];
     
     CLLocationDistance distanceFromMuseum = [newLocation distanceFromLocation:self.museumLocation];
-    [self loadDestinationViewController:distanceFromMuseum];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    UIViewController *vc;
+    if (YES || distanceFromMuseum < maxDistanceFromMuseum) {
+        vc = [storyboard instantiateViewControllerWithIdentifier:@"OnSiteViewController"];
+    } else {
+        vc = [storyboard instantiateViewControllerWithIdentifier:@"OffSiteViewController"];
+    }
+    [self loadDatabaseAndMoveOn:vc];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -52,32 +64,22 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     [self loadDatabaseAndMoveOn:vc];
 }
 
-#pragma mark - Load Destination View Controller
-
-- (void)loadDestinationViewController:(CLLocationDistance)distanceFromMuseum {
-    
-    self.navigationController.viewControllers = @[[self.navigationController.viewControllers firstObject]];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-    UIViewController *vc;
-    
-    if (YES || distanceFromMuseum < maxDistanceFromMuseum) {
-        vc = [storyboard instantiateViewControllerWithIdentifier:@"OnSiteViewController"];
-    } else {
-        vc = [storyboard instantiateViewControllerWithIdentifier:@"OffSiteViewController"];
-    }
-    
-    [self loadDatabaseAndMoveOn:vc];
-}
-
 #pragma mark - Load Database and Segue
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
+    
     [SharedManagedDocument managedDocumentWithBlock:^(UIManagedDocument *managedDocument) {
-        if ([destinationVC respondsToSelector:@selector(setManagedDocument:)]) {
-            [(id)destinationVC setManagedDocument:managedDocument];
-        }
-        [self.navigationController pushViewController:destinationVC animated:NO];
+        
+        [managedDocument saveToURL:managedDocument.fileURL
+                  forSaveOperation:UIDocumentSaveForOverwriting
+                 completionHandler:^(BOOL success) {
+                     
+                     if ([destinationVC respondsToSelector:@selector(setManagedDocument:)]) {
+                         [(id)destinationVC setManagedDocument:managedDocument];
+                     }
+                     [self.navigationController pushViewController:destinationVC animated:NO];
+                 }
+         ];
     }];
 }
 

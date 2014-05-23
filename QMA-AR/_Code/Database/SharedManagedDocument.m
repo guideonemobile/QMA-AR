@@ -11,7 +11,7 @@ static UIManagedDocument *managedDocument;
     
     NSFileManager *fm = [NSFileManager defaultManager];
     
-    if (managedDocument == nil) {
+    if (!managedDocument) {
         
         NSURL *url = [[fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
         url = [url URLByAppendingPathComponent:@"QMADB"];
