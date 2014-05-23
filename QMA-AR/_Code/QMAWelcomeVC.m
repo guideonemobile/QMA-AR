@@ -71,12 +71,28 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
 
 #pragma mark - Load Database and Segue
 
+static NSString *const error = @"Error in DatabasePreLoadData.plist file: the topmost object in the property list should be 'Root', the second topmost object should be 'Targets', and they both should to be of type dictionary.";
+
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
     [SharedManagedDocument managedDocumentWithBlock:^(UIManagedDocument *managedDocument) {
         
         //If this is the first time the app is being used, pre-load database with information
         //from property list
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"DatabasePreLoadData" ofType:@"plist"];
+        NSDictionary *model = [[NSDictionary alloc] initWithContentsOfFile:path][@"Targets"];
+        if (!model || ![model isKindOfClass:[NSDictionary class]]) {
+            QMALog(@"%@", error);
+        } else {
+            for (id key in model) {
+                if ([model[key] isKindOfClass:[NSDictionary class]]) {
+                    //NSDictionary *target = model[key];
+                    QMALog(@"Target: %@", key);
+                } else {
+                    QMALog(@"Error in DatabasePreLoadData.plist file: targets should be dictionaries");
+                }
+            }
+        }        
 
         [managedDocument saveToURL:managedDocument.fileURL
                   forSaveOperation:UIDocumentSaveForOverwriting
