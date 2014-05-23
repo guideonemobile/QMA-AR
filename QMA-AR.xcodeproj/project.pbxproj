@@ -31,7 +31,6 @@
 		250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0E518D0F9FE0072D718 /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */; };
 		250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */; };
-		250AD0F118D1199D0072D718 /* _Targets in Resources */ = {isa = PBXBuildFile; fileRef = 250AD0F018D1199D0072D718 /* _Targets */; };
 		250D9459192EA8C00034BB78 /* QMATarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D9458192EA8C00034BB78 /* QMATarget.m */; };
 		250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D945B192EA8D30034BB78 /* QMAPoi.m */; };
 		250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D945E192EA9490034BB78 /* QMATarget+Create.m */; };
@@ -81,7 +80,6 @@
 		250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACyclopsVC.h; path = _Code/QMACyclopsVC.h; sourceTree = "<group>"; };
 		250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QMACyclopsVC.mm; path = _Code/QMACyclopsVC.mm; sourceTree = "<group>"; };
 		250AD0EE18D0FDC60072D718 /* QMAAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMAAppDelegate.mm; sourceTree = "<group>"; };
-		250AD0F018D1199D0072D718 /* _Targets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _Targets; sourceTree = "<group>"; };
 		250D9457192EA8C00034BB78 /* QMATarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMATarget.h; path = _Code/Database/QMATarget.h; sourceTree = "<group>"; };
 		250D9458192EA8C00034BB78 /* QMATarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMATarget.m; path = _Code/Database/QMATarget.m; sourceTree = "<group>"; };
 		250D945A192EA8D30034BB78 /* QMAPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoi.h; path = _Code/Database/QMAPoi.h; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				251CC03C18E72B7C002FDA84 /* Assets */,
-				250AD0F018D1199D0072D718 /* _Targets */,
 				251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */,
 			);
 			name = Model;
@@ -351,7 +348,6 @@
 			files = (
 				251CC03D18E72B7C002FDA84 /* Assets in Resources */,
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
-				250AD0F118D1199D0072D718 /* _Targets in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
 				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
 			);
