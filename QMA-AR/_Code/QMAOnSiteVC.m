@@ -123,7 +123,7 @@
         [self.session stopRunning];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.spinner stopAnimating];
-            [self performSegueWithIdentifier:@"SegueToPanorama" sender:self];
+            [self performSegueWithIdentifier:@"SegueToPanoramaVC" sender:self];
         });
     });
 }

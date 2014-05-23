@@ -5,10 +5,19 @@
 
 @implementation SharedManagedDocument
 
+
 static UIManagedDocument *managedDocument;
+static BOOL isInteractingWithTheManagedDocument;
+
 
 + (void)managedDocumentWithBlock:(block_t)completionBlock {
     
+    if (isInteractingWithTheManagedDocument) {
+        QMALog(@"The SharedManagedDocument should not be called repeatedly since it is asynchronous");
+        return;
+    }
+    
+    isInteractingWithTheManagedDocument = YES;
     NSFileManager *fm = [NSFileManager defaultManager];
     
     if (!managedDocument) {
@@ -29,6 +38,7 @@ static UIManagedDocument *managedDocument;
         [managedDocument saveToURL:managedDocument.fileURL
                   forSaveOperation:UIDocumentSaveForCreating
                  completionHandler:^(BOOL success) {
+                     isInteractingWithTheManagedDocument = NO;
                      completionBlock(managedDocument);
                  }
          ];
@@ -36,13 +46,16 @@ static UIManagedDocument *managedDocument;
     } else if (managedDocument.documentState == UIDocumentStateClosed) {
         //Document exists on disk but is closed - open it
         [managedDocument openWithCompletionHandler:^(BOOL success) {
+            isInteractingWithTheManagedDocument = NO;
             completionBlock(managedDocument);
         }];
         
     } else if (managedDocument.documentState == UIDocumentStateNormal) {
+        isInteractingWithTheManagedDocument = NO;
         completionBlock(managedDocument);
         
     } else {
+        isInteractingWithTheManagedDocument = NO;
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Database Error"
 														message:@"Could not open database"
 													   delegate:self

@@ -32,8 +32,12 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     
-    //When relaunching, removed old VCs from stack
-    self.navigationController.viewControllers = @[[self.navigationController.viewControllers firstObject]];
+    //In the application's property list (InfoPlist.string), the UIApplicationExitsOnSuspend key is set to
+    //YES. This forces the app termination on exit (we want the application to always start from the
+    //beginning so we can check the user's location and direct him accordingly every time the app is launched).
+    //That being the case, we clean all old VCs that are sitting in the navigation controller's stack on
+    //every new launch
+    [self.navigationController popToRootViewControllerAnimated:NO];
     
     [self.locationManager startUpdatingLocation];
 }

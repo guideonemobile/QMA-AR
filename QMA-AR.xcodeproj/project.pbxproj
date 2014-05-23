@@ -43,6 +43,7 @@
 		251CC03D18E72B7C002FDA84 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC03C18E72B7C002FDA84 /* Assets */; };
 		251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC03E18E72F56002FDA84 /* EventKit.framework */; };
 		251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC04018E72F7D002FDA84 /* MediaPlayer.framework */; };
+		2528280C192F86B700969CC6 /* QMACheckPointVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2528280B192F86B700969CC6 /* QMACheckPointVC.m */; };
 		2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,8 @@
 		251CC03C18E72B7C002FDA84 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		251CC03E18E72F56002FDA84 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		251CC04018E72F7D002FDA84 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2528280A192F86B700969CC6 /* QMACheckPointVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACheckPointVC.h; path = _Code/QMACheckPointVC.h; sourceTree = "<group>"; };
+		2528280B192F86B700969CC6 /* QMACheckPointVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMACheckPointVC.m; path = _Code/QMACheckPointVC.m; sourceTree = "<group>"; };
 		2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAOnSiteVC.h; path = _Code/QMAOnSiteVC.h; sourceTree = "<group>"; };
 		2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAOnSiteVC.m; path = _Code/QMAOnSiteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +213,8 @@
 				041B0B451896A57F0061A3E2 /* System */,
 				255108A0192E833C00208C35 /* Third Party */,
 				251293FD192EA742002585A3 /* Database */,
+				2528280A192F86B700969CC6 /* QMACheckPointVC.h */,
+				2528280B192F86B700969CC6 /* QMACheckPointVC.m */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
 				25282804192EC3CD00969CC6 /* On Site */,
@@ -372,6 +377,7 @@
 				250D9465192EABCC0034BB78 /* SharedManagedDocument.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
+				2528280C192F86B700969CC6 /* QMACheckPointVC.m in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,
 				251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */,

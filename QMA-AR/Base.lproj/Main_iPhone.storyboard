@@ -43,6 +43,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="6dv-5u-0J9"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,12 +146,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="eLt-Yk-uky"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="LDW-kS-aCu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtn-nk-V1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="198"/>
+            <point key="canvasLocation" x="3" y="198"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jAq-Ka-Riq">
@@ -270,7 +271,7 @@
                         <outlet property="cameraFeedView" destination="wZZ-nD-yYk" id="DRF-cJ-3Pb"/>
                         <outlet property="spinner" destination="ZML-D3-XKs" id="ImB-F2-Elo"/>
                         <outlet property="toolbar" destination="yan-vI-klf" id="nhe-YA-EV9"/>
-                        <segue destination="89o-2V-KNI" kind="push" identifier="SegueToPanorama" id="cna-Wd-yif"/>
+                        <segue destination="89o-2V-KNI" kind="push" identifier="SegueToPanoramaVC" id="cna-Wd-yif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpf-Gn-OjH" sceneMemberID="firstResponder"/>
