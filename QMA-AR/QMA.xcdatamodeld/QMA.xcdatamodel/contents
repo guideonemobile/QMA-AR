@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="QMAPoi" representedClassName="QMAPoi" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QMATarget" inverseName="poiList" inverseEntity="QMATarget" syncable="YES"/>
+        <relationship name="target" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QMATarget" inverseName="pointsOfInterest" inverseEntity="QMATarget" syncable="YES"/>
     </entity>
     <entity name="QMATarget" representedClassName="QMATarget" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="poiList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QMAPoi" inverseName="target" inverseEntity="QMAPoi" syncable="YES"/>
+        <relationship name="pointsOfInterest" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QMAPoi" inverseName="target" inverseEntity="QMAPoi" syncable="YES"/>
     </entity>
     <elements>
         <element name="QMAPoi" positionX="117" positionY="27" width="128" height="88"/>

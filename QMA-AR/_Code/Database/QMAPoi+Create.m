@@ -5,7 +5,7 @@
 @implementation QMAPoi (Create)
 
 + (QMAPoi *)poiWithName:(NSString *)name
-         andOrderNumber:(NSNumber *)order
+         andColorNumber:(NSNumber *)order
  inManagedObjectContext:(NSManagedObjectContext *)moc {
     
     QMAPoi *poi;
@@ -23,7 +23,7 @@
                                                inManagedObjectContext:moc];
         
         poi.name = name;
-        poi.order = order;
+        poi.color = order;
     }
     
     return poi;   

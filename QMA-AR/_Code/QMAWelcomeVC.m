@@ -3,6 +3,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "SharedManagedDocument.h"
 #import "QMAOnSiteVC.h"
+#import "QMATarget+Create.h"
+#import "QMAPoi+Create.h"
 
 
 @interface QMAWelcomeVC () <CLLocationManagerDelegate>
@@ -71,28 +73,53 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
 
 #pragma mark - Load Database and Segue
 
-static NSString *const error = @"Error in DatabasePreLoadData.plist file: the topmost object in the property list should be 'Root', the second topmost object should be 'Targets', and they both should to be of type dictionary.";
+static NSString *const error1 = @"Error in DatabasePreLoadData.plist file: the topmost object in the property list should be 'Root', the second topmost object should be 'Targets', and they both should to be of type dictionary";
+
+static NSString *const error2 = @"Error in DatabasePreLoadData.plist file: each target should have a 'POIs' entry of type array listing its points of interest";
+
+static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Name', 'Color'";
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
     [SharedManagedDocument managedDocumentWithBlock:^(UIManagedDocument *managedDocument) {
         
+        /*
         //If this is the first time the app is being used, pre-load database with information
         //from property list
         NSString *path = [[NSBundle mainBundle] pathForResource:@"DatabasePreLoadData" ofType:@"plist"];
         NSDictionary *model = [[NSDictionary alloc] initWithContentsOfFile:path][@"Targets"];
         if (!model || ![model isKindOfClass:[NSDictionary class]]) {
-            QMALog(@"%@", error);
+            QMALog(@"%@", error1);
         } else {
             for (id key in model) {
                 if ([model[key] isKindOfClass:[NSDictionary class]]) {
-                    //NSDictionary *target = model[key];
-                    QMALog(@"Target: %@", key);
+                    QMATarget *target = [QMATarget targetWithName:key
+                                           inManagedObjectContext:managedDocument.managedObjectContext];
+                    if ([model[key][@"POIs"] isKindOfClass:[NSArray class]]) {
+                        NSArray *poiList = model[key][@"POIs"];
+                        for (uint i = 0; i < [poiList count]; i++) {
+                            if ([poiList[i] isKindOfClass:[NSDictionary class]]) {
+                                NSDictionary *poi = poiList[i];
+                                if (poi[@"Name"] && poi[@"Color"]) {
+                                    [target addPointsOfInterestObject:[QMAPoi poiWithName:poi[@"Name"]
+                                                                           andColorNumber:poi[@"Color"]
+                                                                   inManagedObjectContext:managedDocument.managedObjectContext]];
+                                } else {
+                                    QMALog(@"%@", error3);
+                                }
+                            } else {
+                                QMALog(@"%@", error3);
+                            }
+                        }
+                    } else {
+                        QMALog(@"%@", error2);
+                    }
                 } else {
                     QMALog(@"Error in DatabasePreLoadData.plist file: targets should be dictionaries");
                 }
             }
-        }        
+        } 
+        */
 
         [managedDocument saveToURL:managedDocument.fileURL
                   forSaveOperation:UIDocumentSaveForOverwriting

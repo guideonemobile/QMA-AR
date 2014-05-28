@@ -559,15 +559,15 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image28">
+  <object id="image32">
     <title><![CDATA[marker_1_green]]></title>
     <assets3d>
       <model><![CDATA[html/resources/5937c87f68ea1be5856974977ec8c5bc/5937c87f68ea1be5856974977ec8c5bc.zip]]></model>
       <transform>
         <translation>
-          <x>-149.3420715332</x>
+          <x>-245.4986572266</x>
           <y>0.0000000000</y>
-          <z>75.6801147461</z>
+          <z>1.0000000000</z>
         </translation>
         <rotation type="eulerdeg">
           <x>90.0000000000</x>
@@ -575,9 +575,9 @@
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.5000000000</x>
-          <y>0.5000000000</y>
-          <z>0.5000000000</z>
+          <x>1.0000000000</x>
+          <y>1.0000000000</y>
+          <z>1.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -590,15 +590,15 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image29">
+  <object id="image33">
     <title><![CDATA[marker_2_brown]]></title>
     <assets3d>
       <model><![CDATA[html/resources/8179e68ece09414b18d29f6dab7be325/8179e68ece09414b18d29f6dab7be325.zip]]></model>
       <transform>
         <translation>
-          <x>0.0000000000</x>
+          <x>-425.3653564453</x>
           <y>0.0000000000</y>
-          <z>127.9031372070</z>
+          <z>-174.5324554443</z>
         </translation>
         <rotation type="eulerdeg">
           <x>90.0000000000</x>
@@ -606,9 +606,9 @@
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.5000000000</x>
-          <y>0.5000000000</y>
-          <z>0.5000000000</z>
+          <x>1.0000000000</x>
+          <y>1.0000000000</y>
+          <z>1.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -621,15 +621,15 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image30">
+  <object id="image34">
     <title><![CDATA[marker_3_turquoise]]></title>
     <assets3d>
       <model><![CDATA[html/resources/09c82bd3068defbc232f53197251fe04/09c82bd3068defbc232f53197251fe04.zip]]></model>
       <transform>
         <translation>
-          <x>321.8890380859</x>
+          <x>185.1154479980</x>
           <y>0.0000000000</y>
-          <z>70.1348571777</z>
+          <z>53.0670013428</z>
         </translation>
         <rotation type="eulerdeg">
           <x>90.0000000000</x>
@@ -637,9 +637,9 @@
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.5000000000</x>
-          <y>0.5000000000</y>
-          <z>0.5000000000</z>
+          <x>1.0000000000</x>
+          <y>1.0000000000</y>
+          <z>1.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -652,15 +652,15 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image31">
+  <object id="image35">
     <title><![CDATA[marker_4_blue]]></title>
     <assets3d>
       <model><![CDATA[html/resources/cf607133d11d45b7703451e379f28289/cf607133d11d45b7703451e379f28289.zip]]></model>
       <transform>
         <translation>
-          <x>-83.1272735596</x>
+          <x>-69.3370208740</x>
           <y>0.0000000000</y>
-          <z>247.3211975098</z>
+          <z>-91.9993896484</z>
         </translation>
         <rotation type="eulerdeg">
           <x>90.0000000000</x>
@@ -668,9 +668,40 @@
           <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.5000000000</x>
-          <y>0.5000000000</y>
-          <z>0.5000000000</z>
+          <x>1.0000000000</x>
+          <y>1.0000000000</y>
+          <z>1.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>4</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="image36">
+    <title><![CDATA[marker_5_yellow]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/0eaa659fe34acdcf2980b6c5b0613039/0eaa659fe34acdcf2980b6c5b0613039.zip]]></model>
+      <transform>
+        <translation>
+          <x>121.4000244141</x>
+          <y>0.0000000000</y>
+          <z>-138.7277832031</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>90.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>1.0000000000</x>
+          <y>1.0000000000</y>
+          <z>1.0000000000</z>
         </scale>
       </transform>
       <properties>
