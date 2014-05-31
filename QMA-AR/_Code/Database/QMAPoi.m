@@ -2,7 +2,7 @@
 //  QMAPoi.m
 //  QMA-AR
 //
-//  Created by JB DeLima on 5/23/14.
+//  Created by JB DeLima on 5/30/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 
 @implementation QMAPoi
 
-@dynamic name;
 @dynamic color;
+@dynamic label;
 @dynamic target;
 
 @end

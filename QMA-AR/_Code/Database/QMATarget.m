@@ -2,7 +2,7 @@
 //  QMATarget.m
 //  QMA-AR
 //
-//  Created by JB DeLima on 5/23/14.
+//  Created by JB DeLima on 5/30/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @implementation QMATarget
 
-@dynamic name;
+@dynamic label;
 @dynamic pointsOfInterest;
 
 @end

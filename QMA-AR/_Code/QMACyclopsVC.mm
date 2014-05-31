@@ -11,9 +11,15 @@
 #include <metaioSDK/GestureHandler.h>
 
 #import "QMAPoiTBVC.h"
+#import "QMATarget.h"
+#import "QMAPoiDisplayVC.h"
+#import "QMAPoi.h"
 
 
-@interface QMACyclopsVC () <UIGestureRecognizerDelegate, IARELInterpreterIOSDelegate, UIWebViewDelegate>
+@interface QMACyclopsVC () <UIGestureRecognizerDelegate,
+                            IARELInterpreterIOSDelegate,
+                            UIWebViewDelegate,
+                            QMAPoiTBVCDelegate>
 
 @property (nonatomic, weak) IBOutlet EAGLView *glView;
 @property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
@@ -29,6 +35,8 @@
     metaio::IARELInterpreterIOS *m_ArelInterpreter;
 	GestureHandlerIOS *m_pGestureHandlerIOS;
 	NSString *m_arelFile;
+    
+    __weak QMAPoi *_selectedPOI;
     
 }
 
@@ -80,10 +88,15 @@
 #pragma mark - Prepare for Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    //This message is only sent once. It is used by the container view to load its referencing view controller
+    
     if ([segue.destinationViewController isKindOfClass:[QMAPoiTBVC class]]) {
         self.poiTBVC = segue.destinationViewController;
+        self.poiTBVC.delegate = self;
         self.poiTBVC.managedDocument = self.managedDocument;
+    
+    } else if ([segue.destinationViewController isKindOfClass:[QMAPoiDisplayVC class]]) {
+        QMAPoiDisplayVC *vc = segue.destinationViewController;
+        vc.poi = _selectedPOI;
     }
 }
 
@@ -93,15 +106,41 @@
 -(bool)openWebsiteWithUrl:(NSString *)url inExternalApp:(bool)openInExternalApp {
     
     //Sample "url" parameter:
-    //targetUnloaded=Mattt
+    //targetTrackStarted=CentralPark
+    //targetTrackEnded=CentralPark
     
-    NSArray *urlParts = [url componentsSeparatedByString:@"="];
-    
+    NSArray *urlParts = [[url lastPathComponent] componentsSeparatedByString:@"="];
     NSString *action = [urlParts firstObject];
-    NSString *target = [urlParts lastObject];
-    QMALog(@"%@ %@", action, target);
+    NSString *targetString = [urlParts lastObject];
+    
+    if ([action isEqualToString:@"targetTrackStarted"]) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMATarget"];
+        request.predicate = [NSPredicate predicateWithFormat:@"label = %@", targetString];
+        NSArray *matches = [self.managedDocument.managedObjectContext executeFetchRequest:request error:nil];
+        if (!matches) {
+            QMALog(@"Error: Fetch request failed");
+        } else if ([matches count] > 1) {
+            QMALog(@"Error: More than one target with the same name: %@", targetString);
+        } else if ([matches count] == 0) {
+            QMALog(@"No target named '%@' in the database", targetString);
+        } else {
+            self.poiTBVC.target = [matches firstObject];
+        }
+        
+    } else if ([action isEqualToString:@"targetTrackEnded"]) {
+        self.poiTBVC.target = nil;
+    } else {
+        QMALog(@"Action '%@' does not match anything we are expecting", action);
+    }
     
     return YES;
+}
+
+#pragma mark - QMAPoiTBVCDelegate
+
+- (void)qmaPoiTBC:(QMAPoiTBVC *)qmaPoiTBC didSelectPOI:(QMAPoi *)poi {
+    _selectedPOI = poi;
+    [self performSegueWithIdentifier:@"SegueToPoiDisplay" sender:self];
 }
 
 @end

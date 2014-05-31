@@ -83,9 +83,13 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
     
     [SharedManagedDocument managedDocumentWithBlock:^(UIManagedDocument *managedDocument) {
         
-        /*
-        //If this is the first time the app is being used, pre-load database with information
-        //from property list
+        //Load Target and POI information from property list
+        
+        NSManagedObjectContext *moc = managedDocument.managedObjectContext;
+        
+        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+        [nf setNumberStyle:NSNumberFormatterDecimalStyle];
+        
         NSString *path = [[NSBundle mainBundle] pathForResource:@"DatabasePreLoadData" ofType:@"plist"];
         NSDictionary *model = [[NSDictionary alloc] initWithContentsOfFile:path][@"Targets"];
         if (!model || ![model isKindOfClass:[NSDictionary class]]) {
@@ -93,17 +97,27 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
         } else {
             for (id key in model) {
                 if ([model[key] isKindOfClass:[NSDictionary class]]) {
-                    QMATarget *target = [QMATarget targetWithName:key
-                                           inManagedObjectContext:managedDocument.managedObjectContext];
+                    
+                    QMATarget *target = [QMATarget targetWithLabel:key
+                                            inManagedObjectContext:moc];
+                    
                     if ([model[key][@"POIs"] isKindOfClass:[NSArray class]]) {
                         NSArray *poiList = model[key][@"POIs"];
                         for (uint i = 0; i < [poiList count]; i++) {
                             if ([poiList[i] isKindOfClass:[NSDictionary class]]) {
                                 NSDictionary *poi = poiList[i];
                                 if (poi[@"Name"] && poi[@"Color"]) {
-                                    [target addPointsOfInterestObject:[QMAPoi poiWithName:poi[@"Name"]
-                                                                           andColorNumber:poi[@"Color"]
-                                                                   inManagedObjectContext:managedDocument.managedObjectContext]];
+                                    
+                                    NSString *colorSt = [NSString stringWithFormat:@"%@", poi[@"Color"]];
+                                    QMAPoi *p = [QMAPoi poiWithLabel:poi[@"Name"]
+                                                      andColorNumber:[nf numberFromString:colorSt]
+                                                           forTarget:target
+                                              inManagedObjectContext:moc];
+                                    
+                                    if (![p.target.label isEqualToString:target.label]) {
+                                        [target addPointsOfInterestObject:p];
+                                    }
+                                    
                                 } else {
                                     QMALog(@"%@", error3);
                                 }
@@ -118,8 +132,7 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                     QMALog(@"Error in DatabasePreLoadData.plist file: targets should be dictionaries");
                 }
             }
-        } 
-        */
+        }
 
         [managedDocument saveToURL:managedDocument.fileURL
                   forSaveOperation:UIDocumentSaveForOverwriting

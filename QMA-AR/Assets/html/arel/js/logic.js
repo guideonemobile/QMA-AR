@@ -474,16 +474,16 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
-        image18.display();
-        image15.display();
-        image20.display();
         image16.display();
-        image14.display();
-        image19.display();
+        image20.display();
+        image18.display();
         image17.display();
+        image19.display();
+        image14.display();
+        image15.display();
         /**** Begin of custom script ****/
         
-        	arel.Media.openWebsite('targetTrackStarted=Queens', false);
+        	arel.Media.openWebsite('targetTrackStarted=Brooklyn', false);
         
         /***** End of custom script *****/
     };
@@ -494,15 +494,15 @@ arel.sceneReady(function() {
         this.currentTrackingValues = null;
         /**** Begin of custom script ****/
         
-        	arel.Media.openWebsite('targetTrackEnded=Queens', false);
+        	arel.Media.openWebsite('targetTrackEnded=Brooklyn', false);
         
         /***** End of custom script *****/
-        image20.hide();
-        image18.hide();
-        image19.hide();
         image15.hide();
+        image19.hide();
         image14.hide();
+        image18.hide();
         image17.hide();
+        image20.hide();
         image16.hide();
     };
 
@@ -518,10 +518,10 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
-        image10.display();
         image8.display();
         image12.display();
         image11.display();
+        image10.display();
         /**** Begin of custom script ****/
         
         	arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
@@ -535,13 +535,13 @@ arel.sceneReady(function() {
         this.currentTrackingValues = null;
         /**** Begin of custom script ****/
         
-        	arel.Media.openWebsite('targetTrackEnded=CentralPark', false)
+        	arel.Media.openWebsite('targetTrackEnded=CentralPark', false);
         
         /***** End of custom script *****/
         image12.hide();
+        image11.hide();
         image10.hide();
         image8.hide();
-        image11.hide();
     };
 
     ml3Dmap4.onUnloaded = function () {
@@ -565,26 +565,36 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
-        image22.display();
-        image24.display();
+        image26.display();
         image23.display();
         image27.display();
-        image26.display();
-        image25.display();
         image21.display();
+        image22.display();
+        image24.display();
+        image25.display();
+        /**** Begin of custom script ****/
+        
+        	arel.Media.openWebsite('targetTrackStarted=Brooklyn', false);
+        
+        /***** End of custom script *****/
     };
 
     ml3Dmap5.onTrackingLost = function (trackingValues) {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
+        /**** Begin of custom script ****/
+        
+        	arel.Media.openWebsite('targetTrackEnded=Brooklyn', false);
+        
+        /***** End of custom script *****/
+        image25.hide();
         image24.hide();
+        image22.hide();
+        image26.hide();
         image23.hide();
         image27.hide();
-        image22.hide();
         image21.hide();
-        image26.hide();
-        image25.hide();
     };
 
 
@@ -599,21 +609,31 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
-        image35.display();
-        image36.display();
+        image33.display();
         image32.display();
         image34.display();
-        image33.display();
+        image36.display();
+        image35.display();
+        /**** Begin of custom script ****/
+        
+        	arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
+        
+        /***** End of custom script *****/
     };
 
     ml3Dmap7.onTrackingLost = function (trackingValues) {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
-        image32.hide();
+        /**** Begin of custom script ****/
+        
+        	arel.Media.openWebsite('targetTrackEnded=CentralPark', false);
+        
+        /***** End of custom script *****/
         image34.hide();
-        image33.hide();
         image35.hide();
+        image33.hide();
+        image32.hide();
         image36.hide();
     };
 

@@ -4,6 +4,6 @@
 
 @interface QMAOnSiteVC : UIViewController
 
-@property (nonatomic, weak) UIManagedDocument *managedDocument;
+@property (nonatomic, strong) UIManagedDocument *managedDocument;
 
 @end

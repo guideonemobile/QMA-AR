@@ -43,9 +43,11 @@
 		251CC03D18E72B7C002FDA84 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC03C18E72B7C002FDA84 /* Assets */; };
 		251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC03E18E72F56002FDA84 /* EventKit.framework */; };
 		251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC04018E72F7D002FDA84 /* MediaPlayer.framework */; };
-		2528280C192F86B700969CC6 /* QMACheckPointVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2528280B192F86B700969CC6 /* QMACheckPointVC.m */; };
 		2528280E192FAFBC00969CC6 /* DatabasePreLoadData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2528280D192FAFBC00969CC6 /* DatabasePreLoadData.plist */; };
 		2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */; };
+		2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601B19398094003CB15C /* QMAPoiTableViewCell.m */; };
+		25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601F193984F2003CB15C /* UIColor+QMARGB.m */; };
+		2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,11 +103,15 @@
 		251CC03C18E72B7C002FDA84 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		251CC03E18E72F56002FDA84 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		251CC04018E72F7D002FDA84 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		2528280A192F86B700969CC6 /* QMACheckPointVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMACheckPointVC.h; path = _Code/QMACheckPointVC.h; sourceTree = "<group>"; };
-		2528280B192F86B700969CC6 /* QMACheckPointVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMACheckPointVC.m; path = _Code/QMACheckPointVC.m; sourceTree = "<group>"; };
 		2528280D192FAFBC00969CC6 /* DatabasePreLoadData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DatabasePreLoadData.plist; sourceTree = "<group>"; };
 		2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAOnSiteVC.h; path = _Code/QMAOnSiteVC.h; sourceTree = "<group>"; };
 		2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAOnSiteVC.m; path = _Code/QMAOnSiteVC.m; sourceTree = "<group>"; };
+		2576601A19398093003CB15C /* QMAPoiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiTableViewCell.h; path = _Code/QMAPoiTableViewCell.h; sourceTree = "<group>"; };
+		2576601B19398094003CB15C /* QMAPoiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiTableViewCell.m; path = _Code/QMAPoiTableViewCell.m; sourceTree = "<group>"; };
+		2576601E193984F2003CB15C /* UIColor+QMARGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+QMARGB.h"; path = "_Code/UIColor+QMARGB.h"; sourceTree = "<group>"; };
+		2576601F193984F2003CB15C /* UIColor+QMARGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QMARGB.m"; path = "_Code/UIColor+QMARGB.m"; sourceTree = "<group>"; };
+		2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiDisplayVC.h; path = _Code/QMAPoiDisplayVC.h; sourceTree = "<group>"; };
+		2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiDisplayVC.m; path = _Code/QMAPoiDisplayVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,10 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				041B0B451896A57F0061A3E2 /* System */,
+				2576601D193984C4003CB15C /* Categories */,
 				255108A0192E833C00208C35 /* Third Party */,
 				251293FD192EA742002585A3 /* Database */,
-				2528280A192F86B700969CC6 /* QMACheckPointVC.h */,
-				2528280B192F86B700969CC6 /* QMACheckPointVC.m */,
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
 				25282804192EC3CD00969CC6 /* On Site */,
@@ -268,12 +273,9 @@
 			children = (
 				2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */,
 				2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */,
-				250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */,
-				250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */,
-				250D946B192EAE9F0034BB78 /* QMACoreDataTBVC.h */,
-				250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */,
-				250D946E192EAF470034BB78 /* QMAPoiTBVC.h */,
-				250D946F192EAF470034BB78 /* QMAPoiTBVC.m */,
+				2576602119398C7D003CB15C /* Panorama */,
+				2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */,
+				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
 			);
 			name = "On Site";
 			sourceTree = "<group>";
@@ -284,6 +286,38 @@
 				250AD0E818D0FB9B0072D718 /* Metaio */,
 			);
 			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		2576601D193984C4003CB15C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2576601E193984F2003CB15C /* UIColor+QMARGB.h */,
+				2576601F193984F2003CB15C /* UIColor+QMARGB.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2576602119398C7D003CB15C /* Panorama */ = {
+			isa = PBXGroup;
+			children = (
+				250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */,
+				250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */,
+				2576602519398D1F003CB15C /* POI Table View */,
+			);
+			name = Panorama;
+			sourceTree = "<group>";
+		};
+		2576602519398D1F003CB15C /* POI Table View */ = {
+			isa = PBXGroup;
+			children = (
+				250D946B192EAE9F0034BB78 /* QMACoreDataTBVC.h */,
+				250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */,
+				250D946E192EAF470034BB78 /* QMAPoiTBVC.h */,
+				250D946F192EAF470034BB78 /* QMAPoiTBVC.m */,
+				2576601A19398093003CB15C /* QMAPoiTableViewCell.h */,
+				2576601B19398094003CB15C /* QMAPoiTableViewCell.m */,
+			);
+			name = "POI Table View";
 			sourceTree = "<group>";
 		};
 		25DA481518D0E9CF00CF9CCF /* Model */ = {
@@ -373,15 +407,17 @@
 				2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */,
 				250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */,
 				250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */,
+				2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */,
 				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
 				250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */,
 				250D9459192EA8C00034BB78 /* QMATarget.m in Sources */,
 				041B0B481896A7E70061A3E2 /* QMAWelcomeVC.m in Sources */,
 				250D9465192EABCC0034BB78 /* SharedManagedDocument.m in Sources */,
+				25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */,
+				2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
-				2528280C192F86B700969CC6 /* QMACheckPointVC.m in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,
 				251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */,

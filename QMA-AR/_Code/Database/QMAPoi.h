@@ -2,7 +2,7 @@
 //  QMAPoi.h
 //  QMA-AR
 //
-//  Created by JB DeLima on 5/23/14.
+//  Created by JB DeLima on 5/30/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
@@ -13,8 +13,8 @@
 
 @interface QMAPoi : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * color;
+@property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) QMATarget *target;
 
 @end

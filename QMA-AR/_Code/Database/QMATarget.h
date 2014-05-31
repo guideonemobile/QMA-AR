@@ -2,7 +2,7 @@
 //  QMATarget.h
 //  QMA-AR
 //
-//  Created by JB DeLima on 5/23/14.
+//  Created by JB DeLima on 5/30/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 
 @interface QMATarget : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSSet *pointsOfInterest;
 @end
 

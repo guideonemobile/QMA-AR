@@ -1,32 +1,40 @@
 
 #import "QMAPoi+Create.h"
-
+#import "QMATarget.h"
 
 @implementation QMAPoi (Create)
 
-+ (QMAPoi *)poiWithName:(NSString *)name
-         andColorNumber:(NSNumber *)order
- inManagedObjectContext:(NSManagedObjectContext *)moc {
++ (QMAPoi *)poiWithLabel:(NSString *)label
+          andColorNumber:(NSNumber *)color
+               forTarget:(QMATarget *)target
+  inManagedObjectContext:(NSManagedObjectContext *)moc {
     
     QMAPoi *poi;
     
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMAPoi"];
-    request.predicate = [NSPredicate predicateWithFormat:@"name = %@", name];
-    NSArray *allMatches = [moc executeFetchRequest:request error:nil];
+    request.predicate = [NSPredicate predicateWithFormat:@"target = %@ AND label = %@", target, label];
+    NSArray *matches = [moc executeFetchRequest:request error:nil];
     
-    if (allMatches == nil) {
+    if (!matches) {
         QMALog(@"Error: Fetch request failed");
-        poi = [allMatches firstObject];
+    } else if ([matches count] > 1) {
+        QMALog(@"Error: More than one POI with the name '%@' for target '%@'", label, target.label);
+    } else if ([matches count] == 1) {
+        QMALog(@"A POI named '%@' already exists for target '%@'. Update it's properties.", label, target.label);
+        poi = [matches firstObject];
     } else {
-        //Create a new Category object
         poi = [NSEntityDescription insertNewObjectForEntityForName:@"QMAPoi"
-                                               inManagedObjectContext:moc];
-        
-        poi.name = name;
-        poi.color = order;
+                                            inManagedObjectContext:moc];
+        poi.label = label;
     }
     
-    return poi;   
+    poi.color = color;
+    
+    return poi;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color}];
 }
 
 @end

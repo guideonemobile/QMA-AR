@@ -98,8 +98,6 @@
             self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
         } else if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight) {
             self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
-        } else {
-            QMALog(@"ERROR: Portrait orientation is not supported");
         }
     } else {
         QMALog(@"ERROR: Video orientation is not supported");
