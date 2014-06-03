@@ -34,8 +34,6 @@
     request.predicate = [NSPredicate predicateWithFormat:@"target = %@", self.currentPOI.target];
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"label" ascending:YES]];
     self.pointsOfInterest = [self.currentPOI.managedObjectContext executeFetchRequest:request error:nil];
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -94,11 +92,15 @@
 
 - (IBAction)didTapToSeeTheNextPOI:(UIButton *)sender {
     
-    self.currentPage++;
+    for (UIViewController *vc in self.childViewControllers) {
+        if ([vc isKindOfClass:[QMAPoiVC class]]) {
+            [(QMAPoiVC *)vc stopAudio];
+        }
+    }
     
+    self.currentPage++;
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.frame.size.width*self.currentPage, 0)
                              animated:YES];
-    
     if (self.currentPage == [self.pointsOfInterest count]) {
         self.currentPage = 0;
         [self performSelector:@selector(resetScrollViewToInitialPosition) withObject:nil afterDelay:0.3];

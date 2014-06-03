@@ -15,6 +15,7 @@
 @dynamic color;
 @dynamic label;
 @dynamic image;
+@dynamic audio;
 @dynamic target;
 
 @end

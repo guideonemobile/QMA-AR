@@ -7,6 +7,7 @@
 + (QMAPoi *)poiWithLabel:(NSString *)label
           andColorNumber:(NSNumber *)color
             andImageName:(NSString *)imageName
+            andAudioName:(NSString *)audioName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc {
     
@@ -31,6 +32,7 @@
     
     poi.color = color;
     poi.image = imageName;
+    poi.audio = audioName;
     
     return poi;
 }

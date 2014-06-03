@@ -15,6 +15,8 @@
 					<integer>1</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -23,6 +25,8 @@
 					<integer>2</integer>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
+					<key>Audio</key>
+					<string>poi_audio_2</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -31,6 +35,8 @@
 					<integer>3</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -39,6 +45,8 @@
 					<integer>4</integer>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
+					<key>Audio</key>
+					<string>poi_audio_2</string>
 				</dict>
 			</array>
 		</dict>
@@ -53,6 +61,8 @@
 					<integer>1</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -61,6 +71,8 @@
 					<integer>2</integer>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
+					<key>Audio</key>
+					<string>poi_audio_2</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -69,6 +81,8 @@
 					<integer>3</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -77,6 +91,8 @@
 					<integer>4</integer>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
+					<key>Audio</key>
+					<string>poi_audio_2</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -85,6 +101,8 @@
 					<integer>5</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -93,6 +111,8 @@
 					<integer>6</integer>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
+					<key>Audio</key>
+					<string>poi_audio_2</string>
 				</dict>
 				<dict>
 					<key>Name</key>
@@ -101,6 +121,8 @@
 					<integer>7</integer>
 					<key>Image</key>
 					<string>poi_main_market</string>
+					<key>Audio</key>
+					<string>poi_audio_1</string>
 				</dict>
 			</array>
 		</dict>

@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSNumber * color;
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * image;
+@property (nonatomic, retain) NSString * audio;
 @property (nonatomic, retain) QMATarget *target;
 
 @end

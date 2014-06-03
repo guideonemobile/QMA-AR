@@ -3,16 +3,20 @@
 #import "QMAPoi.h"
 #import "QMATarget.h"
 #import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
+#import "DACircularProgressView.h"
 
 
-@interface QMAPoiVC ()
-
+@interface QMAPoiVC () <AVAudioPlayerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *frameView;
-
 @property (nonatomic, weak) IBOutlet UIImageView *mainImageView;
 @property (nonatomic, weak) IBOutlet UILabel *poiLabel;
 @property (nonatomic, weak) IBOutlet UILabel *targetLabel;
+@property (nonatomic, weak) IBOutlet DACircularProgressView *progressView;
+
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic, weak) NSTimer *timer;
 
 @end
 
@@ -23,6 +27,27 @@
     
 }
 
+- (AVAudioPlayer *)audioPlayer {
+    
+    if (!_audioPlayer) {
+        
+        NSURL *url = [[NSBundle mainBundle] URLForResource:self.poi.audio withExtension:@"mp3"];
+        NSError *error;
+        
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+        _audioPlayer.delegate = self;
+        
+        if (error) {
+            QMALog(@"Error loading audioPlayer: %@", [error localizedDescription]);
+        } else {
+            [_audioPlayer prepareToPlay];
+        }
+    }
+    return _audioPlayer;
+}
+
+#pragma mark - View Controller Lifecycle
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -32,6 +57,9 @@
  
     self.poiLabel.text = self.poi.label;
     self.targetLabel.text = self.poi.target.label;
+    
+    self.progressView.roundedCorners = NO;
+    self.progressView.thicknessRatio = 0.02;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,12 +70,60 @@
         
         _mainImageHasBeenMasked = YES;
         
+        //Mask main image
         CALayer *mask = [CALayer layer];
         mask.contents = (id)[[UIImage imageNamed:@"poi_main_mask.png"] CGImage];
         mask.frame = CGRectMake(0, 0, self.mainImageView.frame.size.width, self.mainImageView.frame.size.height);
         self.mainImageView.layer.mask = mask;
         self.mainImageView.layer.masksToBounds = YES;
     }
+}
+
+#pragma mark - Audio Player
+
+- (IBAction)toggleAudio:(UIButton *)sender {
+    if (self.audioPlayer.playing) {
+        [self.audioPlayer pause];
+    } else {
+        if (!self.timer) {
+            [self.progressView setProgress:0.0 animated:NO];
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                          target:self
+                                                        selector:@selector(checkAudioPlaybackProgress:)
+                                                        userInfo:nil
+                                                         repeats:YES];
+        }
+        [self.audioPlayer play];
+    }
+}
+
+- (void)checkAudioPlaybackProgress:(NSTimer *)timer {
+    [self.progressView setProgress:self.audioPlayer.currentTime/self.audioPlayer.duration animated:YES];
+}
+
+#pragma mark - Public API
+
+- (void)stopAudio {
+    [self.timer invalidate];
+    [self fadeVolume];
+}
+
+- (void)fadeVolume {
+    self.audioPlayer.volume -= 0.1;
+    if (self.audioPlayer.volume > 0) {
+        [self performSelector:@selector(fadeVolume) withObject:nil afterDelay:0.1];
+    } else {
+        [self.audioPlayer stop];
+        self.audioPlayer.currentTime = 0;
+        self.audioPlayer.volume = 1;
+        [self.progressView setProgress:0.0 animated:YES];
+    }
+}
+
+#pragma mark - AVAudioPlayerDelegate
+
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    [self.timer invalidate];
 }
 
 @end
