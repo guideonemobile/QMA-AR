@@ -12,25 +12,33 @@
 					<key>Name</key>
 					<string>Sheep Meadow</string>
 					<key>Color</key>
-					<string>1</string>
+					<integer>1</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Cherry Hill</string>
 					<key>Color</key>
-					<string>2</string>
+					<integer>2</integer>
+					<key>Image</key>
+					<string>poi_main_coronaQueens</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>The Pond</string>
 					<key>Color</key>
-					<string>3</string>
+					<integer>3</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Strawberry Fields</string>
 					<key>Color</key>
 					<integer>4</integer>
+					<key>Image</key>
+					<string>poi_main_coronaQueens</string>
 				</dict>
 			</array>
 		</dict>
@@ -42,43 +50,57 @@
 					<key>Name</key>
 					<string>Brooklyn Bridge</string>
 					<key>Color</key>
-					<string>1</string>
+					<integer>1</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Prospect Park</string>
 					<key>Color</key>
-					<string>2</string>
+					<integer>2</integer>
+					<key>Image</key>
+					<string>poi_main_coronaQueens</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Coney Island</string>
 					<key>Color</key>
-					<string>3</string>
+					<integer>3</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Botanic Garden</string>
 					<key>Color</key>
-					<string>4</string>
+					<integer>4</integer>
+					<key>Image</key>
+					<string>poi_main_coronaQueens</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Brooklyn Museum</string>
 					<key>Color</key>
-					<string>5</string>
+					<integer>5</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>New York Aquarium</string>
 					<key>Color</key>
-					<string>6</string>
+					<integer>6</integer>
+					<key>Image</key>
+					<string>poi_main_coronaQueens</string>
 				</dict>
 				<dict>
 					<key>Name</key>
 					<string>Coney Island Cyclone</string>
 					<key>Color</key>
-					<string>7</string>
+					<integer>7</integer>
+					<key>Image</key>
+					<string>poi_main_market</string>
 				</dict>
 			</array>
 		</dict>

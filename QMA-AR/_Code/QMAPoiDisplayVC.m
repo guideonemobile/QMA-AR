@@ -48,13 +48,9 @@
     }
 }
 
-#pragma mark - Load POI VCs
+#pragma mark - POI View Controllers
 
 - (void)loadPOIVCsIntoScrollView:(NSUInteger)startingIndex {
-    
-    //Remove all existing child view controllers
-    [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [self.childViewControllers makeObjectsPerformSelector:@selector(removeFromParentViewController)];
     
     //Load POI VCs
     for (uint i = 0, j = startingIndex; i < [self.pointsOfInterest count]; i++) {

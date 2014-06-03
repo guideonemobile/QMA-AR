@@ -6,6 +6,7 @@
 
 + (QMAPoi *)poiWithLabel:(NSString *)label
           andColorNumber:(NSNumber *)color
+            andImageName:(NSString *)imageName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc {
     
@@ -29,12 +30,13 @@
     }
     
     poi.color = color;
+    poi.image = imageName;
     
     return poi;
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color}];
+    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image}];
 }
 
 @end

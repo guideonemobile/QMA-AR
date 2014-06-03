@@ -11,6 +11,7 @@
 //create a new object
 + (QMAPoi *)poiWithLabel:(NSString *)label
           andColorNumber:(NSNumber *)color
+            andImageName:(NSString *)imageName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc;
 

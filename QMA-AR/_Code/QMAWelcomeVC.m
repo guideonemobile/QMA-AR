@@ -77,7 +77,7 @@ static NSString *const error1 = @"Error in DatabasePreLoadData.plist file: the t
 
 static NSString *const error2 = @"Error in DatabasePreLoadData.plist file: each target should have a 'POIs' entry of type array listing its points of interest";
 
-static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Name', 'Color'";
+static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Name', 'Color', 'Image'";
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
@@ -86,9 +86,6 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
         //Load Target and POI information from property list
         
         NSManagedObjectContext *moc = managedDocument.managedObjectContext;
-        
-        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
-        [nf setNumberStyle:NSNumberFormatterDecimalStyle];
         
         NSString *path = [[NSBundle mainBundle] pathForResource:@"DatabasePreLoadData" ofType:@"plist"];
         NSDictionary *model = [[NSDictionary alloc] initWithContentsOfFile:path][@"Targets"];
@@ -106,11 +103,11 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                         for (uint i = 0; i < [poiList count]; i++) {
                             if ([poiList[i] isKindOfClass:[NSDictionary class]]) {
                                 NSDictionary *poi = poiList[i];
-                                if (poi[@"Name"] && poi[@"Color"]) {
+                                if (poi[@"Name"] && poi[@"Color"] && poi[@"Image"]) {
                                     
-                                    NSString *colorSt = [NSString stringWithFormat:@"%@", poi[@"Color"]];
                                     QMAPoi *p = [QMAPoi poiWithLabel:poi[@"Name"]
-                                                      andColorNumber:[nf numberFromString:colorSt]
+                                                      andColorNumber:poi[@"Color"]
+                                                        andImageName:poi[@"Image"]
                                                            forTarget:target
                                               inManagedObjectContext:moc];
                                     
