@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *mainImageView;
 @property (nonatomic, weak) IBOutlet UILabel *poiLabel;
 @property (nonatomic, weak) IBOutlet UILabel *targetLabel;
+@property (nonatomic, weak) IBOutlet UILabel *personNameLabel;
 @property (nonatomic, weak) IBOutlet DACircularProgressView *progressView;
 
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
@@ -52,11 +53,12 @@
     
     [super viewDidLoad];
     
-    //self.frameView.backgroundColor = [UIColor clearColor];
+    self.frameView.backgroundColor = [UIColor clearColor];
     self.mainImageView.image = [UIImage imageNamed:self.poi.image];
  
     self.poiLabel.text = self.poi.label;
     self.targetLabel.text = self.poi.target.label;
+    self.personNameLabel.text = self.poi.personName;
     
     self.progressView.roundedCorners = NO;
     self.progressView.thicknessRatio = 0.02;

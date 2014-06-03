@@ -12,10 +12,11 @@
 
 @implementation QMAPoi
 
-@dynamic color;
-@dynamic label;
-@dynamic image;
 @dynamic audio;
+@dynamic color;
+@dynamic image;
+@dynamic label;
+@dynamic personName;
 @dynamic target;
 
 @end

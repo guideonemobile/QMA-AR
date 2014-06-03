@@ -8,6 +8,7 @@
           andColorNumber:(NSNumber *)color
             andImageName:(NSString *)imageName
             andAudioName:(NSString *)audioName
+           andPersonName:(NSString *)personName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc {
     
@@ -33,12 +34,13 @@
     poi.color = color;
     poi.image = imageName;
     poi.audio = audioName;
+    poi.personName = personName;
     
     return poi;
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image}];
+    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image, @"Audio File":self.audio, @"Person Name":self.personName}];
 }
 
 @end

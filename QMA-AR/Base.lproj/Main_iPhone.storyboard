@@ -113,11 +113,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="oBg-nv-fci" userLabel="Background View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NyK-Ox-ygM" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="SO0-h1-dH0">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +153,7 @@
                     <navigationItem key="navigationItem" id="JJk-Ry-uOT"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="backgroundView" destination="oBg-nv-fci" id="Uls-54-wPf"/>
+                        <outlet property="backgroundImageView" destination="NyK-Ox-ygM" id="bjF-i1-VgF"/>
                         <outlet property="scrollView" destination="SO0-h1-dH0" id="vk8-IN-dDO"/>
                     </connections>
                 </viewController>
@@ -180,6 +179,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AR-scrim" id="Qh8-4D-xvh">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <containerView contentMode="scaleToFill" id="xbS-8h-vb7">
                                 <rect key="frame" x="416" y="0.0" width="152" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,7 +234,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wyg-87-Hqc" userLabel="Headphones Icon Button">
-                                <rect key="frame" x="254" y="238" width="60" height="40"/>
+                                <rect key="frame" x="254" y="243" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-headphones">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,15 +243,15 @@
                                     <action selector="toggleAudio:" destination="DaI-zt-vH5" eventType="touchUpInside" id="hK0-Wj-VoI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corona" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bhu-aE-bsw">
-                                <rect key="frame" x="20" y="18" width="528" height="22"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poi Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bhu-aE-bsw" userLabel="Label - POI Name">
+                                <rect key="frame" x="20" y="18" width="209" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUEENS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GOJ-7X-OYd">
-                                <rect key="frame" x="20" y="42" width="528" height="23"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TARGET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GOJ-7X-OYd" userLabel="Label - Target Name">
+                                <rect key="frame" x="20" y="42" width="160" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.36862745881080627" green="0.63921570777893066" blue="0.9490196704864502" alpha="1" colorSpace="deviceRGB"/>
@@ -281,6 +284,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r9x-EY-JPC" userLabel="Label - Person Name">
+                                <rect key="frame" x="187" y="217" width="194" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.65490198135375977" green="0.45098042488098145" blue="0.13333334028720856" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -290,6 +300,7 @@
                     <connections>
                         <outlet property="frameView" destination="c7e-N2-ray" id="nVJ-5K-Y3I"/>
                         <outlet property="mainImageView" destination="NMC-TH-wPQ" id="Phr-Cg-tgA"/>
+                        <outlet property="personNameLabel" destination="r9x-EY-JPC" id="mfV-Ka-Ky4"/>
                         <outlet property="poiLabel" destination="Bhu-aE-bsw" id="SsA-bi-hY2"/>
                         <outlet property="progressView" destination="APT-gi-CZ5" id="lgE-hn-9Yk"/>
                         <outlet property="targetLabel" destination="GOJ-7X-OYd" id="XAJ-2N-ZKY"/>
@@ -445,6 +456,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AR-scrim" width="568" height="320"/>
         <image name="icon-about" width="20" height="20"/>
         <image name="icon-chevron-next" width="9" height="15"/>
         <image name="icon-close" width="15" height="15"/>

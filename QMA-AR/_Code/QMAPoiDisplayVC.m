@@ -7,7 +7,7 @@
 
 @interface QMAPoiDisplayVC ()
 
-@property (nonatomic, weak) IBOutlet UIView *backgroundView;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
 
 @property (nonatomic, strong) NSArray *pointsOfInterest;
@@ -34,6 +34,8 @@
     request.predicate = [NSPredicate predicateWithFormat:@"target = %@", self.currentPOI.target];
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"label" ascending:YES]];
     self.pointsOfInterest = [self.currentPOI.managedObjectContext executeFetchRequest:request error:nil];
+    
+    self.backgroundImageView.image = self.panoramaScreenShot;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -92,11 +94,7 @@
 
 - (IBAction)didTapToSeeTheNextPOI:(UIButton *)sender {
     
-    for (UIViewController *vc in self.childViewControllers) {
-        if ([vc isKindOfClass:[QMAPoiVC class]]) {
-            [(QMAPoiVC *)vc stopAudio];
-        }
-    }
+    [self removeAllChildViewControllers];
     
     self.currentPage++;
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.frame.size.width*self.currentPage, 0)
@@ -108,7 +106,16 @@
 }
 
 - (IBAction)didTapToClose:(UIButton *)sender {
+    [self removeAllChildViewControllers];
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)removeAllChildViewControllers {
+    for (UIViewController *vc in self.childViewControllers) {
+        if ([vc isKindOfClass:[QMAPoiVC class]]) {
+            [(QMAPoiVC *)vc stopAudio];
+        }
+    }
 }
 
 @end

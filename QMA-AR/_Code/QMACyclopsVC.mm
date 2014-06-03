@@ -14,6 +14,7 @@
 #import "QMATarget.h"
 #import "QMAPoiDisplayVC.h"
 #import "QMAPoi.h"
+#import "UIImage+ImageEffects.h"
 
 
 @interface QMACyclopsVC () <UIGestureRecognizerDelegate,
@@ -97,7 +98,29 @@
     } else if ([segue.destinationViewController isKindOfClass:[QMAPoiDisplayVC class]]) {
         QMAPoiDisplayVC *vc = segue.destinationViewController;
         vc.currentPOI = _selectedPOI;
+        vc.panoramaScreenShot = [self blurredScreenShot];
     }
+}
+
+#pragma mark - Screen Shot With Blur
+
+- (UIImage *)blurredScreenShot{
+    
+    UIGraphicsBeginImageContextWithOptions(self.glView.frame.size, NO, self.glView.window.screen.scale);
+    
+    [self.glView drawViewHierarchyInRect:self.glView.frame afterScreenUpdates:NO];
+
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *blurredSnapshotImage = [snapshotImage applyDarkEffect];
+
+    
+    // Or apply any other effects available in "UIImage+ImageEffects.h"
+    // UIImage *blurredSnapshotImage = [snapshotImage applyDarkEffect];
+    // UIImage *blurredSnapshotImage = [snapshotImage applyExtraLightEffect];
+    
+    UIGraphicsEndImageContext();
+    
+    return blurredSnapshotImage;
 }
 
 #pragma mark - AREL Callback

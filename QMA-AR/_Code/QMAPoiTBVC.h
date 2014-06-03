@@ -18,7 +18,6 @@
 @interface QMAPoiTBVC : QMACoreDataTBVC
 
 @property (nonatomic, weak) id <QMAPoiTBVCDelegate> delegate;
-
 @property (nonatomic, weak) UIManagedDocument *managedDocument;
 @property (nonatomic, strong) QMATarget *target;
 

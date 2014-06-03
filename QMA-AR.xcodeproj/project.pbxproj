@@ -51,6 +51,8 @@
 		25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601F193984F2003CB15C /* UIColor+QMARGB.m */; };
 		2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */; };
 		25B85982193E42C500F201F1 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8597F193E42C500F201F1 /* DACircularProgressView.m */; };
+		25B8598F193E7AD900F201F1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B8598E193E7AD900F201F1 /* Accelerate.framework */; };
+		25B85993193E925D00F201F1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */; };
 		25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D23F15193D585100A9BCD5 /* QMAPoiVC.m */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +122,9 @@
 		2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiDisplayVC.m; path = _Code/QMAPoiDisplayVC.m; sourceTree = "<group>"; };
 		25B8597E193E42C500F201F1 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = _Code/ThirdParty/DACircularProgress/DACircularProgressView.h; sourceTree = "<group>"; };
 		25B8597F193E42C500F201F1 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACircularProgressView.m; path = _Code/ThirdParty/DACircularProgress/DACircularProgressView.m; sourceTree = "<group>"; };
+		25B8598E193E7AD900F201F1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		25B85991193E925D00F201F1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "_Code/ThirdParty/Apple/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "_Code/ThirdParty/Apple/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		25D23F14193D585100A9BCD5 /* QMAPoiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiVC.h; path = _Code/QMAPoiVC.h; sourceTree = "<group>"; };
 		25D23F15193D585100A9BCD5 /* QMAPoiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiVC.m; path = _Code/QMAPoiVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +136,7 @@
 			files = (
 				25019E1518CA1C8A0019C311 /* libxml2.dylib in Frameworks */,
 				25019E1318CA1C800019C311 /* libz.dylib in Frameworks */,
+				25B8598F193E7AD900F201F1 /* Accelerate.framework in Frameworks */,
 				25019E1B18CA1CB40019C311 /* AudioToolbox.framework in Frameworks */,
 				25019E1D18CA1CC00019C311 /* AVFoundation.framework in Frameworks */,
 				25019E1918CA1CA90019C311 /* CFNetwork.framework in Frameworks */,
@@ -175,6 +181,7 @@
 			children = (
 				25019E1418CA1C8A0019C311 /* libxml2.dylib */,
 				25019E1218CA1C800019C311 /* libz.dylib */,
+				25B8598E193E7AD900F201F1 /* Accelerate.framework */,
 				25019E1A18CA1CB40019C311 /* AudioToolbox.framework */,
 				25019E1C18CA1CC00019C311 /* AVFoundation.framework */,
 				25019E1818CA1CA90019C311 /* CFNetwork.framework */,
@@ -304,6 +311,7 @@
 		255108A0192E833C00208C35 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				25B85990193E925100F201F1 /* Apple */,
 				25B8597D193E428300F201F1 /* DACircularProgress */,
 				250AD0E818D0FB9B0072D718 /* Metaio */,
 			);
@@ -349,6 +357,15 @@
 				25B8597F193E42C500F201F1 /* DACircularProgressView.m */,
 			);
 			name = DACircularProgress;
+			sourceTree = "<group>";
+		};
+		25B85990193E925100F201F1 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				25B85991193E925D00F201F1 /* UIImage+ImageEffects.h */,
+				25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */,
+			);
+			name = Apple;
 			sourceTree = "<group>";
 		};
 		25DA481518D0E9CF00CF9CCF /* Model */ = {
@@ -439,6 +456,7 @@
 			files = (
 				250D9462192EA9630034BB78 /* QMAPoi+Create.m in Sources */,
 				2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */,
+				25B85993193E925D00F201F1 /* UIImage+ImageEffects.m in Sources */,
 				250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */,
 				250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */,
 				25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */,

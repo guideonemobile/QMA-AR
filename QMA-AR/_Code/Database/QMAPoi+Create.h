@@ -13,6 +13,7 @@
           andColorNumber:(NSNumber *)color
             andImageName:(NSString *)imageName
             andAudioName:(NSString *)audioName
+           andPersonName:(NSString *)personName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc;
 
