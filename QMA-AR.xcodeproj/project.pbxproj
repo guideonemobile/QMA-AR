@@ -48,6 +48,7 @@
 		2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601B19398094003CB15C /* QMAPoiTableViewCell.m */; };
 		25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601F193984F2003CB15C /* UIColor+QMARGB.m */; };
 		2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */; };
+		25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D23F15193D585100A9BCD5 /* QMAPoiVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,8 @@
 		2576601F193984F2003CB15C /* UIColor+QMARGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QMARGB.m"; path = "_Code/UIColor+QMARGB.m"; sourceTree = "<group>"; };
 		2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiDisplayVC.h; path = _Code/QMAPoiDisplayVC.h; sourceTree = "<group>"; };
 		2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiDisplayVC.m; path = _Code/QMAPoiDisplayVC.m; sourceTree = "<group>"; };
+		25D23F14193D585100A9BCD5 /* QMAPoiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiVC.h; path = _Code/QMAPoiVC.h; sourceTree = "<group>"; };
+		25D23F15193D585100A9BCD5 /* QMAPoiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiVC.m; path = _Code/QMAPoiVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +279,8 @@
 				2576602119398C7D003CB15C /* Panorama */,
 				2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */,
 				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
+				25D23F14193D585100A9BCD5 /* QMAPoiVC.h */,
+				25D23F15193D585100A9BCD5 /* QMAPoiVC.m */,
 			);
 			name = "On Site";
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */,
 				250AD0ED18D0FDA60072D718 /* QMACyclopsVC.mm in Sources */,
 				250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */,
+				25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */,
 				2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */,
 				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,

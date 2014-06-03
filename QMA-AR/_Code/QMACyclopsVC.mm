@@ -96,7 +96,7 @@
     
     } else if ([segue.destinationViewController isKindOfClass:[QMAPoiDisplayVC class]]) {
         QMAPoiDisplayVC *vc = segue.destinationViewController;
-        vc.poi = _selectedPOI;
+        vc.currentPOI = _selectedPOI;
     }
 }
 

@@ -9,7 +9,6 @@
 @interface QMAPoiTBVC ()
 
 @property (nonatomic, strong) NSDictionary *colorDictionary;
-@property (nonatomic, strong) NSArray *pointsOfInterest;
 
 @end
 
@@ -43,7 +42,6 @@ static const CGFloat kColorButtonCornerRadius = 10; //Half the button's width/he
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMAPoi"];
         request.predicate = [NSPredicate predicateWithFormat:@"target = %@", target];
         request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"label" ascending:YES]];
-        self.pointsOfInterest = [self.managedDocument.managedObjectContext executeFetchRequest:request error:nil];
         [self assignFetchRequest:request];
         
     } else {
@@ -84,7 +82,7 @@ static const CGFloat kColorButtonCornerRadius = 10; //Half the button's width/he
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self.delegate respondsToSelector:@selector(qmaPoiTBC:didSelectPOI:)]) {
-        [self.delegate qmaPoiTBC:self didSelectPOI:self.pointsOfInterest[indexPath.row]];
+        [self.delegate qmaPoiTBC:self didSelectPOI:[self.frc objectAtIndexPath:indexPath]];
     }
 }
 
