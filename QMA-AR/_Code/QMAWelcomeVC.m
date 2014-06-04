@@ -77,7 +77,7 @@ static NSString *const error1 = @"Error in DatabasePreLoadData.plist file: the t
 
 static NSString *const error2 = @"Error in DatabasePreLoadData.plist file: each target should have a 'POIs' entry of type array listing its points of interest";
 
-static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Label', 'Color', 'Image', 'Audio', 'Chen Wuzing'";
+static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Label' (string), 'Color' (number), 'Image' (string), 'Audio' (string), 'PersonName' (string).  'Gallery' (array of dictionaries) is optional";
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
@@ -105,11 +105,14 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                                 NSDictionary *poi = poiList[i];
                                 if (poi[@"Label"] && poi[@"Color"] && poi[@"Image"] && poi[@"Audio"] && poi[@"PersonName"]) {
                                     
+                                    NSArray *gallery = poi[@"Gallery"] ? poi[@"Gallery"] : nil;
+                                    
                                     QMAPoi *p = [QMAPoi poiWithLabel:poi[@"Label"]
                                                       andColorNumber:poi[@"Color"]
                                                         andImageName:poi[@"Image"]
                                                         andAudioName:poi[@"Audio"]
                                                        andPersonName:poi[@"PersonName"]
+                                                     andGalleryItems:gallery
                                                            forTarget:target
                                               inManagedObjectContext:moc];
                                     

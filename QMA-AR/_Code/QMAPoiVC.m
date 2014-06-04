@@ -54,7 +54,7 @@
     
     [super viewDidLoad];
     
-    self.frameView.backgroundColor = [UIColor clearColor];
+    self.frameView.hidden = YES;
     self.mainImageView.image = [UIImage imageNamed:self.poi.image];
  
     self.poiLabel.text = self.poi.label;

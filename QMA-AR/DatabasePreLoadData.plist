@@ -19,6 +19,21 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -31,6 +46,21 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -43,6 +73,21 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -55,6 +100,15 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
@@ -73,6 +127,21 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -85,6 +154,21 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -97,6 +181,21 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -109,6 +208,21 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -121,6 +235,21 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -133,6 +262,21 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-2</string>
+							<key>Caption</key>
+							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 				<dict>
 					<key>Label</key>
@@ -145,6 +289,15 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>gallery-tiffany-1</string>
+							<key>Caption</key>
+							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>

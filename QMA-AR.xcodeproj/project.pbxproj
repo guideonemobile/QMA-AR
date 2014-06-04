@@ -55,6 +55,8 @@
 		25B85993193E925D00F201F1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */; };
 		25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D23F15193D585100A9BCD5 /* QMAPoiVC.m */; };
 		25EEEDCF193F4D4800F9727F /* QMAGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */; };
+		25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD4193F585200F9727F /* QMAGalleryItem.m */; };
+		25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +132,10 @@
 		25D23F15193D585100A9BCD5 /* QMAPoiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiVC.m; path = _Code/QMAPoiVC.m; sourceTree = "<group>"; };
 		25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAGalleryVC.h; path = _Code/QMAGalleryVC.h; sourceTree = "<group>"; };
 		25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAGalleryVC.m; path = _Code/QMAGalleryVC.m; sourceTree = "<group>"; };
+		25EEEDD3193F585200F9727F /* QMAGalleryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAGalleryItem.h; path = _Code/Database/QMAGalleryItem.h; sourceTree = "<group>"; };
+		25EEEDD4193F585200F9727F /* QMAGalleryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAGalleryItem.m; path = _Code/Database/QMAGalleryItem.m; sourceTree = "<group>"; };
+		25EEEDD6193F593E00F9727F /* QMAGalleryItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QMAGalleryItem+Create.h"; path = "_Code/Database/QMAGalleryItem+Create.h"; sourceTree = "<group>"; };
+		25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QMAGalleryItem+Create.m"; path = "_Code/Database/QMAGalleryItem+Create.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +251,12 @@
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
 				25282804192EC3CD00969CC6 /* On Site */,
+				2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */,
+				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
+				25D23F14193D585100A9BCD5 /* QMAPoiVC.h */,
+				25D23F15193D585100A9BCD5 /* QMAPoiVC.m */,
+				25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */,
+				25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -284,6 +296,10 @@
 				250D945B192EA8D30034BB78 /* QMAPoi.m */,
 				250D9460192EA9630034BB78 /* QMAPoi+Create.h */,
 				250D9461192EA9630034BB78 /* QMAPoi+Create.m */,
+				25EEEDD3193F585200F9727F /* QMAGalleryItem.h */,
+				25EEEDD4193F585200F9727F /* QMAGalleryItem.m */,
+				25EEEDD6193F593E00F9727F /* QMAGalleryItem+Create.h */,
+				25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -303,12 +319,6 @@
 				2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */,
 				2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */,
 				2576602119398C7D003CB15C /* Panorama */,
-				2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */,
-				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
-				25D23F14193D585100A9BCD5 /* QMAPoiVC.h */,
-				25D23F15193D585100A9BCD5 /* QMAPoiVC.m */,
-				25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */,
-				25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */,
 			);
 			name = "On Site";
 			sourceTree = "<group>";
@@ -466,6 +476,7 @@
 				250D945C192EA8D30034BB78 /* QMAPoi.m in Sources */,
 				25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */,
 				25B85982193E42C500F201F1 /* DACircularProgressView.m in Sources */,
+				25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */,
 				2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */,
 				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
@@ -475,6 +486,7 @@
 				250D9465192EABCC0034BB78 /* SharedManagedDocument.m in Sources */,
 				25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */,
 				2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */,
+				25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
