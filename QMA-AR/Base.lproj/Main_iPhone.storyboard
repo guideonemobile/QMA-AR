@@ -204,21 +204,33 @@
             </objects>
             <point key="canvasLocation" x="2055" y="-39"/>
         </scene>
-        <!--View Controller-->
+        <!--AboutVC-->
         <scene sceneID="RFQ-I5-jd2">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="iFv-6Q-AeR" sceneMemberID="viewController">
+                <viewController id="iFv-6Q-AeR" customClass="QMAAboutVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qI5-zd-aVs">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2Ph-q8-9w9" userLabel="Button - Close">
+                                <rect key="frame" x="9" y="4" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToCloseVC:" destination="iFv-6Q-AeR" eventType="touchUpInside" id="XN9-IK-AGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mf3-eQ-ymI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496" y="801"/>
+            <point key="canvasLocation" x="3911" y="-39"/>
         </scene>
         <!--PoiVC-->
         <scene sceneID="BRR-U2-pBJ">
@@ -284,6 +296,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="button_about_highlighted"/>
+                                <connections>
+                                    <segue destination="iFv-6Q-AeR" kind="modal" modalTransitionStyle="coverVertical" id="F3o-gT-u4a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="G8n-8Z-AEa" userLabel="Button - Gallery">
                                 <rect key="frame" x="462" y="68" width="90" height="30"/>
@@ -293,7 +308,7 @@
                                 </state>
                                 <state key="highlighted" image="button_gallery_highlighted"/>
                                 <connections>
-                                    <action selector="didTapToSeeGallery:" destination="DaI-zt-vH5" eventType="touchUpInside" id="p4H-aU-4IC"/>
+                                    <segue destination="mLw-ND-dOz" kind="modal" modalTransitionStyle="coverVertical" id="IYk-B5-ofn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3hF-De-K3u" userLabel="Button - Facts">
@@ -303,6 +318,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="button_facts_highlighted"/>
+                                <connections>
+                                    <segue destination="o5s-Jm-15v" kind="modal" modalTransitionStyle="coverVertical" id="8a2-zo-NMw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -317,7 +335,6 @@
                         <outlet property="poiLabel" destination="Bhu-aE-bsw" id="SsA-bi-hY2"/>
                         <outlet property="progressView" destination="APT-gi-CZ5" id="lgE-hn-9Yk"/>
                         <outlet property="targetLabel" destination="GOJ-7X-OYd" id="XAJ-2N-ZKY"/>
-                        <segue destination="mLw-ND-dOz" kind="modal" identifier="SegueToGalleryVC" modalTransitionStyle="coverVertical" id="hF9-eJ-MOk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wx5-9p-JDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,7 +488,7 @@
         <!--GalleryVC-->
         <scene sceneID="s4a-O0-3z6">
             <objects>
-                <viewController storyboardIdentifier="GalleryViewController" id="mLw-ND-dOz" customClass="QMAGalleryVC" sceneMemberID="viewController">
+                <viewController id="mLw-ND-dOz" customClass="QMAGalleryVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9hT-eG-VUR">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -480,8 +497,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AR-scrim" id="1yr-v5-Bpm" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caption-gradient" id="1yr-v5-Bpm" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="273" width="568" height="47"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="ihE-DR-W9w" userLabel="Frame">
@@ -543,23 +560,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzF-lx-Iig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3126" y="801"/>
+            <point key="canvasLocation" x="3911" y="371"/>
         </scene>
-        <!--View Controller-->
+        <!--FactsVC-->
         <scene sceneID="FuY-ek-lca">
             <objects>
-                <viewController storyboardIdentifier="FactsViewController" id="o5s-Jm-15v" sceneMemberID="viewController">
+                <viewController id="o5s-Jm-15v" customClass="QMAFactsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h12-4O-cMv">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" id="gf2-2e-U6e">
+                                <rect key="frame" x="169" y="0.0" width="399" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="esd-I3-QQP" userLabel="Button - Close">
+                                <rect key="frame" x="9" y="4" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToCloseVC:" destination="o5s-Jm-15v" eventType="touchUpInside" id="pMG-LW-UZ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7Fd-cW-WR8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="webView" destination="gf2-2e-U6e" id="gkG-Fd-Av4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llv-vY-ufL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="801"/>
+            <point key="canvasLocation" x="3911" y="796"/>
         </scene>
     </scenes>
     <resources>
@@ -574,6 +612,7 @@
         <image name="button_gallery_highlighted" width="90" height="30"/>
         <image name="button_next_default" width="90" height="30"/>
         <image name="button_next_highlighted" width="90" height="30"/>
+        <image name="caption-gradient" width="568" height="47"/>
         <image name="icon-chevron-big-left" width="12" height="29"/>
         <image name="icon-chevron-big-right" width="12" height="29"/>
         <image name="icon-close" width="15" height="15"/>

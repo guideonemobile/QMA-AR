@@ -120,19 +120,13 @@
 - (void)fadeVolume {
     self.audioPlayer.volume -= 0.05;
     if (self.audioPlayer.volume > 0) {
-        [self performSelector:@selector(fadeVolume) withObject:nil afterDelay:0.07];
+        [self performSelector:@selector(fadeVolume) withObject:nil afterDelay:0.06];
     } else {
         [self.audioPlayer stop];
         self.audioPlayer.currentTime = 0;
         self.audioPlayer.volume = 1;
         [self.progressView setProgress:0.0 animated:YES];
     }
-}
-
-#pragma mark - Target Action
-
-- (IBAction)didTapToSeeGallery:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"SegueToGalleryVC" sender:self];
 }
 
 #pragma mark - Segue
