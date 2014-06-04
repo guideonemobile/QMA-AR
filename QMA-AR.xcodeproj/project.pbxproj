@@ -54,6 +54,7 @@
 		25B8598F193E7AD900F201F1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B8598E193E7AD900F201F1 /* Accelerate.framework */; };
 		25B85993193E925D00F201F1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */; };
 		25D23F16193D585100A9BCD5 /* QMAPoiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D23F15193D585100A9BCD5 /* QMAPoiVC.m */; };
+		25EEEDCF193F4D4800F9727F /* QMAGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,8 @@
 		25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "_Code/ThirdParty/Apple/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		25D23F14193D585100A9BCD5 /* QMAPoiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiVC.h; path = _Code/QMAPoiVC.h; sourceTree = "<group>"; };
 		25D23F15193D585100A9BCD5 /* QMAPoiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiVC.m; path = _Code/QMAPoiVC.m; sourceTree = "<group>"; };
+		25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAGalleryVC.h; path = _Code/QMAGalleryVC.h; sourceTree = "<group>"; };
+		25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAGalleryVC.m; path = _Code/QMAGalleryVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,8 @@
 				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
 				25D23F14193D585100A9BCD5 /* QMAPoiVC.h */,
 				25D23F15193D585100A9BCD5 /* QMAPoiVC.m */,
+				25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */,
+				25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */,
 			);
 			name = "On Site";
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,
 				251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */,
+				25EEEDCF193F4D4800F9727F /* QMAGalleryVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

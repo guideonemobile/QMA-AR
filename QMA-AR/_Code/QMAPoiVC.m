@@ -5,6 +5,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DACircularProgressView.h"
+#import "QMAGalleryVC.h"
 
 
 @interface QMAPoiVC () <AVAudioPlayerDelegate>
@@ -103,6 +104,12 @@
     [self.progressView setProgress:self.audioPlayer.currentTime/self.audioPlayer.duration animated:YES];
 }
 
+#pragma mark - AVAudioPlayerDelegate
+
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    [self.timer invalidate];
+}
+
 #pragma mark - Public API
 
 - (void)stopAudio {
@@ -111,9 +118,9 @@
 }
 
 - (void)fadeVolume {
-    self.audioPlayer.volume -= 0.1;
+    self.audioPlayer.volume -= 0.05;
     if (self.audioPlayer.volume > 0) {
-        [self performSelector:@selector(fadeVolume) withObject:nil afterDelay:0.1];
+        [self performSelector:@selector(fadeVolume) withObject:nil afterDelay:0.07];
     } else {
         [self.audioPlayer stop];
         self.audioPlayer.currentTime = 0;
@@ -122,10 +129,18 @@
     }
 }
 
-#pragma mark - AVAudioPlayerDelegate
+#pragma mark - Target Action
 
--(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-    [self.timer invalidate];
+- (IBAction)didTapToSeeGallery:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"SegueToGalleryVC" sender:self];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController respondsToSelector:@selector(setPoi:)]) {
+        [(id) segue.destinationViewController setPoi:self.poi];
+    }
 }
 
 @end

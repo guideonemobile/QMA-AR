@@ -121,29 +121,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="AAX-yz-sNw">
-                                <rect key="frame" x="20" y="276" width="66" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LKQ-Rw-Ur7" userLabel="Button - Close">
+                                <rect key="frame" x="15" y="277" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="  Close" image="icon-close">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="button_close_default">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button_close_highlighted"/>
                                 <connections>
-                                    <action selector="didTapToClose:" destination="DaI-zt-vH5" eventType="touchUpInside" id="DOY-8c-v9M"/>
-                                    <action selector="didTapToClose:" destination="oXQ-An-EjX" eventType="touchUpInside" id="euq-cx-Tg4"/>
+                                    <action selector="didTapToClose:" destination="oXQ-An-EjX" eventType="touchUpInside" id="PGy-Zi-95W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="FpC-W6-eGE">
-                                <rect key="frame" x="445" y="276" width="112" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0HF-MQ-DNb" userLabel="Button - Next Story">
+                                <rect key="frame" x="471" y="277" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                <inset key="imageEdgeInsets" minX="90" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Next Story" image="icon-chevron-next">
+                                <state key="normal" image="button_next_default">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button_next_highlighted"/>
                                 <connections>
-                                    <action selector="didTapToSeeTheNextPOI:" destination="oXQ-An-EjX" eventType="touchUpInside" id="A9v-hR-khM"/>
+                                    <action selector="didTapToSeeTheNextPOI:" destination="oXQ-An-EjX" eventType="touchUpInside" id="zoo-IH-guX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -207,6 +204,22 @@
             </objects>
             <point key="canvasLocation" x="2055" y="-39"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="RFQ-I5-jd2">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="iFv-6Q-AeR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qI5-zd-aVs">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mf3-eQ-ymI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2496" y="801"/>
+        </scene>
         <!--PoiVC-->
         <scene sceneID="BRR-U2-pBJ">
             <objects>
@@ -220,29 +233,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="APT-gi-CZ5" userLabel="Audio Circular Progress Bar" customClass="DACircularProgressView">
-                                <rect key="frame" x="148" y="25" width="270" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NMC-TH-wPQ" userLabel="Main Image">
-                                <rect key="frame" x="158" y="35" width="251" height="251"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poi_main_audioPlayerBackground" id="foB-og-tRh" userLabel="Audio Player Background">
-                                <rect key="frame" x="168" y="209" width="232" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wyg-87-Hqc" userLabel="Headphones Icon Button">
-                                <rect key="frame" x="254" y="243" width="60" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icon-headphones">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="toggleAudio:" destination="DaI-zt-vH5" eventType="touchUpInside" id="hK0-Wj-VoI"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poi Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bhu-aE-bsw" userLabel="Label - POI Name">
                                 <rect key="frame" x="20" y="18" width="209" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -257,33 +247,19 @@
                                 <color key="textColor" red="0.36862745881080627" green="0.63921570777893066" blue="0.9490196704864502" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Au9-iW-mTT">
-                                <rect key="frame" x="456" y="14" width="97" height="35"/>
+                            <view contentMode="scaleToFill" id="APT-gi-CZ5" userLabel="Audio Circular Progress Bar" customClass="DACircularProgressView">
+                                <rect key="frame" x="148" y="25" width="270" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="About  " image="icon-about">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="baS-Fw-1II">
-                                <rect key="frame" x="449" y="54" width="97" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NMC-TH-wPQ" userLabel="Main Image">
+                                <rect key="frame" x="158" y="35" width="251" height="251"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poi_main_audioPlayerBackground" id="foB-og-tRh" userLabel="Audio Player Background">
+                                <rect key="frame" x="168" y="209" width="232" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                <inset key="imageEdgeInsets" minX="77" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Gallery" image="icon-gallery">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="zhC-vP-cJf">
-                                <rect key="frame" x="461" y="94" width="97" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                <inset key="imageEdgeInsets" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Facts" image="icon-facts">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r9x-EY-JPC" userLabel="Label - Person Name">
                                 <rect key="frame" x="187" y="217" width="194" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,6 +267,43 @@
                                 <color key="textColor" red="0.65490198135375977" green="0.45098042488098145" blue="0.13333334028720856" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wyg-87-Hqc" userLabel="Headphones Icon Button">
+                                <rect key="frame" x="254" y="243" width="60" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-headphones">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleAudio:" destination="DaI-zt-vH5" eventType="touchUpInside" id="hK0-Wj-VoI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="O7h-M0-Y4P" userLabel="Button About">
+                                <rect key="frame" x="462" y="16" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_about_default">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="button_about_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="G8n-8Z-AEa" userLabel="Button - Gallery">
+                                <rect key="frame" x="462" y="68" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_gallery_default">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="button_gallery_highlighted"/>
+                                <connections>
+                                    <action selector="didTapToSeeGallery:" destination="DaI-zt-vH5" eventType="touchUpInside" id="p4H-aU-4IC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3hF-De-K3u" userLabel="Button - Facts">
+                                <rect key="frame" x="462" y="120" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_facts_default">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="button_facts_highlighted"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -304,6 +317,7 @@
                         <outlet property="poiLabel" destination="Bhu-aE-bsw" id="SsA-bi-hY2"/>
                         <outlet property="progressView" destination="APT-gi-CZ5" id="lgE-hn-9Yk"/>
                         <outlet property="targetLabel" destination="GOJ-7X-OYd" id="XAJ-2N-ZKY"/>
+                        <segue destination="mLw-ND-dOz" kind="modal" identifier="SegueToGalleryVC" modalTransitionStyle="coverVertical" id="hF9-eJ-MOk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wx5-9p-JDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -454,14 +468,105 @@
             </objects>
             <point key="canvasLocation" x="1371" y="-39"/>
         </scene>
+        <!--GalleryVC-->
+        <scene sceneID="s4a-O0-3z6">
+            <objects>
+                <viewController storyboardIdentifier="GalleryViewController" id="mLw-ND-dOz" customClass="QMAGalleryVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hT-eG-VUR">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="jAC-EE-bOk">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" id="ihE-DR-W9w" userLabel="Frame">
+                                <rect key="frame" x="20" y="20" width="528" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wIl-9z-zRs">
+                                <rect key="frame" x="8" y="140" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-chevron-big-left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ssj-XF-qCR">
+                                <rect key="frame" x="9" y="9" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToCloseVC:" destination="mLw-ND-dOz" eventType="touchUpInside" id="90I-W1-0SV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="u9d-I2-dBa">
+                                <rect key="frame" x="521" y="140" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-chevron-big-right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xYY-Fe-hUK">
+                                <rect key="frame" x="20" y="284" width="528" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="captionLabel" destination="xYY-Fe-hUK" id="1K1-Ya-MId"/>
+                        <outlet property="closeButton" destination="ssj-XF-qCR" id="9jU-EH-aR8"/>
+                        <outlet property="frameView" destination="ihE-DR-W9w" id="rn5-q7-QNc"/>
+                        <outlet property="nextButton" destination="u9d-I2-dBa" id="eQZ-o0-xRP"/>
+                        <outlet property="prevButton" destination="wIl-9z-zRs" id="Mnc-VC-KqI"/>
+                        <outlet property="scrollView" destination="jAC-EE-bOk" id="VYN-XD-Xqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzF-lx-Iig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3126" y="801"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FuY-ek-lca">
+            <objects>
+                <viewController storyboardIdentifier="FactsViewController" id="o5s-Jm-15v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h12-4O-cMv">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llv-vY-ufL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3751" y="801"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AR-scrim" width="568" height="320"/>
-        <image name="icon-about" width="20" height="20"/>
-        <image name="icon-chevron-next" width="9" height="15"/>
+        <image name="button_about_default" width="90" height="30"/>
+        <image name="button_about_highlighted" width="90" height="30"/>
+        <image name="button_close_default" width="90" height="30"/>
+        <image name="button_close_highlighted" width="90" height="30"/>
+        <image name="button_facts_default" width="90" height="30"/>
+        <image name="button_facts_highlighted" width="90" height="30"/>
+        <image name="button_gallery_default" width="90" height="30"/>
+        <image name="button_gallery_highlighted" width="90" height="30"/>
+        <image name="button_next_default" width="90" height="30"/>
+        <image name="button_next_highlighted" width="90" height="30"/>
+        <image name="icon-chevron-big-left" width="12" height="29"/>
+        <image name="icon-chevron-big-right" width="12" height="29"/>
         <image name="icon-close" width="15" height="15"/>
-        <image name="icon-facts" width="20" height="13"/>
-        <image name="icon-gallery" width="22" height="18"/>
         <image name="icon-headphones" width="22" height="21"/>
         <image name="poi_main_audioPlayerBackground" width="232" height="78"/>
     </resources>
