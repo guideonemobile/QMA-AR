@@ -42,12 +42,39 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
     [super viewWillAppear:animated];
+    
     if (!_initialized) {
         _initialized = YES;
         [self initializeCamera];
     }
     self.toolbar.frame = self.cameraFeedView.frame;
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(adjustVideoOrientation)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:[UIDevice currentDevice]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Video Orientation
+
+- (void)adjustVideoOrientation {
+    if (self.cvpl.connection.supportsVideoOrientation) {
+        if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft) {
+            self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
+        } else if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight) {
+            self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
+        }
+    } else {
+        QMALog(@"ERROR: Video orientation is not supported");
+    }
 }
 
 #pragma mark - Camera Feed
@@ -90,24 +117,6 @@
     
     self.arLabel.text = self.arLabelString;
     [self.spinner stopAnimating];
-}
-
-- (void)adjustVideoOrientation {
-    if (self.cvpl.connection.supportsVideoOrientation) {
-        if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeLeft) {
-            self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
-        } else if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationLandscapeRight) {
-            self.cvpl.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
-        }
-    } else {
-        QMALog(@"ERROR: Video orientation is not supported");
-    }
-}
-
-#pragma mark - Device Rotation
-
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    [self adjustVideoOrientation];
 }
 
 #pragma mark - Target Action
