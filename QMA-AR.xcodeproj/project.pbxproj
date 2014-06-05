@@ -59,6 +59,7 @@
 		25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */; };
 		25EEEDDB193F955800F9727F /* QMAFactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDDA193F955800F9727F /* QMAFactsVC.m */; };
 		25EEEDDE193F9A8F00F9727F /* QMAAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */; };
+		25EEEDE61940F17300F9727F /* QMAMenuTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,8 @@
 		25EEEDDA193F955800F9727F /* QMAFactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAFactsVC.m; path = _Code/QMAFactsVC.m; sourceTree = "<group>"; };
 		25EEEDDC193F9A8F00F9727F /* QMAAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAAboutVC.h; path = _Code/QMAAboutVC.h; sourceTree = "<group>"; };
 		25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAAboutVC.m; path = _Code/QMAAboutVC.m; sourceTree = "<group>"; };
+		25EEEDE41940F17300F9727F /* QMAMenuTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAMenuTBVC.h; path = _Code/QMAMenuTBVC.h; sourceTree = "<group>"; };
+		25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAMenuTBVC.m; path = _Code/QMAMenuTBVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +360,8 @@
 			children = (
 				250AD0E918D0FBCF0072D718 /* QMACyclopsVC.h */,
 				250AD0EC18D0FDA60072D718 /* QMACyclopsVC.mm */,
+				25EEEDE41940F17300F9727F /* QMAMenuTBVC.h */,
+				25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */,
 				2576602519398D1F003CB15C /* POI Table View */,
 			);
 			name = Panorama;
@@ -489,6 +494,7 @@
 				25B85982193E42C500F201F1 /* DACircularProgressView.m in Sources */,
 				25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */,
 				2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */,
+				25EEEDE61940F17300F9727F /* QMAMenuTBVC.m in Sources */,
 				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
 				250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */,

@@ -10,6 +10,7 @@
 #include <metaioSDK/IARELInterpreterIOS.h>
 #include <metaioSDK/GestureHandler.h>
 
+#import "QMAMenuTBVC.h"
 #import "QMAPoiTBVC.h"
 #import "QMATarget.h"
 #import "QMAPoiDisplayVC.h"
@@ -20,13 +21,18 @@
 @interface QMACyclopsVC () <UIGestureRecognizerDelegate,
                             IARELInterpreterIOSDelegate,
                             UIWebViewDelegate,
-                            QMAPoiTBVCDelegate>
+                            QMAPoiTBVCDelegate,
+                            QMAMenuTBVCDelegate>
 
 @property (nonatomic, weak) IBOutlet EAGLView *glView;
 @property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
 
-@property (nonatomic, weak) IBOutlet UIView *containerView;
+@property (nonatomic, weak) IBOutlet UIView *menuContainerView;
+@property (nonatomic, weak) IBOutlet UIButton *menuButton;
+
+@property (nonatomic, weak) QMAMenuTBVC *menuTBVC;
 @property (nonatomic, weak) QMAPoiTBVC *poiTBVC;
+
 
 @end
 
@@ -38,6 +44,7 @@
 	NSString *m_arelFile;
     
     __weak QMAPoi *_selectedPOI;
+    BOOL _engineHasLoaded;
     
 }
 
@@ -46,6 +53,8 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.menuButton.hidden = YES;
     
     self.m_arelWebView.scrollView.bounces = NO;
     
@@ -73,24 +82,81 @@
 
 - (void)onSDKReady {
 	m_ArelInterpreter->loadARELFile([m_arelFile UTF8String]);
+    _engineHasLoaded = YES;
+    self.menuButton.hidden = NO;
 }
 
 - (void)drawFrame {
-    
 	[glView setFramebuffer];
-    
     if (m_ArelInterpreter) {
 		m_ArelInterpreter->update();
     }
-    
     [glView presentFramebuffer];
+}
+
+#pragma mark - View Will Appear
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self hideMenuAnimated:NO];
+    if (_engineHasLoaded) {
+        self.menuButton.hidden = NO;
+    }
+}
+
+#pragma mark - Menu
+
+- (IBAction)didTapToShowMenu:(UIButton *)sender {
+    [self showMenuAnimated:YES];
+    sender.hidden = YES;
+}
+
+- (void)hideMenuAnimated:(BOOL)animated {
+    [UIView animateWithDuration:(animated ? 0.3 : 0)
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         //CGSize size = self.menuContainerView.frame.size;
+                         //self.menuContainerView.frame = CGRectMake(0, -size.height, size.width, size.height);
+                         CGSize size = self.menuContainerView.frame.size;
+                         self.glView.frame = CGRectMake(0, 0, self.view.frame.size.width, size.height);
+                     }
+                     completion:^(BOOL finished) {
+                     }
+     ];
+}
+
+- (void)showMenuAnimated:(BOOL)animated {
+    [UIView animateWithDuration:(animated ? 0.3 : 0)
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         //CGSize size = self.menuContainerView.frame.size;
+                         //self.menuContainerView.frame = CGRectMake(0, 0, size.width, size.height);
+                         CGSize size = self.menuContainerView.frame.size;
+                         self.glView.frame = CGRectMake(size.width, 0, self.view.frame.size.width-size.width, size.height);
+                     }
+                     completion:^(BOOL finished) {
+                     }
+     ];
+}
+
+#pragma mark - QMAMenuTBVCDelegate
+
+- (void)qmaMenuDidTapToClose:(QMAMenuTBVC *)qmaMenu {
+    [self hideMenuAnimated:YES];
+    self.menuButton.hidden = NO;
 }
 
 #pragma mark - Prepare for Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    if ([segue.destinationViewController isKindOfClass:[QMAMenuTBVC class]]) {
+        self.menuTBVC = segue.destinationViewController;
+        self.menuTBVC.delegate = self;
     
-    if ([segue.destinationViewController isKindOfClass:[QMAPoiTBVC class]]) {
+    } else if ([segue.destinationViewController isKindOfClass:[QMAPoiTBVC class]]) {
         self.poiTBVC = segue.destinationViewController;
         self.poiTBVC.delegate = self;
         self.poiTBVC.managedDocument = self.managedDocument;
@@ -109,14 +175,8 @@
     UIGraphicsBeginImageContextWithOptions(self.glView.frame.size, NO, self.glView.window.screen.scale);
     
     [self.glView drawViewHierarchyInRect:self.glView.frame afterScreenUpdates:NO];
-
     UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
     UIImage *blurredSnapshotImage = [snapshotImage applyDarkEffect];
-
-    
-    // Or apply any other effects available in "UIImage+ImageEffects.h"
-    // UIImage *blurredSnapshotImage = [snapshotImage applyDarkEffect];
-    // UIImage *blurredSnapshotImage = [snapshotImage applyExtraLightEffect];
     
     UIGraphicsEndImageContext();
     
