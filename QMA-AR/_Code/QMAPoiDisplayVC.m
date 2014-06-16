@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSArray *pointsOfInterest;
 @property (nonatomic) NSUInteger currentPage;
 
+@property (nonatomic, strong) NSMutableArray *childVCs;
+
 @end
 
 
@@ -48,9 +50,17 @@
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    //Start playing audio for the first POI automatically
+    [(QMAPoiVC *)self.childVCs[0] playAudio];
+}
+
 #pragma mark - POI View Controllers
 
 - (void)loadPOIVCsIntoScrollView:(NSUInteger)startingIndex {
+    
+    self.childVCs = [NSMutableArray array];
     
     //Load POI VCs
     for (uint i = 0, j = startingIndex; i < [self.pointsOfInterest count]; i++) {
@@ -67,6 +77,7 @@
         [vc didMoveToParentViewController:self];
         
         j = j == [self.pointsOfInterest count] - 1 ? 0 : j+1;
+        [self.childVCs addObject:vc];
     }
     
     //Add the very first one again, this time to the end
@@ -80,6 +91,7 @@
     [self.scrollView addSubview:vc.view];
     [self addChildViewController:vc];
     [vc didMoveToParentViewController:self];
+    [self.childVCs addObject:vc];
     
     //Set scrollView properties
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([self.pointsOfInterest count]+1),
@@ -94,7 +106,8 @@
 
 - (IBAction)didTapToSeeTheNextPOI:(UIButton *)sender {
     
-    [self removeAllChildViewControllers];
+    //Stop current audio
+    [(QMAPoiVC *)self.childVCs[self.currentPage] stopAudio];
     
     self.currentPage++;
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.frame.size.width*self.currentPage, 0)
@@ -103,14 +116,17 @@
         self.currentPage = 0;
         [self performSelector:@selector(resetScrollViewToInitialPosition) withObject:nil afterDelay:0.3];
     }
+    
+    //Start playing audio for the first POI automatically
+    [(QMAPoiVC *)self.childVCs[self.currentPage] performSelector:@selector(playAudio) withObject:nil afterDelay:1.0];
 }
 
 - (IBAction)didTapToClose:(UIButton *)sender {
-    [self removeAllChildViewControllers];
+    [self stopAllAudio];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)removeAllChildViewControllers {
+- (void)stopAllAudio {
     for (UIViewController *vc in self.childViewControllers) {
         if ([vc isKindOfClass:[QMAPoiVC class]]) {
             [(QMAPoiVC *)vc stopAudio];

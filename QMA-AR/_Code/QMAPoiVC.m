@@ -112,6 +112,14 @@
 
 #pragma mark - Public API
 
+- (void)playAudio {
+    if (self.audioPlayer.playing) {
+        QMALog(@"Audio is already playing");
+    } else {
+        [self toggleAudio:nil];
+    }
+}
+
 - (void)stopAudio {
     [self.timer invalidate];
     [self fadeVolume];

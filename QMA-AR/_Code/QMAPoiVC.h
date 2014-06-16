@@ -8,6 +8,7 @@
 
 @property (nonatomic, weak) QMAPoi *poi;
 
+- (void)playAudio;
 - (void)stopAudio;
 
 @end

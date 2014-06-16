@@ -3,14 +3,16 @@
 
 
 @interface QMAMenuTBVC ()
-
+@property (weak, nonatomic) IBOutlet UIButton *closeButton;
 @end
 
 
 @implementation QMAMenuTBVC
 
 - (IBAction)didTapMenuButton:(UIButton *)sender {
+    sender.hidden = YES;
     [self.delegate qmaMenuDidTapToClose:self];
+    [self performSelector:@selector(showCloseButton) withObject:nil afterDelay:1];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -30,6 +32,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-
+- (void)showCloseButton {
+    self.closeButton.hidden = NO;
+}
 
 @end
