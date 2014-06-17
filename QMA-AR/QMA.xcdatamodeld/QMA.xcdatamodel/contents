@@ -6,6 +6,7 @@
         <relationship name="poi" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QMAPoi" inverseName="gallery" inverseEntity="QMAPoi" syncable="YES"/>
     </entity>
     <entity name="QMAPoi" representedClassName="QMAPoi" syncable="YES">
+        <attribute name="aboutHTMLFile" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="factsHTMLFile" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +22,7 @@
     </entity>
     <elements>
         <element name="QMAGalleryItem" positionX="394" positionY="45" width="128" height="88"/>
-        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="163"/>
+        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="178"/>
         <element name="QMATarget" positionX="-38" positionY="62" width="128" height="73"/>
     </elements>
 </model>

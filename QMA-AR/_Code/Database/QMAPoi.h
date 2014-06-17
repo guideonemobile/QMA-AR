@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * personName;
 @property (nonatomic, retain) NSString * factsHTMLFile;
+@property (nonatomic, retain) NSString * aboutHTMLFile;
 @property (nonatomic, retain) NSSet *gallery;
 @property (nonatomic, retain) QMATarget *target;
 @end

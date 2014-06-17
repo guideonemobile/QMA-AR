@@ -12,9 +12,11 @@
 @implementation QMAFactsVC
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    
+    [self loadHTMLContent];
+}
+
+- (void)loadHTMLContent {
     NSURL *baseURL = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"html" isDirectory:YES];
     NSURL *htmlURL = [baseURL URLByAppendingPathComponent:self.poi.factsHTMLFile isDirectory:NO];
     NSError *error = nil;
@@ -24,6 +26,8 @@
     }
     [self.webView loadHTMLString:htmlString baseURL:baseURL];
 }
+
+#pragma mark - Target Action
 
 - (IBAction)didTapToCloseVC:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:^{}];

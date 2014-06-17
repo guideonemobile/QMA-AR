@@ -19,6 +19,7 @@
 @dynamic label;
 @dynamic personName;
 @dynamic factsHTMLFile;
+@dynamic aboutHTMLFile;
 @dynamic gallery;
 @dynamic target;
 

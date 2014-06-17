@@ -77,7 +77,7 @@ static NSString *const error1 = @"Error in DatabasePreLoadData.plist file: the t
 
 static NSString *const error2 = @"Error in DatabasePreLoadData.plist file: each target should have a 'POIs' entry of type array listing its points of interest";
 
-static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Label' (string), 'Color' (number), 'FactsHTMLFile' (string), 'Image' (string), 'Audio' (string), 'PersonName' (string).  'Gallery' (array of dictionaries) is optional";
+static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Label' (string), 'Color' (number), 'AboutHTMLFile' (string), 'FactsHTMLFile' (string), 'Image' (string), 'Audio' (string), 'PersonName' (string).  'Gallery' (array of dictionaries) is optional";
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
@@ -103,7 +103,7 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                         for (uint i = 0; i < [poiList count]; i++) {
                             if ([poiList[i] isKindOfClass:[NSDictionary class]]) {
                                 NSDictionary *poi = poiList[i];
-                                if (poi[@"Label"] && poi[@"Color"] && poi[@"Image"] && poi[@"Audio"] && poi[@"PersonName"] && poi[@"FactsHTMLFile"]) {
+                                if (poi[@"Label"] && poi[@"Color"] && poi[@"Image"] && poi[@"Audio"] && poi[@"PersonName"] && poi[@"AboutHTMLFile"] && poi[@"FactsHTMLFile"]) {
                                     
                                     NSArray *gallery = poi[@"Gallery"] ? poi[@"Gallery"] : nil;
                                     
@@ -113,6 +113,7 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                                                         andAudioName:poi[@"Audio"]
                                                        andPersonName:poi[@"PersonName"]
                                                      andGalleryItems:gallery
+                                                    andAboutHTMLFile:poi[@"AboutHTMLFile"]
                                                     andFactsHTMLFile:poi[@"FactsHTMLFile"]
                                                            forTarget:target
                                               inManagedObjectContext:moc];
