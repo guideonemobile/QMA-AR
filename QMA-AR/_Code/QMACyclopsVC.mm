@@ -9,6 +9,7 @@
 #include <metaioSDK/IMetaioSDKIOS.h>
 #include <metaioSDK/IARELInterpreterIOS.h>
 #include <metaioSDK/GestureHandler.h>
+#import <UIKit/UIGestureRecognizerSubclass.h>
 
 #import "QMAMenuTBVC.h"
 #import "QMAPoiTBVC.h"
@@ -35,6 +36,44 @@
 
 
 @end
+
+
+
+
+#pragma mark - Metaio Touch Event Boilerplate Code
+
+@interface MetaioTouchesRecognizer : UIGestureRecognizer {
+    UIViewController *theLiveViewController;
+}
+@end
+
+@implementation MetaioTouchesRecognizer
+
+- (void)setTheLiveViewController:(UIViewController *)controller {
+    theLiveViewController = controller;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (theLiveViewController) {
+        [theLiveViewController touchesBegan:touches withEvent:event];
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (theLiveViewController && ([self numberOfTouches] == 1) ) {
+        [theLiveViewController touchesMoved:touches withEvent:event];
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (theLiveViewController) {
+        [theLiveViewController touchesEnded:touches withEvent:event];
+    }
+}
+
+@end
+
+
 
 
 @implementation QMACyclopsVC  {
@@ -73,6 +112,11 @@
     m_ArelInterpreter->setRadarProperties(metaio::IGeometry::ANCHOR_TL, metaio::Vector3d(1), metaio::Vector3d(1));
 	
 	m_ArelInterpreter->registerDelegate(self);
+    
+    MetaioTouchesRecognizer *recognizer = [[MetaioTouchesRecognizer alloc] init];
+	[recognizer setTheLiveViewController:self];
+    [recognizer setDelegate:self];
+	[self.m_arelWebView addGestureRecognizer:recognizer];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -92,6 +136,19 @@
 		m_ArelInterpreter->update();
     }
     [glView presentFramebuffer];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [m_pGestureHandlerIOS touchesBegan:touches withEvent:event withView:glView];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+	[m_pGestureHandlerIOS touchesMoved:touches withEvent:event withView:glView];
+}
+
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [m_pGestureHandlerIOS touchesEnded:touches withEvent:event withView:glView];
 }
 
 #pragma mark - View Will Appear
@@ -186,32 +243,60 @@
 #pragma mark - AREL Callback
 
 //This function is called from the AREL JavaScript code whenever targets start and stop being tracked
+//as well as when the user taps on a POI
+
 -(bool)openWebsiteWithUrl:(NSString *)url inExternalApp:(bool)openInExternalApp {
     
-    //Sample "url" parameter:
+    //Sample "url" parameters:
+    
     //targetTrackStarted=CentralPark
     //targetTrackEnded=CentralPark
     
+    //poiTouchEnded=CentralPark-1'
+    
     NSArray *urlParts = [[url lastPathComponent] componentsSeparatedByString:@"="];
     NSString *action = [urlParts firstObject];
-    NSString *targetString = [urlParts lastObject];
+    NSString *paramValue = [urlParts lastObject];
     
     if ([action isEqualToString:@"targetTrackStarted"]) {
+        
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMATarget"];
-        request.predicate = [NSPredicate predicateWithFormat:@"label = %@", targetString];
+        request.predicate = [NSPredicate predicateWithFormat:@"label = %@", paramValue];
         NSArray *matches = [self.managedDocument.managedObjectContext executeFetchRequest:request error:nil];
+        
         if (!matches) {
             QMALog(@"Error: Fetch request failed");
         } else if ([matches count] > 1) {
-            QMALog(@"Error: More than one target with the same name: %@", targetString);
+            QMALog(@"Error: More than one target with the same name: %@", paramValue);
         } else if ([matches count] == 0) {
-            QMALog(@"No target named '%@' in the database", targetString);
+            QMALog(@"No target named '%@' in the database", paramValue);
         } else {
             self.poiTBVC.target = [matches firstObject];
         }
         
     } else if ([action isEqualToString:@"targetTrackEnded"]) {
         self.poiTBVC.target = nil;
+    
+    } else if ([action isEqualToString:@"poiTouchEnded"]) {
+        
+        NSString *target = [[paramValue componentsSeparatedByString:@"-"] firstObject];
+        NSString *poiNum = [[paramValue componentsSeparatedByString:@"-"] lastObject];
+        
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMAPoi"];
+        request.predicate = [NSPredicate predicateWithFormat:@"target.label = %@ AND color = %@", target, poiNum];
+        NSArray *matches = [self.managedDocument.managedObjectContext executeFetchRequest:request error:nil];
+        
+        if (!matches) {
+            QMALog(@"Error: Fetch request failed");
+        } else if ([matches count] > 1) {
+            QMALog(@"Error: More than one POI with Color number %@ for target %@", poiNum, target);
+        } else if ([matches count] == 0) {
+            QMALog(@"No target with Color number '%@' for target %@", poiNum, target);
+        } else {
+            _selectedPOI = [matches firstObject];
+            [self performSegueWithIdentifier:@"SegueToPoiDisplay" sender:self];
+        }
+        
     } else {
         QMALog(@"Action '%@' does not match anything we are expecting", action);
     }
