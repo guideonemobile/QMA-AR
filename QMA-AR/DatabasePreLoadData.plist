@@ -19,6 +19,8 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>FactsHTMLFile</key>
+					<string>index.html</string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -46,6 +48,8 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>FactsHTMLFile</key>
+					<string>privacy.html</string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -73,6 +77,8 @@
 					<string>poi_audio_1</string>
 					<key>PersonName</key>
 					<string>Chen Wuzing</string>
+					<key>FactsHTMLFile</key>
+					<string>index.html</string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -100,6 +106,8 @@
 					<string>poi_audio_2</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
+					<key>FactsHTMLFile</key>
+					<string>privacy.html</string>
 					<key>Gallery</key>
 					<array>
 						<dict>

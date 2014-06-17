@@ -2,14 +2,14 @@
 //  QMAPoi.h
 //  QMA-AR
 //
-//  Created by JB DeLima on 6/4/14.
+//  Created by JB DeLima on 6/16/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class QMATarget;
+@class QMAGalleryItem, QMATarget;
 
 @interface QMAPoi : NSManagedObject
 
@@ -18,14 +18,15 @@
 @property (nonatomic, retain) NSString * image;
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * personName;
-@property (nonatomic, retain) QMATarget *target;
+@property (nonatomic, retain) NSString * factsHTMLFile;
 @property (nonatomic, retain) NSSet *gallery;
+@property (nonatomic, retain) QMATarget *target;
 @end
 
 @interface QMAPoi (CoreDataGeneratedAccessors)
 
-- (void)addGalleryObject:(NSManagedObject *)value;
-- (void)removeGalleryObject:(NSManagedObject *)value;
+- (void)addGalleryObject:(QMAGalleryItem *)value;
+- (void)removeGalleryObject:(QMAGalleryItem *)value;
 - (void)addGallery:(NSSet *)values;
 - (void)removeGallery:(NSSet *)values;
 

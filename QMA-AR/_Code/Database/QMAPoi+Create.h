@@ -15,6 +15,7 @@
             andAudioName:(NSString *)audioName
            andPersonName:(NSString *)personName
          andGalleryItems:(NSArray *)galleryItems
+        andFactsHTMLFile:(NSString *)factsHTMLFileName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc;
 

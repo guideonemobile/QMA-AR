@@ -12,6 +12,7 @@
             andAudioName:(NSString *)audioName
            andPersonName:(NSString *)personName
          andGalleryItems:(NSArray *)galleryItems
+        andFactsHTMLFile:(NSString *)factsHTMLFileName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc {
     
@@ -38,6 +39,7 @@
     poi.image = imageName;
     poi.audio = audioName;
     poi.personName = personName;
+    poi.factsHTMLFile = factsHTMLFileName;
     
     //gallery
     for (NSDictionary *dic in galleryItems) {
@@ -55,7 +57,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image, @"Audio File":self.audio, @"Person Name":self.personName, @"Gallery Items":@([self.gallery count])}];
+    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image, @"Audio File":self.audio, @"Person Name":self.personName, @"Facts HTML File Name":self.factsHTMLFile, @"Gallery Items":@([self.gallery count])}];
 }
 
 @end

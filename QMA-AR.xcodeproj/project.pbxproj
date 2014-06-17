@@ -46,6 +46,7 @@
 		25229207193E307900928717 /* poi_audio_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25229205193E307900928717 /* poi_audio_1.mp3 */; };
 		25229208193E307900928717 /* poi_audio_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25229206193E307900928717 /* poi_audio_2.mp3 */; };
 		2528280E192FAFBC00969CC6 /* DatabasePreLoadData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2528280D192FAFBC00969CC6 /* DatabasePreLoadData.plist */; };
+		2549B394194FD8780047F278 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 2549B393194FD8780047F278 /* html */; };
 		2551089F192E4B3E00208C35 /* QMAOnSiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */; };
 		2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601B19398094003CB15C /* QMAPoiTableViewCell.m */; };
 		25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601F193984F2003CB15C /* UIColor+QMARGB.m */; };
@@ -118,6 +119,7 @@
 		25229205193E307900928717 /* poi_audio_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = poi_audio_1.mp3; path = _Audio/poi_audio_1.mp3; sourceTree = "<group>"; };
 		25229206193E307900928717 /* poi_audio_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = poi_audio_2.mp3; path = _Audio/poi_audio_2.mp3; sourceTree = "<group>"; };
 		2528280D192FAFBC00969CC6 /* DatabasePreLoadData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DatabasePreLoadData.plist; sourceTree = "<group>"; };
+		2549B393194FD8780047F278 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; name = html; path = _HTML/html; sourceTree = "<group>"; };
 		2551089D192E4B3E00208C35 /* QMAOnSiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAOnSiteVC.h; path = _Code/QMAOnSiteVC.h; sourceTree = "<group>"; };
 		2551089E192E4B3E00208C35 /* QMAOnSiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAOnSiteVC.m; path = _Code/QMAOnSiteVC.m; sourceTree = "<group>"; };
 		2576601A19398093003CB15C /* QMAPoiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiTableViewCell.h; path = _Code/QMAPoiTableViewCell.h; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				251CC03C18E72B7C002FDA84 /* Assets */,
+				2549B393194FD8780047F278 /* html */,
 				252291FD193E2C0A00928717 /* Audio */,
 				2528280D192FAFBC00969CC6 /* DatabasePreLoadData.plist */,
 				251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */,
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				251CC03D18E72B7C002FDA84 /* Assets in Resources */,
+				2549B394194FD8780047F278 /* html in Resources */,
 				041B0B261896A2200061A3E2 /* Images.xcassets in Resources */,
 				2528280E192FAFBC00969CC6 /* DatabasePreLoadData.plist in Resources */,
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,

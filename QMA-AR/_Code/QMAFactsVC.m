@@ -12,8 +12,17 @@
 @implementation QMAFactsVC
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    //[self.webView loadHTMLString:self.poi.facts baseURL:nil];
+    
+    NSURL *baseURL = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"html" isDirectory:YES];
+    NSURL *htmlURL = [baseURL URLByAppendingPathComponent:self.poi.factsHTMLFile isDirectory:NO];
+    NSError *error = nil;
+    NSString *htmlString = [NSString stringWithContentsOfURL:htmlURL encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        QMALog(@"Error: %@", [error localizedDescription]);
+    }
+    [self.webView loadHTMLString:htmlString baseURL:baseURL];
 }
 
 - (IBAction)didTapToCloseVC:(UIButton *)sender {

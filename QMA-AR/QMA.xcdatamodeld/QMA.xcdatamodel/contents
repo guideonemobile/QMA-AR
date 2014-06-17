@@ -8,6 +8,7 @@
     <entity name="QMAPoi" representedClassName="QMAPoi" syncable="YES">
         <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="factsHTMLFile" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="personName" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,8 +20,8 @@
         <relationship name="pointsOfInterest" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QMAPoi" inverseName="target" inverseEntity="QMAPoi" syncable="YES"/>
     </entity>
     <elements>
-        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="148"/>
-        <element name="QMATarget" positionX="-38" positionY="62" width="128" height="73"/>
         <element name="QMAGalleryItem" positionX="394" positionY="45" width="128" height="88"/>
+        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="163"/>
+        <element name="QMATarget" positionX="-38" positionY="62" width="128" height="73"/>
     </elements>
 </model>

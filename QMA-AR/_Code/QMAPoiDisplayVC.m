@@ -50,12 +50,6 @@
     }
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    //Start playing audio for the first POI automatically
-    [(QMAPoiVC *)self.childVCs[0] playAudio];
-}
-
 #pragma mark - POI View Controllers
 
 - (void)loadPOIVCsIntoScrollView:(NSUInteger)startingIndex {
@@ -96,6 +90,9 @@
     //Set scrollView properties
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([self.pointsOfInterest count]+1),
                                              self.scrollView.frame.size.height);
+    
+    //Start playing audio for the first POI automatically
+    [(QMAPoiVC *)self.childVCs[0] playAudio];
 }
 
 - (void)resetScrollViewToInitialPosition {
