@@ -125,4 +125,128 @@
       </visibility>
     </viewparameters>
   </object>
+  <object id="model6">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/c2a8fab409cf9e16607413c340e5cac3/c2a8fab409cf9e16607413c340e5cac3.zip]]></model>
+      <transform>
+        <translation>
+          <x>305.0808410645</x>
+          <y>0.0000000000</y>
+          <z>173.7767639160</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>2</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model7">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/c2a8fab409cf9e16607413c340e5cac3/c2a8fab409cf9e16607413c340e5cac3.zip]]></model>
+      <transform>
+        <translation>
+          <x>-229.9617309570</x>
+          <y>0.0000000000</y>
+          <z>99.4584197998</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>2</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model8">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/c2a8fab409cf9e16607413c340e5cac3/c2a8fab409cf9e16607413c340e5cac3.zip]]></model>
+      <transform>
+        <translation>
+          <x>-20.6493759155</x>
+          <y>0.0000000000</y>
+          <z>187.9403686523</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>2</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model9">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/c2a8fab409cf9e16607413c340e5cac3/c2a8fab409cf9e16607413c340e5cac3.zip]]></model>
+      <transform>
+        <translation>
+          <x>-445.6657104492</x>
+          <y>0.0000000000</y>
+          <z>1.0000000000</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>2</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
 </results>

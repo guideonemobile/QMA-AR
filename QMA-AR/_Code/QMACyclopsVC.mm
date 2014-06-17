@@ -146,7 +146,6 @@
 	[m_pGestureHandlerIOS touchesMoved:touches withEvent:event withView:glView];
 }
 
-
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [m_pGestureHandlerIOS touchesEnded:touches withEvent:event withView:glView];
 }
