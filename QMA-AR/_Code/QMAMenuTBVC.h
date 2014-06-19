@@ -7,6 +7,8 @@
 @protocol QMAMenuTBVCDelegate <NSObject>
 
 - (void)qmaMenuDidTapToClose:(QMAMenuTBVC *)qmaMenu;
+- (void)qmaMenuDidTapToViewAboutPage:(QMAMenuTBVC *)qmaMenu;
+- (void)qmaMenuDidTapToViewQMA:(QMAMenuTBVC *)qmaMenu;
 
 @end
 

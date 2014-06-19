@@ -21,8 +21,10 @@
         [self.delegate qmaMenuDidTapToClose:self];
         
     } else if (indexPath.row == 1) { //About the Panorama
+        [self.delegate qmaMenuDidTapToViewAboutPage:self];
         
     } else if (indexPath.row == 2) { //queensmuseum.org
+        [self.delegate qmaMenuDidTapToViewQMA:self];
         
     } else if (indexPath.row == 3) { //Credits
         

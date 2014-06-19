@@ -218,6 +218,7 @@
                         <outlet property="menuButton" destination="wwK-ks-QYk" id="V0n-uk-xiJ"/>
                         <outlet property="menuContainerView" destination="1lf-IH-0VI" id="C7M-hk-kAx"/>
                         <segue destination="oXQ-An-EjX" kind="push" identifier="SegueToPoiDisplay" id="ehe-Wt-CZJ"/>
+                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebView" modalTransitionStyle="coverVertical" id="rBW-TL-Jvt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Qf-7ST" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -761,6 +762,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AvE-5D-PFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2755" y="-373"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="uxy-zs-6ag">
+            <objects>
+                <viewController id="StB-NR-djp" customClass="QMAWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wc8-FN-966">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="OxO-7P-hN6" userLabel="Button - Close">
+                                <rect key="frame" x="9" y="4" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-close-black">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToCloseVC:" destination="StB-NR-djp" eventType="touchUpInside" id="gTO-MI-2fF"/>
+                                </connections>
+                            </button>
+                            <webView opaque="NO" contentMode="scaleToFill" id="ta6-Nz-hxL">
+                                <rect key="frame" x="57" y="0.0" width="511" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="webView" destination="ta6-Nz-hxL" id="cE1-cN-2ac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osw-fo-SEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="-493"/>
         </scene>
     </scenes>
     <resources>

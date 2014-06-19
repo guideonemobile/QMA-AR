@@ -17,6 +17,7 @@
 #import "QMAPoiDisplayVC.h"
 #import "QMAPoi.h"
 #import "UIImage+ImageEffects.h"
+#import "QMAWebViewController.h"
 
 
 @interface QMACyclopsVC () <UIGestureRecognizerDelegate,
@@ -199,9 +200,22 @@
 
 #pragma mark - QMAMenuTBVCDelegate
 
+static NSString *const kQMAURL = @"http://www.queensmuseum.org/";
+static NSString *const kAboutHTMLFileName = @"centralPark-2.html";
+
 - (void)qmaMenuDidTapToClose:(QMAMenuTBVC *)qmaMenu {
     [self hideMenuAnimated:YES];
     self.menuButton.hidden = NO;
+}
+
+- (void)qmaMenuDidTapToViewAboutPage:(QMAMenuTBVC *)qmaMenu {
+    [self hideMenuAnimated:YES];
+    [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
+}
+
+- (void)qmaMenuDidTapToViewQMA:(QMAMenuTBVC *)qmaMenu {
+    [self hideMenuAnimated:YES];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kQMAURL]];
 }
 
 #pragma mark - Prepare for Segue
@@ -221,6 +235,10 @@
         QMAPoiDisplayVC *vc = segue.destinationViewController;
         vc.currentPOI = _selectedPOI;
         vc.panoramaScreenShot = [self blurredScreenShot];
+    
+    } else if ([segue.destinationViewController isKindOfClass:[QMAWebViewController class]]) {
+        QMAWebViewController *vc = segue.destinationViewController;
+        vc.htmlFileName = kAboutHTMLFileName;
     }
 }
 
