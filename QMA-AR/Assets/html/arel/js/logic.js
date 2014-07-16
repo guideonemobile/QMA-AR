@@ -373,6 +373,82 @@ arel.sceneReady(function() {
         if (methodExists(image19, image19.onLoaded)) {
             image19.onLoaded();
         }
+        scenario.registerObject(model23);
+        if (methodExists(model23, model23.onLoaded)) {
+            model23.onLoaded();
+        }
+        scenario.registerObject(model24);
+        if (methodExists(model24, model24.onLoaded)) {
+            model24.onLoaded();
+        }
+        scenario.registerObject(model25);
+        if (methodExists(model25, model25.onLoaded)) {
+            model25.onLoaded();
+        }
+        scenario.registerObject(model26);
+        if (methodExists(model26, model26.onLoaded)) {
+            model26.onLoaded();
+        }
+        scenario.registerObject(model27);
+        if (methodExists(model27, model27.onLoaded)) {
+            model27.onLoaded();
+        }
+        scenario.registerObject(model28);
+        if (methodExists(model28, model28.onLoaded)) {
+            model28.onLoaded();
+        }
+        scenario.registerObject(model29);
+        if (methodExists(model29, model29.onLoaded)) {
+            model29.onLoaded();
+        }
+        scenario.registerObject(model30);
+        if (methodExists(model30, model30.onLoaded)) {
+            model30.onLoaded();
+        }
+        scenario.registerObject(model31);
+        if (methodExists(model31, model31.onLoaded)) {
+            model31.onLoaded();
+        }
+        scenario.registerObject(model32);
+        if (methodExists(model32, model32.onLoaded)) {
+            model32.onLoaded();
+        }
+        scenario.registerObject(model33);
+        if (methodExists(model33, model33.onLoaded)) {
+            model33.onLoaded();
+        }
+        scenario.registerObject(model34);
+        if (methodExists(model34, model34.onLoaded)) {
+            model34.onLoaded();
+        }
+        scenario.registerObject(model35);
+        if (methodExists(model35, model35.onLoaded)) {
+            model35.onLoaded();
+        }
+        scenario.registerObject(model36);
+        if (methodExists(model36, model36.onLoaded)) {
+            model36.onLoaded();
+        }
+        scenario.registerObject(image20);
+        if (methodExists(image20, image20.onLoaded)) {
+            image20.onLoaded();
+        }
+        scenario.registerObject(image21);
+        if (methodExists(image21, image21.onLoaded)) {
+            image21.onLoaded();
+        }
+        scenario.registerObject(image22);
+        if (methodExists(image22, image22.onLoaded)) {
+            image22.onLoaded();
+        }
+        scenario.registerObject(image23);
+        if (methodExists(image23, image23.onLoaded)) {
+            image23.onLoaded();
+        }
+        scenario.registerObject(image24);
+        if (methodExists(image24, image24.onLoaded)) {
+            image24.onLoaded();
+        }
 
 
         if (methodExists(userDevice, userDevice.onLoaded)) {
@@ -494,29 +570,29 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
-        image9.display();
-        model2.display();
-        model8.display();
-        model17.display();
         model21.display();
-        image15.display();
-        image11.display();
-        image13.display();
-        model18.display();
-        model22.display();
-        model6.display();
-        image14.display();
-        image18.display();
+        image9.display();
         model16.display();
-        model15.display();
-        model19.display();
-        image16.display();
-        image12.display();
-        image19.display();
-        image10.display();
         model20.display();
-        model10.display();
+        image13.display();
+        image18.display();
+        model19.display();
+        model2.display();
         image17.display();
+        model17.display();
+        model8.display();
+        image16.display();
+        model22.display();
+        image14.display();
+        image12.display();
+        image10.display();
+        model6.display();
+        model18.display();
+        image15.display();
+        model15.display();
+        model10.display();
+        image11.display();
+        image19.display();
         /**** Begin of custom script ****/
         
         arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
@@ -528,30 +604,30 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
-        image9.hide();
-        image11.hide();
-        image4.hide();
-        model15.hide();
-        model16.hide();
         model19.hide();
-        image12.hide();
-        image16.hide();
-        image13.hide();
-        model2.hide();
-        model21.hide();
-        model22.hide();
-        model10.hide();
-        model17.hide();
-        image18.hide();
-        image19.hide();
-        image10.hide();
-        image14.hide();
-        model20.hide();
-        model8.hide();
-        image17.hide();
-        image15.hide();
         model18.hide();
+        image14.hide();
+        image11.hide();
+        image19.hide();
         model6.hide();
+        image10.hide();
+        model20.hide();
+        image12.hide();
+        image13.hide();
+        image18.hide();
+        image9.hide();
+        image16.hide();
+        model17.hide();
+        model10.hide();
+        image15.hide();
+        model16.hide();
+        model15.hide();
+        model8.hide();
+        model22.hide();
+        image17.hide();
+        model21.hide();
+        model2.hide();
+        image4.hide();
     };
 
 
@@ -566,13 +642,34 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
+        model24.display();
+        image24.display();
+        image20.display();
+        image23.display();
+        image21.display();
+        image22.display();
+        model25.display();
+        model23.display();
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
+        
+        /***** End of custom script *****/
     };
 
     ml3Dmap2.onTrackingLost = function (trackingValues) {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
+        image24.hide();
+        model23.hide();
+        model25.hide();
+        image22.hide();
+        model24.hide();
+        image20.hide();
         image3.hide();
+        image23.hide();
+        image21.hide();
     };
 
 
@@ -587,13 +684,30 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
+        model29.display();
+        model27.display();
+        model26.display();
+        model28.display();
+        model30.display();
+        model31.display();
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
+        
+        /***** End of custom script *****/
     };
 
     ml3Dmap3.onTrackingLost = function (trackingValues) {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
+        model31.hide();
+        model29.hide();
         image5.hide();
+        model30.hide();
+        model27.hide();
+        model26.hide();
+        model28.hide();
     };
 
 
@@ -608,15 +722,30 @@ arel.sceneReady(function() {
         arel.Debug.log(this.objectName + ".onTracked()");
         this.isCurrentlyTracking = true;
         this.currentTrackingValues = trackingValues;
+        model32.display();
         image6.display();
+        model36.display();
+        model35.display();
+        model33.display();
+        model34.display();
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('targetTrackStarted=CentralPark', false);
+        
+        /***** End of custom script *****/
     };
 
     ml3Dmap4.onTrackingLost = function (trackingValues) {
         arel.Debug.log(this.objectName + ".onTrackingLost()");
         this.isCurrentlyTracking = false;
         this.currentTrackingValues = null;
-        image6.hide();
+        model35.hide();
+        model34.hide();
+        model33.hide();
+        model36.hide();
         image7.hide();
+        image6.hide();
+        model32.hide();
     };
 
 
@@ -1516,6 +1645,451 @@ arel.sceneReady(function() {
     };
 
     image19.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // Verrazano
+    var image20 = arel.Scene.getObject("image20");
+    image20.objectName = "image20";
+    image20.type = "Image";
+    image20.scene = scene1;
+    image20.associatedTrackable = ml3Dmap2;
+    image20.displayOnLoaded = false;
+    scenario.contents.push(image20);
+
+    image20.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    image20.isLoaded = function () {
+        return arel.Scene.objectExists("image20");
+    };
+
+    image20.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    image20.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    image20.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    image20.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    image20.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    image20.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(image20);
+            }
+            arel.GestureHandler.addObject("image20", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    image20.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // GeorgeTerminal
+    var image21 = arel.Scene.getObject("image21");
+    image21.objectName = "image21";
+    image21.type = "Image";
+    image21.scene = scene1;
+    image21.associatedTrackable = ml3Dmap2;
+    image21.displayOnLoaded = false;
+    scenario.contents.push(image21);
+
+    image21.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    image21.isLoaded = function () {
+        return arel.Scene.objectExists("image21");
+    };
+
+    image21.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    image21.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    image21.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    image21.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    image21.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    image21.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(image21);
+            }
+            arel.GestureHandler.addObject("image21", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    image21.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // ConeyIsland
+    var image22 = arel.Scene.getObject("image22");
+    image22.objectName = "image22";
+    image22.type = "Image";
+    image22.scene = scene1;
+    image22.associatedTrackable = ml3Dmap2;
+    image22.displayOnLoaded = false;
+    scenario.contents.push(image22);
+
+    image22.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    image22.isLoaded = function () {
+        return arel.Scene.objectExists("image22");
+    };
+
+    image22.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    image22.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    image22.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    image22.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    image22.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    image22.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(image22);
+            }
+            arel.GestureHandler.addObject("image22", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    image22.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // Brooklyn
+    var image23 = arel.Scene.getObject("image23");
+    image23.objectName = "image23";
+    image23.type = "Image";
+    image23.scene = scene1;
+    image23.associatedTrackable = ml3Dmap2;
+    image23.displayOnLoaded = false;
+    scenario.contents.push(image23);
+
+    image23.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    image23.isLoaded = function () {
+        return arel.Scene.objectExists("image23");
+    };
+
+    image23.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    image23.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    image23.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    image23.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    image23.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    image23.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(image23);
+            }
+            arel.GestureHandler.addObject("image23", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    image23.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // StatenIsland
+    var image24 = arel.Scene.getObject("image24");
+    image24.objectName = "image24";
+    image24.type = "Image";
+    image24.scene = scene1;
+    image24.associatedTrackable = ml3Dmap2;
+    image24.displayOnLoaded = false;
+    scenario.contents.push(image24);
+
+    image24.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    image24.isLoaded = function () {
+        return arel.Scene.objectExists("image24");
+    };
+
+    image24.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    image24.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    image24.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    image24.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    image24.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    image24.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(image24);
+            }
+            arel.GestureHandler.addObject("image24", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    image24.onLoaded = function () {
         arel.Debug.log(this.objectName + ".onLoaded()");
         this.hide();
         if (this.displayOnLoaded) { 
@@ -3110,6 +3684,1490 @@ arel.sceneReady(function() {
     };
 
     model22.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model23 = arel.Scene.getObject("model23");
+    model23.objectName = "model23";
+    model23.type = "Model";
+    model23.scene = scene1;
+    model23.associatedTrackable = ml3Dmap2;
+    model23.displayOnLoaded = false;
+    scenario.contents.push(model23);
+
+    model23.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model23.isLoaded = function () {
+        return arel.Scene.objectExists("model23");
+    };
+
+    model23.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model23.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model23.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model23.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model23.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model23.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model23);
+            }
+            arel.GestureHandler.addObject("model23", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model23.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model23.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model23.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model24 = arel.Scene.getObject("model24");
+    model24.objectName = "model24";
+    model24.type = "Model";
+    model24.scene = scene1;
+    model24.associatedTrackable = ml3Dmap2;
+    model24.displayOnLoaded = false;
+    scenario.contents.push(model24);
+
+    model24.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model24.isLoaded = function () {
+        return arel.Scene.objectExists("model24");
+    };
+
+    model24.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model24.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model24.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model24.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model24.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model24.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model24);
+            }
+            arel.GestureHandler.addObject("model24", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model24.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model24.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model24.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model25 = arel.Scene.getObject("model25");
+    model25.objectName = "model25";
+    model25.type = "Model";
+    model25.scene = scene1;
+    model25.associatedTrackable = ml3Dmap2;
+    model25.displayOnLoaded = false;
+    scenario.contents.push(model25);
+
+    model25.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model25.isLoaded = function () {
+        return arel.Scene.objectExists("model25");
+    };
+
+    model25.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model25.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model25.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model25.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model25.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model25.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model25);
+            }
+            arel.GestureHandler.addObject("model25", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model25.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model25.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model25.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model26 = arel.Scene.getObject("model26");
+    model26.objectName = "model26";
+    model26.type = "Model";
+    model26.scene = scene1;
+    model26.associatedTrackable = ml3Dmap3;
+    model26.displayOnLoaded = false;
+    scenario.contents.push(model26);
+
+    model26.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model26.isLoaded = function () {
+        return arel.Scene.objectExists("model26");
+    };
+
+    model26.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model26.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model26.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model26.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model26.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model26.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model26);
+            }
+            arel.GestureHandler.addObject("model26", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model26.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model26.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model26.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model27 = arel.Scene.getObject("model27");
+    model27.objectName = "model27";
+    model27.type = "Model";
+    model27.scene = scene1;
+    model27.associatedTrackable = ml3Dmap3;
+    model27.displayOnLoaded = false;
+    scenario.contents.push(model27);
+
+    model27.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model27.isLoaded = function () {
+        return arel.Scene.objectExists("model27");
+    };
+
+    model27.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model27.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model27.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model27.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model27.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model27.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model27);
+            }
+            arel.GestureHandler.addObject("model27", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model27.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model27.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model27.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model28 = arel.Scene.getObject("model28");
+    model28.objectName = "model28";
+    model28.type = "Model";
+    model28.scene = scene1;
+    model28.associatedTrackable = ml3Dmap3;
+    model28.displayOnLoaded = false;
+    scenario.contents.push(model28);
+
+    model28.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model28.isLoaded = function () {
+        return arel.Scene.objectExists("model28");
+    };
+
+    model28.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model28.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model28.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model28.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model28.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model28.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model28);
+            }
+            arel.GestureHandler.addObject("model28", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model28.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model28.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model28.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model29 = arel.Scene.getObject("model29");
+    model29.objectName = "model29";
+    model29.type = "Model";
+    model29.scene = scene1;
+    model29.associatedTrackable = ml3Dmap3;
+    model29.displayOnLoaded = false;
+    scenario.contents.push(model29);
+
+    model29.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model29.isLoaded = function () {
+        return arel.Scene.objectExists("model29");
+    };
+
+    model29.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model29.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model29.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model29.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model29.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model29.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model29);
+            }
+            arel.GestureHandler.addObject("model29", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model29.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model29.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model29.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model30 = arel.Scene.getObject("model30");
+    model30.objectName = "model30";
+    model30.type = "Model";
+    model30.scene = scene1;
+    model30.associatedTrackable = ml3Dmap3;
+    model30.displayOnLoaded = false;
+    scenario.contents.push(model30);
+
+    model30.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model30.isLoaded = function () {
+        return arel.Scene.objectExists("model30");
+    };
+
+    model30.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model30.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model30.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model30.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model30.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model30.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model30);
+            }
+            arel.GestureHandler.addObject("model30", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model30.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model30.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model30.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model31 = arel.Scene.getObject("model31");
+    model31.objectName = "model31";
+    model31.type = "Model";
+    model31.scene = scene1;
+    model31.associatedTrackable = ml3Dmap3;
+    model31.displayOnLoaded = false;
+    scenario.contents.push(model31);
+
+    model31.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model31.isLoaded = function () {
+        return arel.Scene.objectExists("model31");
+    };
+
+    model31.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model31.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model31.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model31.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model31.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model31.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model31);
+            }
+            arel.GestureHandler.addObject("model31", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model31.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model31.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model31.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model32 = arel.Scene.getObject("model32");
+    model32.objectName = "model32";
+    model32.type = "Model";
+    model32.scene = scene1;
+    model32.associatedTrackable = ml3Dmap4;
+    model32.displayOnLoaded = false;
+    scenario.contents.push(model32);
+
+    model32.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model32.isLoaded = function () {
+        return arel.Scene.objectExists("model32");
+    };
+
+    model32.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model32.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model32.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model32.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model32.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model32.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model32);
+            }
+            arel.GestureHandler.addObject("model32", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model32.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model32.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model32.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model33 = arel.Scene.getObject("model33");
+    model33.objectName = "model33";
+    model33.type = "Model";
+    model33.scene = scene1;
+    model33.associatedTrackable = ml3Dmap4;
+    model33.displayOnLoaded = false;
+    scenario.contents.push(model33);
+
+    model33.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model33.isLoaded = function () {
+        return arel.Scene.objectExists("model33");
+    };
+
+    model33.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model33.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model33.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model33.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model33.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model33.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model33);
+            }
+            arel.GestureHandler.addObject("model33", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model33.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model33.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model33.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model34 = arel.Scene.getObject("model34");
+    model34.objectName = "model34";
+    model34.type = "Model";
+    model34.scene = scene1;
+    model34.associatedTrackable = ml3Dmap4;
+    model34.displayOnLoaded = false;
+    scenario.contents.push(model34);
+
+    model34.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model34.isLoaded = function () {
+        return arel.Scene.objectExists("model34");
+    };
+
+    model34.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model34.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model34.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model34.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model34.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model34.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model34);
+            }
+            arel.GestureHandler.addObject("model34", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model34.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model34.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model34.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model35 = arel.Scene.getObject("model35");
+    model35.objectName = "model35";
+    model35.type = "Model";
+    model35.scene = scene1;
+    model35.associatedTrackable = ml3Dmap4;
+    model35.displayOnLoaded = false;
+    scenario.contents.push(model35);
+
+    model35.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model35.isLoaded = function () {
+        return arel.Scene.objectExists("model35");
+    };
+
+    model35.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model35.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model35.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model35.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model35.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model35.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model35);
+            }
+            arel.GestureHandler.addObject("model35", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model35.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model35.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-2', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model35.onLoaded = function () {
+        arel.Debug.log(this.objectName + ".onLoaded()");
+        this.hide();
+        if (this.displayOnLoaded) { 
+            this.displayOnLoaded = false;
+            this.display();
+        }
+        if (this.playOnLoaded) { 
+            this.playOnLoaded = false;
+            this.play();
+        }
+    };
+
+
+    // qma5
+    var model36 = arel.Scene.getObject("model36");
+    model36.objectName = "model36";
+    model36.type = "Model";
+    model36.scene = scene1;
+    model36.associatedTrackable = ml3Dmap4;
+    model36.displayOnLoaded = false;
+    scenario.contents.push(model36);
+
+    model36.setScene = function (scene) {
+        this.scene = scene;
+        scenario.currentScene.display();
+    };
+
+    model36.isLoaded = function () {
+        return arel.Scene.objectExists("model36");
+    };
+
+    model36.bind = function (cosID) {
+        arel.Debug.log(this.objectName + ".bind(" + cosID + ")");
+        this.setCoordinateSystemID(cosID);
+    };
+
+    model36.load = function () {
+        arel.Debug.log(this.objectName + ".load()");
+        if (!this.isLoaded()) {
+            scenario.addObject(this);
+        }
+    };
+
+    model36.unload = function () {
+        arel.Debug.log(this.objectName + ".unload()");
+        if (this.isLoaded()) {
+            arel.Scene.removeObject(this);
+            if (methodExists(this, this.onUnloaded)) {
+                this.onUnloaded();
+            }
+        }
+    };
+
+    model36.display = function () {
+        arel.Debug.log(this.objectName + ".display()");
+        if (this.scene && this.scene != scenario.currentScene) {
+            return;
+        }
+        
+        if (!this.isLoaded()) {
+            this.displayOnLoaded = true;
+            this.load();
+            return;
+        }
+        
+        this.setVisibility(true);
+    };
+
+    model36.hide = function () {
+        arel.Debug.log(this.objectName + ".hide()");
+        this.setVisibility(false);
+    };
+
+    model36.attach = function (origin, offset) {
+        arel.Debug.log(this.objectName + ".attach(" + origin.objectName + ")");
+        if (typeof (origin.getScreenAnchor()) != 'undefined' && typeof (origin.getScreenAnchorFlags()) != 'undefined') {
+            this.setScreenAnchor(origin.getScreenAnchor(), origin.getScreenAnchorFlags());
+        }
+        this.setTranslation(arel.Vector3D.add(origin.getTranslation(), offset));
+        if (origin.groupID) {
+            if (this.groupID) {
+                arel.GestureHandler.removeObject(model36);
+            }
+            arel.GestureHandler.addObject("model36", origin.groupID);
+            this.setPickingEnabled(false);
+        }
+    };
+
+    model36.play = function (animationName, animationLooped) {
+        arel.Debug.log(this.objectName + ".play(" + animationName + ", " + animationLooped + ")");
+        this.startAnimation(animationName, animationLooped);
+        if (methodExists(this, this.onPlayed)) {
+            this.onPlayed(animationName);
+        }
+    };
+
+    model36.onTouchEnded = function () {
+        arel.Debug.log(this.objectName + ".onTouchEnded()");
+        /**** Begin of custom script ****/
+        
+        arel.Media.openWebsite('poiTouchEnded=CentralPark-1', false);
+        
+        /***** End of custom script *****/
+    };
+
+    model36.onLoaded = function () {
         arel.Debug.log(this.objectName + ".onLoaded()");
         this.hide();
         if (this.displayOnLoaded) { 
