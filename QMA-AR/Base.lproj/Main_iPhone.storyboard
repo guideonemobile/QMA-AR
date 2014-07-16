@@ -121,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LKQ-Rw-Ur7" userLabel="Button - Close">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LKQ-Rw-Ur7" userLabel="Button - Close">
                                 <rect key="frame" x="15" y="9" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_close_default">
@@ -217,7 +217,7 @@
                         <outlet property="m_arelWebView" destination="5GG-dI-ef7" id="czN-75-CMK"/>
                         <outlet property="menuButton" destination="wwK-ks-QYk" id="V0n-uk-xiJ"/>
                         <outlet property="menuContainerView" destination="1lf-IH-0VI" id="C7M-hk-kAx"/>
-                        <segue destination="oXQ-An-EjX" kind="push" identifier="SegueToPoiDisplay" id="ehe-Wt-CZJ"/>
+                        <segue destination="oXQ-An-EjX" kind="modal" identifier="SegueToPoiDisplay" modalTransitionStyle="crossDissolve" id="ehe-Wt-CZJ"/>
                         <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebView" modalTransitionStyle="coverVertical" id="rBW-TL-Jvt"/>
                     </connections>
                 </viewController>
