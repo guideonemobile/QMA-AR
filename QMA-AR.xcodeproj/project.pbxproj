@@ -61,6 +61,7 @@
 		25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */; };
 		25EEEDDE193F9A8F00F9727F /* QMAAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */; };
 		25EEEDE61940F17300F9727F /* QMAMenuTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */; };
+		D3C643AF1982F5D30039F5C1 /* poi_audio_Corona.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C643AE1982F5D30039F5C1 /* poi_audio_Corona.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAAboutVC.m; path = _Code/QMAAboutVC.m; sourceTree = "<group>"; };
 		25EEEDE41940F17300F9727F /* QMAMenuTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAMenuTBVC.h; path = _Code/QMAMenuTBVC.h; sourceTree = "<group>"; };
 		25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAMenuTBVC.m; path = _Code/QMAMenuTBVC.m; sourceTree = "<group>"; };
+		D3C643AE1982F5D30039F5C1 /* poi_audio_Corona.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = poi_audio_Corona.mp3; path = _Audio/poi_audio_Corona.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +322,7 @@
 		252291FD193E2C0A00928717 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				D3C643AE1982F5D30039F5C1 /* poi_audio_Corona.mp3 */,
 				25229205193E307900928717 /* poi_audio_1.mp3 */,
 				25229206193E307900928717 /* poi_audio_2.mp3 */,
 			);
@@ -443,7 +446,7 @@
 				ORGANIZATIONNAME = GuideOne;
 				TargetAttributes = {
 					041B0B091896A2200061A3E2 = {
-						DevelopmentTeam = 72N2MY3SW3;
+						DevelopmentTeam = 744XS764QY;
 					};
 				};
 			};
@@ -477,6 +480,7 @@
 				041B0B181896A2200061A3E2 /* InfoPlist.strings in Resources */,
 				25229208193E307900928717 /* poi_audio_2.mp3 in Resources */,
 				25229207193E307900928717 /* poi_audio_1.mp3 in Resources */,
+				D3C643AF1982F5D30039F5C1 /* poi_audio_Corona.mp3 in Resources */,
 				041B0B211896A2200061A3E2 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: MergeSort DeLima (95GDP2D5WC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -647,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: MergeSort DeLima (95GDP2D5WC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",

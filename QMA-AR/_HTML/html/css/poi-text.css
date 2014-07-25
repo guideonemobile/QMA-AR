@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Avenir";
+	font-size: 19pt;
+	line-height: 28pt;
+	color: #dbdbdb;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+    height: 100%;
+    background: #000000;
+}
+
+h1 {
+	font-size: 25pt;
+	color: #f6a93a;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	display: block;
+    position: fixed;
+    width:465px;
+    padding-left: 72px;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: -webkit-linear-gradient(top,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0) 100%);
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+
+a {
+	text-decoration: none;
+	color: #006cb8;
+}
+
+.divider{
+	border-bottom: 1px solid #c2c2c2;
+	margin: 30px 0 30px 0;
+}
+
+
+
+
+
