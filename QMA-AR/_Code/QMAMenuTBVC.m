@@ -17,19 +17,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 0) { //Augmented Camera
+    if (indexPath.row == 0) { //Pano Cam
         [self.delegate qmaMenuDidTapToClose:self];
         
     } else if (indexPath.row == 1) { //About the Panorama
         [self.delegate qmaMenuDidTapToViewAboutPage:self];
         
-    } else if (indexPath.row == 2) { //queensmuseum.org
+    } else if (indexPath.row == 2) { //QueensMuseum.org
         [self.delegate qmaMenuDidTapToViewQMA:self];
         
-    } else if (indexPath.row == 3) { //Credits
+    } else if (indexPath.row == 3) { //Share / Review
+        [self.delegate qmaMenuDidTapToShareReview:self];
         
-    } else if (indexPath.row == 4) { //Share this app
-        
+    } else if (indexPath.row == 4) { //Credits
+        [self.delegate qmaMenuDidTapToViewCredits:self];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

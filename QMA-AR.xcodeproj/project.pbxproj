@@ -59,7 +59,6 @@
 		25EEEDCF193F4D4800F9727F /* QMAGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */; };
 		25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD4193F585200F9727F /* QMAGalleryItem.m */; };
 		25EEEDD8193F593E00F9727F /* QMAGalleryItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */; };
-		25EEEDDB193F955800F9727F /* QMAFactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDDA193F955800F9727F /* QMAFactsVC.m */; };
 		25EEEDDE193F9A8F00F9727F /* QMAAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */; };
 		25EEEDE61940F17300F9727F /* QMAMenuTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EEEDE51940F17300F9727F /* QMAMenuTBVC.m */; };
 /* End PBXBuildFile section */
@@ -144,8 +143,6 @@
 		25EEEDD4193F585200F9727F /* QMAGalleryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAGalleryItem.m; path = _Code/Database/QMAGalleryItem.m; sourceTree = "<group>"; };
 		25EEEDD6193F593E00F9727F /* QMAGalleryItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "QMAGalleryItem+Create.h"; path = "_Code/Database/QMAGalleryItem+Create.h"; sourceTree = "<group>"; };
 		25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "QMAGalleryItem+Create.m"; path = "_Code/Database/QMAGalleryItem+Create.m"; sourceTree = "<group>"; };
-		25EEEDD9193F955800F9727F /* QMAFactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAFactsVC.h; path = _Code/QMAFactsVC.h; sourceTree = "<group>"; };
-		25EEEDDA193F955800F9727F /* QMAFactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAFactsVC.m; path = _Code/QMAFactsVC.m; sourceTree = "<group>"; };
 		25EEEDDC193F9A8F00F9727F /* QMAAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAAboutVC.h; path = _Code/QMAAboutVC.h; sourceTree = "<group>"; };
 		25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAAboutVC.m; path = _Code/QMAAboutVC.m; sourceTree = "<group>"; };
 		25EEEDE41940F17300F9727F /* QMAMenuTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAMenuTBVC.h; path = _Code/QMAMenuTBVC.h; sourceTree = "<group>"; };
@@ -273,8 +270,6 @@
 				25EEEDDD193F9A8F00F9727F /* QMAAboutVC.m */,
 				25EEEDCD193F4D4800F9727F /* QMAGalleryVC.h */,
 				25EEEDCE193F4D4800F9727F /* QMAGalleryVC.m */,
-				25EEEDD9193F955800F9727F /* QMAFactsVC.h */,
-				25EEEDDA193F955800F9727F /* QMAFactsVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -515,7 +510,6 @@
 				252C1A11195394E500F76849 /* QMAWebViewController.m in Sources */,
 				25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
-				25EEEDDB193F955800F9727F /* QMAFactsVC.m in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,

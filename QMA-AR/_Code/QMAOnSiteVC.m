@@ -1,5 +1,6 @@
 
 #import "QMAOnSiteVC.h"
+#import "QMAWebViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
 
@@ -121,6 +122,10 @@
 
 #pragma mark - Target Action
 
+- (IBAction)didTapToSeeAboutPanorama:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
+}
+
 - (IBAction)didTapToSeePanorama:(UIButton *)sender {
     self.arLabel.text = @"";
     [self.spinner startAnimating];
@@ -137,9 +142,15 @@
 
 #pragma mark - Segue
 
+static NSString *const kAboutThePanoramaHTMLFile = @"centralPark-2.html";
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {
         [(id)segue.destinationViewController setManagedDocument:self.managedDocument];
+    }
+    if ([segue.destinationViewController isKindOfClass:[QMAWebViewController class]]) {
+        QMAWebViewController *dVC = (QMAWebViewController *) segue.destinationViewController;
+        dVC.htmlFileName = kAboutThePanoramaHTMLFile;
     }
 }
 

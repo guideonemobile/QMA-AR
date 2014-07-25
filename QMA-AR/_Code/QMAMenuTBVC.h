@@ -9,6 +9,8 @@
 - (void)qmaMenuDidTapToClose:(QMAMenuTBVC *)qmaMenu;
 - (void)qmaMenuDidTapToViewAboutPage:(QMAMenuTBVC *)qmaMenu;
 - (void)qmaMenuDidTapToViewQMA:(QMAMenuTBVC *)qmaMenu;
+- (void)qmaMenuDidTapToShareReview:(QMAMenuTBVC *)qmaMenu;
+- (void)qmaMenuDidTapToViewCredits:(QMAMenuTBVC *)qmaMenu;
 
 @end
 

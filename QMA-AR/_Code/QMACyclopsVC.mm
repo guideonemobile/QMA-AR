@@ -20,25 +20,7 @@
 #import "QMAWebViewController.h"
 
 
-@interface QMACyclopsVC () <UIGestureRecognizerDelegate,
-                            IARELInterpreterIOSDelegate,
-                            UIWebViewDelegate,
-                            QMAPoiTBVCDelegate,
-                            QMAMenuTBVCDelegate>
-
-@property (nonatomic, weak) IBOutlet EAGLView *glView;
-@property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
-
-@property (nonatomic, weak) IBOutlet UIView *menuContainerView;
-@property (nonatomic, weak) IBOutlet UIButton *menuButton;
-
-@property (nonatomic, weak) QMAMenuTBVC *menuTBVC;
-@property (nonatomic, weak) QMAPoiTBVC *poiTBVC;
-
-
-@end
-
-
+//<------------------------------------------------------------------------------------
 
 
 #pragma mark - Metaio Touch Event Boilerplate Code
@@ -75,6 +57,39 @@
 @end
 
 
+//<------------------------------------------------------------------------------------
+
+
+@interface QMACyclopsVC () <UIGestureRecognizerDelegate,
+                            IARELInterpreterIOSDelegate,
+                            UIWebViewDelegate,
+                            QMAPoiTBVCDelegate,
+                            QMAMenuTBVCDelegate>
+
+@property (nonatomic, weak) IBOutlet EAGLView *glView;
+@property (nonatomic, weak) IBOutlet UIWebView *m_arelWebView;
+
+@property (nonatomic, weak) IBOutlet UIView *menuContainerView;
+@property (nonatomic, weak) IBOutlet UIButton *menuButton;
+
+@property (nonatomic, weak) QMAMenuTBVC *menuTBVC;
+@property (nonatomic, weak) QMAPoiTBVC *poiTBVC;
+
+@end
+
+
+static const BOOL kHideTableViewWithPOIs = YES;
+
+static NSString *const kQMAURL = @"http://www.queensmuseum.org/";
+static NSString *const kAboutThePanoramaHTMLFile = @"centralPark-2.html";
+static NSString *const kShareReviewHTMLFile = @"centralPark-1.html";
+static NSString *const kCreditsHTMLFile = @"centralPark-2.html";
+
+typedef NS_ENUM(NSUInteger, MenuSelectionState) {
+    MenuSelectionStateAboutThePanorama,
+    MenuSelectionStateShareReview,
+    MenuSelectionStateCredits,
+};
 
 
 @implementation QMACyclopsVC  {
@@ -86,6 +101,8 @@
     __weak QMAPoi *_selectedPOI;
     BOOL _engineHasLoaded;
     
+    
+    MenuSelectionState _menuSelection;
 }
 
 #pragma mark - Metaio Boilerplate Code
@@ -200,9 +217,6 @@
 
 #pragma mark - QMAMenuTBVCDelegate
 
-static NSString *const kQMAURL = @"http://www.queensmuseum.org/";
-static NSString *const kAboutHTMLFileName = @"centralPark-2.html";
-
 - (void)qmaMenuDidTapToClose:(QMAMenuTBVC *)qmaMenu {
     [self hideMenuAnimated:YES];
     self.menuButton.hidden = NO;
@@ -210,12 +224,23 @@ static NSString *const kAboutHTMLFileName = @"centralPark-2.html";
 
 - (void)qmaMenuDidTapToViewAboutPage:(QMAMenuTBVC *)qmaMenu {
     [self hideMenuAnimated:YES];
+    _menuSelection = MenuSelectionStateAboutThePanorama;
     [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
 }
 
 - (void)qmaMenuDidTapToViewQMA:(QMAMenuTBVC *)qmaMenu {
     [self hideMenuAnimated:YES];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kQMAURL]];
+}
+
+- (void)qmaMenuDidTapToShareReview:(QMAMenuTBVC *)qmaMenu {
+    _menuSelection = MenuSelectionStateShareReview;
+    [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
+}
+
+- (void)qmaMenuDidTapToViewCredits:(QMAMenuTBVC *)qmaMenu {
+    _menuSelection = MenuSelectionStateCredits;
+    [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
 }
 
 #pragma mark - Prepare for Segue
@@ -230,6 +255,7 @@ static NSString *const kAboutHTMLFileName = @"centralPark-2.html";
         self.poiTBVC = segue.destinationViewController;
         self.poiTBVC.delegate = self;
         self.poiTBVC.managedDocument = self.managedDocument;
+        self.poiTBVC.view.hidden = kHideTableViewWithPOIs;
     
     } else if ([segue.destinationViewController isKindOfClass:[QMAPoiDisplayVC class]]) {
         QMAPoiDisplayVC *vc = segue.destinationViewController;
@@ -237,8 +263,16 @@ static NSString *const kAboutHTMLFileName = @"centralPark-2.html";
         vc.panoramaScreenShot = [self blurredScreenShot];
     
     } else if ([segue.destinationViewController isKindOfClass:[QMAWebViewController class]]) {
-        QMAWebViewController *vc = segue.destinationViewController;
-        vc.htmlFileName = kAboutHTMLFileName;
+        
+        QMAWebViewController *dVC = (QMAWebViewController *) segue.destinationViewController;
+        
+        if (_menuSelection == MenuSelectionStateAboutThePanorama) {
+            dVC.htmlFileName = kAboutThePanoramaHTMLFile;
+        } else if (_menuSelection == MenuSelectionStateShareReview) {
+            dVC.htmlFileName = kShareReviewHTMLFile;
+        } else if (_menuSelection == MenuSelectionStateCredits) {
+            dVC.htmlFileName = kCreditsHTMLFile;
+        }
     }
 }
 
