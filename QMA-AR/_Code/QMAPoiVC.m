@@ -13,7 +13,7 @@
 @property (nonatomic, weak) IBOutlet UIView *frameView;
 @property (nonatomic, weak) IBOutlet UIImageView *mainImageView;
 @property (nonatomic, weak) IBOutlet UILabel *poiLabel;
-@property (nonatomic, weak) IBOutlet UILabel *targetLabel;
+@property (nonatomic, weak) IBOutlet UILabel *boroughLabel;
 @property (nonatomic, weak) IBOutlet UILabel *personNameLabel;
 @property (nonatomic, weak) IBOutlet DACircularProgressView *progressView;
 
@@ -58,7 +58,7 @@
     self.mainImageView.image = [UIImage imageNamed:self.poi.image];
  
     self.poiLabel.text = self.poi.label;
-    self.targetLabel.text = self.poi.target.label;
+    self.boroughLabel.text = self.poi.borough;
     self.personNameLabel.text = self.poi.personName;
     
     self.progressView.roundedCorners = NO;

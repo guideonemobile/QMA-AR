@@ -2,7 +2,7 @@
 //  QMAPoi.m
 //  QMA-AR
 //
-//  Created by JB DeLima on 6/16/14.
+//  Created by JB DeLima on 7/28/14.
 //  Copyright (c) 2014 GuideOne. All rights reserved.
 //
 
@@ -13,13 +13,14 @@
 
 @implementation QMAPoi
 
+@dynamic aboutHTMLFile;
 @dynamic audio;
-@dynamic color;
+@dynamic index;
+@dynamic factsHTMLFile;
 @dynamic image;
 @dynamic label;
 @dynamic personName;
-@dynamic factsHTMLFile;
-@dynamic aboutHTMLFile;
+@dynamic borough;
 @dynamic gallery;
 @dynamic target;
 

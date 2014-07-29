@@ -6,8 +6,9 @@
 
 @implementation QMAPoi (Create)
 
-+ (QMAPoi *)poiWithLabel:(NSString *)label
-          andColorNumber:(NSNumber *)color
++ (QMAPoi *)poiWithIndex:(NSNumber *)index
+                andlabel:(NSString *)label
+              andBorough:(NSString *)borough
             andImageName:(NSString *)imageName
             andAudioName:(NSString *)audioName
            andPersonName:(NSString *)personName
@@ -36,7 +37,8 @@
         poi.label = label;
     }
     
-    poi.color = color;
+    poi.index = index;
+    poi.borough = borough;
     poi.image = imageName;
     poi.audio = audioName;
     poi.personName = personName;
@@ -59,7 +61,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Label":self.label, @"Color":self.color, @"Image Name":self.image, @"Audio File":self.audio, @"Person Name":self.personName, @"About HTML File Name":self.aboutHTMLFile, @"Facts HTML File Name":self.factsHTMLFile, @"Gallery Items":@([self.gallery count])}];
+    return [NSString stringWithFormat:@"<%@: %p, %@>", [self class], self, @{@"Index:":self.index, @"Label":self.label, @"Borough":self.borough, @"Image Name":self.image, @"Audio File":self.audio, @"Person Name":self.personName, @"About HTML File Name":self.aboutHTMLFile, @"Facts HTML File Name":self.factsHTMLFile, @"Gallery Items":@([self.gallery count])}];
 }
 
 @end

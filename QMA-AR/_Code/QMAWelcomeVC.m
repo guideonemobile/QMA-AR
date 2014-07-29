@@ -9,6 +9,8 @@
 
 @interface QMAWelcomeVC () <CLLocationManagerDelegate>
 
+@property (nonatomic, weak) IBOutlet UIImageView *splashImageView;
+
 @property (nonatomic, strong) CLLocation *museumLocation;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
@@ -27,6 +29,22 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.splashImageView.alpha = 1.0;
+    
+    [UIView animateWithDuration:1.0
+                          delay:1.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         self.splashImageView.alpha = 0;
+                     }
+                     completion:^(BOOL finished) {
+                         [self getStarted];
+                     }
+     ];
+}
+
+- (void)getStarted {
     
     //In the application's property list (InfoPlist.string), the UIApplicationExitsOnSuspend key is set to
     //YES. This forces the app termination on exit (we want the application to always start from the
@@ -77,7 +95,7 @@ static NSString *const error1 = @"Error in DatabasePreLoadData.plist file: the t
 
 static NSString *const error2 = @"Error in DatabasePreLoadData.plist file: each target should have a 'POIs' entry of type array listing its points of interest";
 
-static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Label' (string), 'Color' (number), 'AboutHTMLFile' (string), 'FactsHTMLFile' (string), 'Image' (string), 'Audio' (string), 'PersonName' (string).  'Gallery' (array of dictionaries) is optional";
+static NSString *const error3 = @"Each POI (point of interest) should be of type dictionary and have the following keys: 'Index' (number), 'Label' (string), 'Borough' (string), 'AboutHTMLFile' (string), 'FactsHTMLFile' (string), 'Image' (string), 'Audio' (string), 'PersonName' (string).  'Gallery' (array of dictionaries) is optional";
 
 - (void)loadDatabaseAndMoveOn:(UIViewController *)destinationVC {
     
@@ -103,12 +121,13 @@ static NSString *const error3 = @"Each POI (point of interest) should be of type
                         for (uint i = 0; i < [poiList count]; i++) {
                             if ([poiList[i] isKindOfClass:[NSDictionary class]]) {
                                 NSDictionary *poi = poiList[i];
-                                if (poi[@"Label"] && poi[@"Color"] && poi[@"Image"] && poi[@"Audio"] && poi[@"PersonName"] && poi[@"AboutHTMLFile"] && poi[@"FactsHTMLFile"]) {
+                                if (poi[@"Index"] && poi[@"Borough"] && poi[@"Label"] && poi[@"Image"] && poi[@"Audio"] && poi[@"PersonName"] && poi[@"AboutHTMLFile"] && poi[@"FactsHTMLFile"]) {
                                     
                                     NSArray *gallery = poi[@"Gallery"] ? poi[@"Gallery"] : nil;
                                     
-                                    QMAPoi *p = [QMAPoi poiWithLabel:poi[@"Label"]
-                                                      andColorNumber:poi[@"Color"]
+                                    QMAPoi *p = [QMAPoi poiWithIndex:poi[@"Index"]
+                                                            andlabel:poi[@"Label"]
+                                                          andBorough:poi[@"Borough"]
                                                         andImageName:poi[@"Image"]
                                                         andAudioName:poi[@"Audio"]
                                                        andPersonName:poi[@"PersonName"]

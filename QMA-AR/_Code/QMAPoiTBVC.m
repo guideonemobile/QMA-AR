@@ -72,7 +72,7 @@ static const CGFloat kColorButtonCornerRadius = 10; //Half the button's width/he
     QMAPoi *poi = [self.frc objectAtIndexPath:indexPath];
     
     cell.colorButton.layer.cornerRadius = kColorButtonCornerRadius;
-    cell.colorButton.backgroundColor = self.colorDictionary[poi.color];
+    //cell.colorButton.backgroundColor = self.colorDictionary[poi.color];
     cell.poiLabel.text = poi.label;
     
     return cell;

@@ -334,15 +334,15 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
         NSString *poiNum = [[paramValue componentsSeparatedByString:@"-"] lastObject];
         
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"QMAPoi"];
-        request.predicate = [NSPredicate predicateWithFormat:@"target.label = %@ AND color = %@", target, poiNum];
+        request.predicate = [NSPredicate predicateWithFormat:@"target.label = %@ AND index = %@", target, poiNum];
         NSArray *matches = [self.managedDocument.managedObjectContext executeFetchRequest:request error:nil];
         
         if (!matches) {
             QMALog(@"Error: Fetch request failed");
         } else if ([matches count] > 1) {
-            QMALog(@"Error: More than one POI with Color number %@ for target %@", poiNum, target);
+            QMALog(@"Error: More than one POI with Index number %@ for target %@", poiNum, target);
         } else if ([matches count] == 0) {
-            QMALog(@"No target with Color number '%@' for target %@", poiNum, target);
+            QMALog(@"No target with Index number '%@' for target %@", poiNum, target);
         } else {
             _selectedPOI = [matches firstObject];
             [self performSegueWithIdentifier:@"SegueToPoiDisplay" sender:self];

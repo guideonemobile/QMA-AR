@@ -9,10 +9,12 @@
 			<key>POIs</key>
 			<array>
 				<dict>
+					<key>Index</key>
+					<integer>1</integer>
 					<key>Label</key>
 					<string>Sheep Meadow</string>
-					<key>Color</key>
-					<integer>1</integer>
+					<key>Borough</key>
+					<string>Central Park</string>
 					<key>Image</key>
 					<string>poi_main_market</string>
 					<key>Audio</key>
@@ -40,10 +42,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>Index</key>
+					<integer>2</integer>
 					<key>Label</key>
 					<string>Cherry Hill</string>
-					<key>Color</key>
-					<integer>2</integer>
+					<key>Borough</key>
+					<string>Broadway</string>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
 					<key>Audio</key>
@@ -71,10 +75,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>Index</key>
+					<integer>3</integer>
 					<key>Label</key>
 					<string>The Pond</string>
-					<key>Color</key>
-					<integer>3</integer>
+					<key>Borough</key>
+					<string>Fifth Avenue</string>
 					<key>Image</key>
 					<string>poi_main_market</string>
 					<key>Audio</key>
@@ -102,10 +108,12 @@
 					</array>
 				</dict>
 				<dict>
+					<key>Index</key>
+					<integer>4</integer>
 					<key>Label</key>
 					<string>Strawberry Fields</string>
-					<key>Color</key>
-					<integer>4</integer>
+					<key>Borough</key>
+					<string>Harlem</string>
 					<key>Image</key>
 					<string>poi_main_coronaQueens</string>
 					<key>Audio</key>

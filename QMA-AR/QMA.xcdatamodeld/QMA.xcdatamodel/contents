@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="QMAGalleryItem" representedClassName="QMAGalleryItem" syncable="YES">
         <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,9 +8,10 @@
     <entity name="QMAPoi" representedClassName="QMAPoi" syncable="YES">
         <attribute name="aboutHTMLFile" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="borough" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="factsHTMLFile" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="personName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="gallery" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="QMAGalleryItem" inverseName="poi" inverseEntity="QMAGalleryItem" syncable="YES"/>
@@ -22,7 +23,7 @@
     </entity>
     <elements>
         <element name="QMAGalleryItem" positionX="394" positionY="45" width="128" height="88"/>
-        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="178"/>
+        <element name="QMAPoi" positionX="171" positionY="18" width="128" height="193"/>
         <element name="QMATarget" positionX="-38" positionY="62" width="128" height="73"/>
     </elements>
 </model>
