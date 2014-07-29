@@ -142,7 +142,7 @@
 
 #pragma mark - Segue
 
-static NSString *const kAboutThePanoramaHTMLFile = @"centralPark-2.html";
+static NSString *const kAboutThePanoramaHTMLFile = @"About.html";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {

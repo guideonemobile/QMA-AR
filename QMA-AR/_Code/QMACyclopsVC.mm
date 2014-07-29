@@ -81,9 +81,9 @@
 static const BOOL kHideTableViewWithPOIs = YES;
 
 static NSString *const kQMAURL = @"http://www.queensmuseum.org/";
-static NSString *const kAboutThePanoramaHTMLFile = @"centralPark-2.html";
-static NSString *const kShareReviewHTMLFile = @"centralPark-1.html";
-static NSString *const kCreditsHTMLFile = @"centralPark-2.html";
+static NSString *const kAboutThePanoramaHTMLFile = @"About.html";
+static NSString *const kShareReviewHTMLFile = @"Share-Review.html";
+static NSString *const kCreditsHTMLFile = @"Credits.html";
 
 typedef NS_ENUM(NSUInteger, MenuSelectionState) {
     MenuSelectionStateAboutThePanorama,

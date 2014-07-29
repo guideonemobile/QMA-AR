@@ -12,32 +12,32 @@
 					<key>Index</key>
 					<integer>1</integer>
 					<key>Label</key>
-					<string>Sheep Meadow</string>
+					<string>Williamsburg</string>
 					<key>Borough</key>
-					<string>Central Park</string>
+					<string>Brooklyn</string>
 					<key>Image</key>
-					<string>poi_main_market</string>
+					<string>poi_portrait_Williamsburg</string>
 					<key>Audio</key>
-					<string>poi_audio_1</string>
+					<string>poi_audio_Williamsburg</string>
 					<key>PersonName</key>
-					<string>Chen Wuzing</string>
+					<string>Sandra Davila</string>
 					<key>AboutHTMLFile</key>
-					<string>centralPark-1.html</string>
+					<string>Text-Williamsburg.html</string>
 					<key>FactsHTMLFile</key>
-					<string>centralPark-1.html</string>
+					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-1</string>
+							<string>poi_gallery_Williamsburg_1</string>
 							<key>Caption</key>
-							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-2</string>
+							<string>poi_gallery_Williamsburg_2</string>
 							<key>Caption</key>
-							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 					</array>
 				</dict>
@@ -45,32 +45,32 @@
 					<key>Index</key>
 					<integer>2</integer>
 					<key>Label</key>
-					<string>Cherry Hill</string>
+					<string>Tompkinsville</string>
 					<key>Borough</key>
-					<string>Broadway</string>
+					<string>Staten Island</string>
 					<key>Image</key>
-					<string>poi_main_coronaQueens</string>
+					<string>poi_portrait_Tompkinsville</string>
 					<key>Audio</key>
-					<string>poi_audio_2</string>
+					<string>poi_audio_Tompkinsville</string>
 					<key>PersonName</key>
-					<string>Doris Ramirez</string>
+					<string>Tattfoo Tan</string>
 					<key>AboutHTMLFile</key>
-					<string>centralPark-2.html</string>
+					<string>Text-Tompkinsville.html</string>
 					<key>FactsHTMLFile</key>
-					<string>centralPark-2.html</string>
+					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-1</string>
+							<string>poi_gallery_Tompkinsville_1</string>
 							<key>Caption</key>
-							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-2</string>
+							<string>poi_gallery_Tompkinsville_2</string>
 							<key>Caption</key>
-							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 					</array>
 				</dict>
@@ -78,32 +78,32 @@
 					<key>Index</key>
 					<integer>3</integer>
 					<key>Label</key>
-					<string>The Pond</string>
+					<string>Jackson Heights</string>
 					<key>Borough</key>
-					<string>Fifth Avenue</string>
+					<string>Queens</string>
 					<key>Image</key>
-					<string>poi_main_market</string>
+					<string>poi_portrait_JacksonHeights</string>
 					<key>Audio</key>
-					<string>poi_audio_1</string>
+					<string>poi_audio_JacksonHeights</string>
 					<key>PersonName</key>
-					<string>Chen Wuzing</string>
+					<string>Renzo Ortega</string>
 					<key>AboutHTMLFile</key>
-					<string>centralPark-1.html</string>
+					<string>Text-JacksonHeights.html</string>
 					<key>FactsHTMLFile</key>
-					<string>centralPark-1.html</string>
+					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-1</string>
+							<string>poi_gallery_JacksonHeights_1</string>
 							<key>Caption</key>
-							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-2</string>
+							<string>poi_gallery_JacksonHeights_2</string>
 							<key>Caption</key>
-							<string>View of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renewed for their experimentation with glass pigments and related media.</string>
+							<string>Lorem ipsum dolor est.</string>
 						</dict>
 					</array>
 				</dict>
@@ -111,26 +111,65 @@
 					<key>Index</key>
 					<integer>4</integer>
 					<key>Label</key>
-					<string>Strawberry Fields</string>
+					<string>Corona</string>
 					<key>Borough</key>
-					<string>Harlem</string>
+					<string>Queens</string>
 					<key>Image</key>
-					<string>poi_main_coronaQueens</string>
+					<string>poi_portrait_Corona</string>
 					<key>Audio</key>
-					<string>poi_audio_2</string>
+					<string>poi_audio_Corona</string>
 					<key>PersonName</key>
 					<string>Doris Ramirez</string>
 					<key>AboutHTMLFile</key>
-					<string>centralPark-2.html</string>
+					<string>Text-Corona.html</string>
 					<key>FactsHTMLFile</key>
-					<string>centralPark-2.html</string>
+					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
 							<key>Image</key>
-							<string>gallery-tiffany-1</string>
+							<string>poi_gallery_Corona_1</string>
 							<key>Caption</key>
 							<string>View inside of Tiffany Studios in 43rd Avenue and 97th Place in Corona, Queens circa 1910. The glass workshops of Louis Comfort Tiffany were renowed for their experimentation with glass pigments and related media.</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>poi_gallery_Corona_2</string>
+							<key>Caption</key>
+							<string>Lorem ipsum dolor est</string>
+						</dict>
+						<dict>
+							<key>Image</key>
+							<string>poi_gallery_Corona_3</string>
+							<key>Caption</key>
+							<string>Lorem ipsum dolor est</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Index</key>
+					<integer>4</integer>
+					<key>Label</key>
+					<string>Woodside</string>
+					<key>Borough</key>
+					<string>Queens</string>
+					<key>Image</key>
+					<string>poi_portrait_Woodside</string>
+					<key>Audio</key>
+					<string>poi_audio_Woodside</string>
+					<key>PersonName</key>
+					<string>Raji Pokhrel</string>
+					<key>AboutHTMLFile</key>
+					<string>Text-Woodside.html</string>
+					<key>FactsHTMLFile</key>
+					<string></string>
+					<key>Gallery</key>
+					<array>
+						<dict>
+							<key>Image</key>
+							<string>poi_gallery_Woodside_1</string>
+							<key>Caption</key>
+							<string>Lorem ipsum</string>
 						</dict>
 					</array>
 				</dict>

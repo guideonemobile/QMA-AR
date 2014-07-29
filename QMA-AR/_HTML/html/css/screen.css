@@ -5,29 +5,26 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Helvetica Neue";
-	font-size: 15px;
-	color: #4e4e4e;
+	font-family: "Avenir";
+	font-size: 17px;
+	color: #1f1f1f;
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-text-size-adjust: none;
     height: 100%;
-    background-image: url('../img/background.jpg');
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 h1 {
-	font-size: 18px;
+	font-size: 23px;
 	margin: 0;
 	padding: 0;
-	color: #000;
 }
 
 #main {
 	display: block;
     position: fixed;
-    padding-right: 15px;
+    width:465px;
+    padding-left: 72px;
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
@@ -38,6 +35,10 @@ h1 {
         rgba(0, 0, 0, 0) 100%);
 }
 
+.caption{
+	color: #555555;
+	font-size: 15px;
+}
 a {
 	text-decoration: none;
 	color: #006cb8;
@@ -48,26 +49,7 @@ a {
 	margin: 30px 0 30px 0;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background-image: url('../img/background@2x.jpg');
-        -webkit-background-size: 523px 595px;
-    }
-}
 
-.icon{
-	float: left;
-	margin-right: 20px;
-	margin-top: 18px;
-	margin-bottom: 25px;
-}
-.video-thumb{
-	float: left;
-	margin-right: 15px;
-	margin-top: 10px;
-	margin-bottom: 8px;
-}
 
-.floated{
-	float: left;
-}
+
+
