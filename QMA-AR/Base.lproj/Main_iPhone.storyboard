@@ -226,6 +226,7 @@
                         <outlet property="menuContainerView" destination="1lf-IH-0VI" id="C7M-hk-kAx"/>
                         <segue destination="oXQ-An-EjX" kind="modal" identifier="SegueToPoiDisplayVC" modalTransitionStyle="crossDissolve" id="ehe-Wt-CZJ"/>
                         <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebView" modalTransitionStyle="coverVertical" id="rBW-TL-Jvt"/>
+                        <segue destination="ZOt-hc-YMM" kind="modal" identifier="SegueToShareVC" modalTransitionStyle="coverVertical" id="RsT-qE-7O6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wi-Qf-7ST" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -913,11 +914,44 @@
             </objects>
             <point key="canvasLocation" x="519" y="391"/>
         </scene>
+        <!--ShareVC-->
+        <scene sceneID="Diw-hB-CBP">
+            <objects>
+                <viewController id="ZOt-hc-YMM" customClass="QMAShareVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="du6-1I-FYx">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="015-C7-61h" userLabel="Button - Close">
+                                <rect key="frame" x="0.0" y="5" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-close-black">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToCloseVC:" destination="ZOt-hc-YMM" eventType="touchUpInside" id="jQj-93-Uzi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Share-Review" id="gRe-wv-HgX">
+                                <rect key="frame" x="67" y="55" width="434" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNA-MG-qAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="-491"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AR-scrim" width="568" height="320"/>
         <image name="HowTo-NotThere" width="568" height="320"/>
         <image name="HowTo-There" width="568" height="320"/>
+        <image name="Share-Review" width="434" height="209"/>
         <image name="button_about_highlighted" width="90" height="30"/>
         <image name="button_close_highlighted" width="90" height="30"/>
         <image name="button_next_default" width="90" height="30"/>
@@ -939,7 +973,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Boz-Xj-04g"/>
         <segue reference="QrI-Lm-8Pj"/>
+        <segue reference="rBW-TL-Jvt"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -231,7 +231,7 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
 
 - (void)qmaMenuDidTapToShareReview:(QMAMenuTBVC *)qmaMenu {
     _menuSelection = MenuSelectionStateShareReview;
-    [self performSegueWithIdentifier:@"SegueToWebView" sender:self];
+    [self performSegueWithIdentifier:@"SegueToShareVC" sender:self];
 }
 
 - (void)qmaMenuDidTapToViewCredits:(QMAMenuTBVC *)qmaMenu {
