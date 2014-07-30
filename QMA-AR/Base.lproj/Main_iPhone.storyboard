@@ -395,77 +395,6 @@
             </objects>
             <point key="canvasLocation" x="-807" y="198"/>
         </scene>
-        <!--Off SiteVC-->
-        <scene sceneID="jAq-Ka-Riq">
-            <objects>
-                <viewController storyboardIdentifier="OffSiteViewController" id="BgA-9E-487" customClass="QMAOffSiteVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eh2-1O-ShJ">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="1kC-wl-Gep">
-                                <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT THE PANORAMA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xG2-6i-1lh">
-                                        <rect key="frame" x="45" y="126" width="194" height="68"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
-                                        <color key="textColor" red="0.16862745579999999" green="0.16862745579999999" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="xc8-t0-O31" userLabel="Invisible Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapToSeeAboutPanorama:" destination="BgA-9E-487" eventType="touchUpInside" id="Wyd-Jr-oRP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.91372555494308472" green="0.91372555494308472" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="BAo-G9-FiU">
-                                <rect key="frame" x="284" y="0.0" width="284" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS OF INTEREST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZI-kW-NW4">
-                                        <rect key="frame" x="45" y="126" width="194" height="68"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="I91-WX-gko" userLabel="Invisible Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapToSeePanorama:" destination="BgA-9E-487" eventType="touchUpInside" id="0XF-Yl-RxL"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0aU-dL-pwl"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebViewVC" modalTransitionStyle="coverVertical" id="6TZ-j9-ctu"/>
-                        <segue destination="Ye8-4l-Anl" kind="push" identifier="SegueToInstructionsVC" id="Tgk-NP-Jx4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ES-J6-fBE" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="519" y="391"/>
-        </scene>
         <!--On SiteVC-->
         <scene sceneID="52L-9T-cfa">
             <objects>
@@ -895,6 +824,95 @@
             </objects>
             <point key="canvasLocation" x="1234" y="391"/>
         </scene>
+        <!--Off SiteVC-->
+        <scene sceneID="nBh-gi-uEl">
+            <objects>
+                <viewController storyboardIdentifier="OffSiteViewController" id="UwL-um-we8" customClass="QMAOffSiteVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPj-G8-LrS">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bXt-ZI-Moi">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT THE PANORAMA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iMH-ah-qT7">
+                                        <rect key="frame" x="45" y="126" width="194" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
+                                        <color key="textColor" red="0.16862745579999999" green="0.16862745579999999" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="DyE-OQ-EKA" userLabel="Invisible Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapToSeeAboutPanorama:" destination="UwL-um-we8" eventType="touchUpInside" id="Gi3-38-lxO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372555489999996" green="0.91372555489999996" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="3fl-u2-8sN">
+                                <rect key="frame" x="284" y="0.0" width="284" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="OtU-CO-cOr" userLabel="Live Camera Feed">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="CZN-qp-jQL" userLabel="Toolbar for Blur">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items/>
+                                    </toolbar>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PANO CAM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLw-aE-G87">
+                                        <rect key="frame" x="93" y="126" width="99" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="rKc-I0-uBg">
+                                        <rect key="frame" x="124" y="141" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Bk4-Su-KaD" userLabel="Invisible Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapToSeePanorama:" destination="UwL-um-we8" eventType="touchUpInside" id="O8B-Fo-N5x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5xP-KJ-ZBh"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="arLabel" destination="cLw-aE-G87" id="ova-ec-Zjl"/>
+                        <outlet property="cameraFeedView" destination="OtU-CO-cOr" id="bI2-ib-F1W"/>
+                        <outlet property="spinner" destination="rKc-I0-uBg" id="NgI-Qf-4Cf"/>
+                        <outlet property="toolbar" destination="CZN-qp-jQL" id="mLz-tf-cyo"/>
+                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebViewVC" modalTransitionStyle="coverVertical" id="Boz-Xj-04g"/>
+                        <segue destination="Ye8-4l-Anl" kind="push" identifier="SegueToInstructionsVC" id="a7R-LP-Eyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIh-ee-hMP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="391"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AR-scrim" width="568" height="320"/>
@@ -921,7 +939,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Boz-Xj-04g"/>
         <segue reference="QrI-Lm-8Pj"/>
-        <segue reference="6TZ-j9-ctu"/>
     </inferredMetricsTieBreakers>
 </document>
