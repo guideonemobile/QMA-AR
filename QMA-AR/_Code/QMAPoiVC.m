@@ -58,7 +58,7 @@
     self.mainImageView.image = [UIImage imageNamed:self.poi.image];
  
     self.poiLabel.text = self.poi.label;
-    self.boroughLabel.text = self.poi.borough;
+    self.boroughLabel.text = [self.poi.borough uppercaseString];
     self.personNameLabel.text = self.poi.personName;
     
     self.progressView.roundedCorners = NO;
