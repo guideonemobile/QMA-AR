@@ -23,8 +23,6 @@
 					<string>Sandra Davila</string>
 					<key>AboutHTMLFile</key>
 					<string>Text-Williamsburg.html</string>
-					<key>FactsHTMLFile</key>
-					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -56,8 +54,6 @@
 					<string>Tattfoo Tan</string>
 					<key>AboutHTMLFile</key>
 					<string>Text-Tompkinsville.html</string>
-					<key>FactsHTMLFile</key>
-					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -89,8 +85,6 @@
 					<string>Renzo Ortega</string>
 					<key>AboutHTMLFile</key>
 					<string>Text-JacksonHeights.html</string>
-					<key>FactsHTMLFile</key>
-					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -122,8 +116,6 @@
 					<string>Doris Ramirez</string>
 					<key>AboutHTMLFile</key>
 					<string>Text-Corona.html</string>
-					<key>FactsHTMLFile</key>
-					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>
@@ -161,8 +153,6 @@
 					<string>Raji Pokhrel</string>
 					<key>AboutHTMLFile</key>
 					<string>Text-Woodside.html</string>
-					<key>FactsHTMLFile</key>
-					<string></string>
 					<key>Gallery</key>
 					<array>
 						<dict>

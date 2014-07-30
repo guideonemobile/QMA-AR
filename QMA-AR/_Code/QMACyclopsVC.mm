@@ -190,10 +190,8 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         //CGSize size = self.menuContainerView.frame.size;
-                         //self.menuContainerView.frame = CGRectMake(0, -size.height, size.width, size.height);
                          CGSize size = self.menuContainerView.frame.size;
-                         self.glView.frame = CGRectMake(0, 0, self.view.frame.size.width, size.height);
+                         self.menuContainerView.frame = CGRectMake(-size.width, 0, size.width, size.height);
                      }
                      completion:^(BOOL finished) {
                      }
@@ -205,10 +203,8 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         //CGSize size = self.menuContainerView.frame.size;
-                         //self.menuContainerView.frame = CGRectMake(0, 0, size.width, size.height);
                          CGSize size = self.menuContainerView.frame.size;
-                         self.glView.frame = CGRectMake(size.width, 0, self.view.frame.size.width-size.width, size.height);
+                         self.menuContainerView.frame = CGRectMake(0, 0, size.width, size.height);
                      }
                      completion:^(BOOL finished) {
                      }

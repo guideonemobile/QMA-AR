@@ -17,7 +17,6 @@
            andPersonName:(NSString *)personName
          andGalleryItems:(NSArray *)galleryItems
         andAboutHTMLFile:(NSString *)aboutHTMLFileName
-        andFactsHTMLFile:(NSString *)factsHTMLFileName
                forTarget:(QMATarget *)target
   inManagedObjectContext:(NSManagedObjectContext *)moc;
 

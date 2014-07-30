@@ -131,7 +131,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LKQ-Rw-Ur7" userLabel="Button - Close">
                                 <rect key="frame" x="21" y="18" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_close_default">
+                                <state key="normal" image="button_close_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="button_close_highlighted"/>
@@ -182,6 +182,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="D4E-RA-ifz" userLabel="EAGLView" customClass="EAGLView">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <containerView contentMode="scaleToFill" id="1lf-IH-0VI" userLabel="Container View - Menu">
                                 <rect key="frame" x="0.0" y="0.0" width="185" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
@@ -190,11 +195,6 @@
                                     <segue destination="VAC-gm-Owl" kind="embed" id="3Yl-eY-gs3"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" id="D4E-RA-ifz" userLabel="EAGLView" customClass="EAGLView">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
                             <containerView contentMode="scaleToFill" id="xbS-8h-vb7" userLabel="Container View - POI TBVC">
                                 <rect key="frame" x="416" y="0.0" width="152" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wwK-ks-QYk">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="5" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-menu-white">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -241,12 +241,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" id="D4G-aW-qMw">
-                                <rect key="frame" x="57" y="0.0" width="511" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2Ph-q8-9w9" userLabel="Button - Close">
-                                <rect key="frame" x="9" y="18" width="40" height="40"/>
+                                <rect key="frame" x="14" y="19" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -338,7 +338,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="O7h-M0-Y4P" userLabel="Button About">
                                 <rect key="frame" x="458" y="219" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_about_default">
+                                <state key="normal" image="button_about_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="button_about_highlighted"/>
@@ -349,7 +349,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="G8n-8Z-AEa" userLabel="Button - Gallery">
                                 <rect key="frame" x="458" y="271" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_photos_default">
+                                <state key="normal" image="button_photos_highlighted">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="button_photos_highlighted"/>
@@ -553,7 +553,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ssj-XF-qCR" userLabel="Button - Close">
-                                <rect key="frame" x="9" y="18" width="40" height="40"/>
+                                <rect key="frame" x="14" y="19" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -622,7 +622,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="VYc-sS-rSt">
-                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <rect key="frame" x="0.0" y="5" width="40" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="icon-close-black">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -757,7 +757,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="OxO-7P-hN6" userLabel="Button - Close">
-                                <rect key="frame" x="9" y="4" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="5" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-close-black">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -782,13 +782,10 @@
     </scenes>
     <resources>
         <image name="AR-scrim" width="568" height="320"/>
-        <image name="button_about_default" width="90" height="30"/>
         <image name="button_about_highlighted" width="90" height="30"/>
-        <image name="button_close_default" width="90" height="30"/>
         <image name="button_close_highlighted" width="90" height="30"/>
         <image name="button_next_default" width="90" height="30"/>
         <image name="button_next_highlighted" width="90" height="30"/>
-        <image name="button_photos_default" width="90" height="30"/>
         <image name="button_photos_highlighted" width="90" height="30"/>
         <image name="caption-gradient" width="568" height="47"/>
         <image name="icon-chevron-big-left" width="12" height="29"/>
@@ -806,6 +803,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GQs-ag-MuK"/>
+        <segue reference="rBW-TL-Jvt"/>
     </inferredMetricsTieBreakers>
 </document>
