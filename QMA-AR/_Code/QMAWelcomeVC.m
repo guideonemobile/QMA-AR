@@ -75,7 +75,7 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     UIViewController *vc;
-    if (YES || distanceFromMuseum < maxDistanceFromMuseum) {
+    if (distanceFromMuseum < maxDistanceFromMuseum) {
         vc = [storyboard instantiateViewControllerWithIdentifier:@"OnSiteViewController"];
     } else {
         vc = [storyboard instantiateViewControllerWithIdentifier:@"OffSiteViewController"];

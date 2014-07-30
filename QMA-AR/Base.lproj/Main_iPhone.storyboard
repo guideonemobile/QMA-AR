@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="198"/>
+            <point key="canvasLocation" x="-125" y="198"/>
         </scene>
         <!--PoiTBVC-->
         <scene sceneID="XkJ-tp-fht">
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFR-eW-nRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006" y="-39"/>
+            <point key="canvasLocation" x="2844" y="-39"/>
         </scene>
         <!--CyclopsVC-->
         <scene sceneID="c3m-wv-mEF">
@@ -266,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mf3-eQ-ymI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789" y="144"/>
+            <point key="canvasLocation" x="3627" y="144"/>
         </scene>
         <!--PoiVC-->
         <scene sceneID="BRR-U2-pBJ">
@@ -374,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wx5-9p-JDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006" y="371"/>
+            <point key="canvasLocation" x="2844" y="371"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XKv-yt-COU">
@@ -393,12 +393,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtn-nk-V1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="198"/>
+            <point key="canvasLocation" x="-807" y="198"/>
         </scene>
-        <!--View Controller-->
+        <!--Off SiteVC-->
         <scene sceneID="jAq-Ka-Riq">
             <objects>
-                <viewController storyboardIdentifier="OffSiteViewController" id="BgA-9E-487" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OffSiteViewController" id="BgA-9E-487" customClass="QMAOffSiteVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eh2-1O-ShJ">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -414,6 +414,16 @@
                                         <color key="textColor" red="0.16862745579999999" green="0.16862745579999999" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="xc8-t0-O31" userLabel="Invisible Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapToSeeAboutPanorama:" destination="BgA-9E-487" eventType="touchUpInside" id="Wyd-Jr-oRP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.91372555494308472" green="0.91372555494308472" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
                             </view>
@@ -428,6 +438,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="I91-WX-gko" userLabel="Invisible Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapToSeePanorama:" destination="BgA-9E-487" eventType="touchUpInside" id="0XF-Yl-RxL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                             </view>
@@ -437,10 +457,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="0aU-dL-pwl"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebViewVC" modalTransitionStyle="coverVertical" id="6TZ-j9-ctu"/>
+                        <segue destination="Ye8-4l-Anl" kind="push" identifier="SegueToInstructionsVC" id="Tgk-NP-Jx4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ES-J6-fBE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="391"/>
+            <point key="canvasLocation" x="519" y="391"/>
         </scene>
         <!--On SiteVC-->
         <scene sceneID="52L-9T-cfa">
@@ -523,13 +547,13 @@
                         <outlet property="cameraFeedView" destination="wZZ-nD-yYk" id="DRF-cJ-3Pb"/>
                         <outlet property="spinner" destination="ZML-D3-XKs" id="ImB-F2-Elo"/>
                         <outlet property="toolbar" destination="yan-vI-klf" id="nhe-YA-EV9"/>
-                        <segue destination="89o-2V-KNI" kind="push" identifier="SegueToPanoramaVC" id="cna-Wd-yif"/>
-                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebView" modalTransitionStyle="coverVertical" id="GQs-ag-MuK"/>
+                        <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebViewVC" modalTransitionStyle="coverVertical" id="GQs-ag-MuK"/>
+                        <segue destination="R5c-xP-QUv" kind="push" identifier="SegueToInstructionsVC" id="oV3-h1-fj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpf-Gn-OjH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="-39"/>
+            <point key="canvasLocation" x="519" y="-39"/>
         </scene>
         <!--GalleryVC-->
         <scene sceneID="s4a-O0-3z6">
@@ -606,7 +630,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzF-lx-Iig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789" y="554"/>
+            <point key="canvasLocation" x="3627" y="554"/>
+        </scene>
+        <!--InstructionsVC-->
+        <scene sceneID="TDF-e3-ioS">
+            <objects>
+                <viewController id="R5c-xP-QUv" customClass="QMAInstructionsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g32-EG-HSq">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="VvC-r1-Cxk" userLabel="Live Camera Feed">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowTo-There" id="ib7-Mi-zhY">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1yv-Pg-7Wg" userLabel="Invisible Button">
+                                <rect key="frame" x="242" y="215" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="89o-2V-KNI" kind="push" id="Klx-9m-sgA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tJg-Wo-JdN"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="cameraFeedView" destination="VvC-r1-Cxk" id="A92-gU-RhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QqL-VT-0AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="-39"/>
         </scene>
         <!--MenuTBVC-->
         <scene sceneID="4YN-Ni-CUN">
@@ -777,11 +842,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osw-fo-SEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2055" y="-541"/>
+            <point key="canvasLocation" x="2055" y="-491"/>
+        </scene>
+        <!--InstructionsVC-->
+        <scene sceneID="94p-oK-eQt">
+            <objects>
+                <viewController id="Ye8-4l-Anl" customClass="QMAInstructionsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aQu-fl-MYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="YNS-BM-RXq" userLabel="Live Camera Feed">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowTo-NotThere" id="gWd-Bj-oa9">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mk1-Zt-cpQ" userLabel="Invisible Button - Open URL">
+                                <rect key="frame" x="176" y="125" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToSeeWebSite:" destination="Ye8-4l-Anl" eventType="touchUpInside" id="8sS-7o-UPo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qxz-vN-Cyn" userLabel="Invisible Button - Got It">
+                                <rect key="frame" x="242" y="225" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="89o-2V-KNI" kind="push" id="QrI-Lm-8Pj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ozj-KN-vKk"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="cameraFeedView" destination="YNS-BM-RXq" id="hY6-Ma-QsV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcL-lX-rf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="391"/>
         </scene>
     </scenes>
     <resources>
         <image name="AR-scrim" width="568" height="320"/>
+        <image name="HowTo-NotThere" width="568" height="320"/>
+        <image name="HowTo-There" width="568" height="320"/>
         <image name="button_about_highlighted" width="90" height="30"/>
         <image name="button_close_highlighted" width="90" height="30"/>
         <image name="button_next_default" width="90" height="30"/>
@@ -803,6 +921,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rBW-TL-Jvt"/>
+        <segue reference="QrI-Lm-8Pj"/>
+        <segue reference="6TZ-j9-ctu"/>
     </inferredMetricsTieBreakers>
 </document>

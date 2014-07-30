@@ -40,6 +40,8 @@
 		250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D946C192EAE9F0034BB78 /* QMACoreDataTBVC.m */; };
 		250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D946F192EAF470034BB78 /* QMAPoiTBVC.m */; };
 		251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 251293FA192EA5A0002585A3 /* QMA.xcdatamodeld */; };
+		251BEA811989530700C53FD8 /* QMAInstructionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BEA801989530700C53FD8 /* QMAInstructionsVC.m */; };
+		251BEA85198962E300C53FD8 /* QMAOffSiteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BEA84198962E300C53FD8 /* QMAOffSiteVC.m */; };
 		251CC03D18E72B7C002FDA84 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 251CC03C18E72B7C002FDA84 /* Assets */; };
 		251CC03F18E72F56002FDA84 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC03E18E72F56002FDA84 /* EventKit.framework */; };
 		251CC04118E72F7D002FDA84 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251CC04018E72F7D002FDA84 /* MediaPlayer.framework */; };
@@ -116,6 +118,10 @@
 		250D946E192EAF470034BB78 /* QMAPoiTBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiTBVC.h; path = _Code/QMAPoiTBVC.h; sourceTree = "<group>"; };
 		250D946F192EAF470034BB78 /* QMAPoiTBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiTBVC.m; path = _Code/QMAPoiTBVC.m; sourceTree = "<group>"; };
 		251293FB192EA5A0002585A3 /* QMA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QMA.xcdatamodel; sourceTree = "<group>"; };
+		251BEA7F1989530700C53FD8 /* QMAInstructionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAInstructionsVC.h; path = _Code/QMAInstructionsVC.h; sourceTree = "<group>"; };
+		251BEA801989530700C53FD8 /* QMAInstructionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAInstructionsVC.m; path = _Code/QMAInstructionsVC.m; sourceTree = "<group>"; };
+		251BEA83198962E300C53FD8 /* QMAOffSiteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAOffSiteVC.h; path = _Code/QMAOffSiteVC.h; sourceTree = "<group>"; };
+		251BEA84198962E300C53FD8 /* QMAOffSiteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAOffSiteVC.m; path = _Code/QMAOffSiteVC.m; sourceTree = "<group>"; };
 		251CC03C18E72B7C002FDA84 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		251CC03E18E72F56002FDA84 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		251CC04018E72F7D002FDA84 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -268,6 +274,9 @@
 				041B0B461896A7E70061A3E2 /* QMAWelcomeVC.h */,
 				041B0B471896A7E70061A3E2 /* QMAWelcomeVC.m */,
 				25282804192EC3CD00969CC6 /* On Site */,
+				251BEA82198960F400C53FD8 /* Off Site */,
+				251BEA7F1989530700C53FD8 /* QMAInstructionsVC.h */,
+				251BEA801989530700C53FD8 /* QMAInstructionsVC.m */,
 				2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */,
 				2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */,
 				25D23F14193D585100A9BCD5 /* QMAPoiVC.h */,
@@ -321,6 +330,15 @@
 				25EEEDD7193F593E00F9727F /* QMAGalleryItem+Create.m */,
 			);
 			name = Database;
+			sourceTree = "<group>";
+		};
+		251BEA82198960F400C53FD8 /* Off Site */ = {
+			isa = PBXGroup;
+			children = (
+				251BEA83198962E300C53FD8 /* QMAOffSiteVC.h */,
+				251BEA84198962E300C53FD8 /* QMAOffSiteVC.m */,
+			);
+			name = "Off Site";
 			sourceTree = "<group>";
 		};
 		252291FD193E2C0A00928717 /* Audio */ = {
@@ -512,6 +530,7 @@
 				2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */,
 				25EEEDE61940F17300F9727F /* QMAMenuTBVC.m in Sources */,
 				250D945F192EA9490034BB78 /* QMATarget+Create.m in Sources */,
+				251BEA85198962E300C53FD8 /* QMAOffSiteVC.m in Sources */,
 				041B0B1A1896A2200061A3E2 /* main.m in Sources */,
 				250D9470192EAF470034BB78 /* QMAPoiTBVC.m in Sources */,
 				250D9459192EA8C00034BB78 /* QMATarget.m in Sources */,
@@ -523,6 +542,7 @@
 				25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,
+				251BEA811989530700C53FD8 /* QMAInstructionsVC.m in Sources */,
 				250AD0E718D0F9FE0072D718 /* MetaioSDKViewController.mm in Sources */,
 				250D946D192EAE9F0034BB78 /* QMACoreDataTBVC.m in Sources */,
 				251293FC192EA5A0002585A3 /* QMA.xcdatamodeld in Sources */,

@@ -1,16 +1,11 @@
 
-#import "QMAOnSiteVC.h"
-#import "QMAWebViewController.h"
+#import "QMAInstructionsVC.h"
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface QMAOnSiteVC ()
+@interface QMAInstructionsVC ()
 
 @property (nonatomic, weak) IBOutlet UIView *cameraFeedView;
-@property (nonatomic, weak) IBOutlet UIToolbar *toolbar; //Used for blur effect
-@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
-@property (nonatomic, weak) IBOutlet UILabel *arLabel;
-@property (nonatomic, strong) NSString *arLabelString;
 
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *cvpl;
@@ -18,7 +13,7 @@
 @end
 
 
-@implementation QMAOnSiteVC {
+@implementation QMAInstructionsVC {
     
     BOOL _initialized;
     
@@ -34,14 +29,6 @@
 
 #pragma mark - View Controller Lifecycle
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.arLabelString = self.arLabel.text;
-    self.arLabel.text = @"";
-    self.arLabel.textColor = [UIColor whiteColor];
-    //QMALog(@"%@", self.navigationController.viewControllers);
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
@@ -50,7 +37,6 @@
         _initialized = YES;
         [self initializeCamera];
     }
-    self.toolbar.frame = self.cameraFeedView.frame;
     
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -111,47 +97,23 @@
     }
 }
 
-- (void)startCameraFeed {
-    
+- (void)startCameraFeed {    
     [self adjustVideoOrientation];
     [self.session startRunning];
-    
-    self.arLabel.text = self.arLabelString;
-    [self.spinner stopAnimating];
-}
-
-#pragma mark - Target Action
-
-- (IBAction)didTapToSeeAboutPanorama:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"SegueToWebViewVC" sender:self];
-}
-
-- (IBAction)didTapToSeePanorama:(UIButton *)sender {
-    self.arLabel.text = @"";
-    [self.spinner startAnimating];
-    //AVCaptureSession's stopRunning is synchronous and takes a long time to run.
-    //Without dispatching it to run in the background, it would block the UI for a couple of seconds
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self.session stopRunning];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.spinner stopAnimating];
-            [self performSegueWithIdentifier:@"SegueToInstructionsVC" sender:self];
-        });
-    });
 }
 
 #pragma mark - Segue
 
-static NSString *const kAboutThePanoramaHTMLFile = @"About.html";
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {
-        [(id)segue.destinationViewController setManagedDocument:self.managedDocument];
-    }
-    if ([segue.destinationViewController isKindOfClass:[QMAWebViewController class]]) {
-        QMAWebViewController *dVC = (QMAWebViewController *) segue.destinationViewController;
-        dVC.htmlFileName = kAboutThePanoramaHTMLFile;
-    }
+    [self.session stopRunning];
+}
+
+#pragma mark - Target Action
+
+static NSString *const kQMAURL = @"http://www.queensmuseum.org/pano";
+
+- (IBAction)didTapToSeeWebSite:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kQMAURL]];
 }
 
 @end
