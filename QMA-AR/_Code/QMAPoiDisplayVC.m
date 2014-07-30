@@ -120,7 +120,7 @@
 
 - (IBAction)didTapToClose:(UIButton *)sender {
     [self stopAllAudio];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 - (void)stopAllAudio {

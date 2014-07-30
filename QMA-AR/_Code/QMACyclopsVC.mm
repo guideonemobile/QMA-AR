@@ -341,7 +341,7 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
             QMALog(@"No target with Index number '%@' for target %@", poiNum, target);
         } else {
             _selectedPOI = [matches firstObject];
-            [self performSegueWithIdentifier:@"SegueToPoiDisplay" sender:self];
+            [self performSegueWithIdentifier:@"SegueToPoiDisplayVC" sender:self];
         }
         
     } else {
@@ -355,7 +355,7 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
 
 - (void)qmaPoiTBC:(QMAPoiTBVC *)qmaPoiTBC didSelectPOI:(QMAPoi *)poi {
     _selectedPOI = poi;
-    [self performSegueWithIdentifier:@"SegueToPoiDisplay" sender:self];
+    [self performSegueWithIdentifier:@"SegueToPoiDisplayVC" sender:self];
 }
 
 @end

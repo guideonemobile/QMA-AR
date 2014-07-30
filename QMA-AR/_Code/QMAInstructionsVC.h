@@ -4,4 +4,6 @@
 
 @interface QMAInstructionsVC : UIViewController
 
+@property (nonatomic, strong) UIManagedDocument *managedDocument;
+
 @end

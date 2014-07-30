@@ -106,6 +106,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [self.session stopRunning];
+    if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {
+        [(id)segue.destinationViewController setManagedDocument:self.managedDocument];
+    }
 }
 
 #pragma mark - Target Action

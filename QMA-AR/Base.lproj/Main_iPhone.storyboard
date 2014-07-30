@@ -224,7 +224,7 @@
                         <outlet property="m_arelWebView" destination="5GG-dI-ef7" id="czN-75-CMK"/>
                         <outlet property="menuButton" destination="wwK-ks-QYk" id="V0n-uk-xiJ"/>
                         <outlet property="menuContainerView" destination="1lf-IH-0VI" id="C7M-hk-kAx"/>
-                        <segue destination="oXQ-An-EjX" kind="push" identifier="SegueToPoiDisplay" id="ehe-Wt-CZJ"/>
+                        <segue destination="oXQ-An-EjX" kind="modal" identifier="SegueToPoiDisplayVC" modalTransitionStyle="crossDissolve" id="ehe-Wt-CZJ"/>
                         <segue destination="StB-NR-djp" kind="modal" identifier="SegueToWebView" modalTransitionStyle="coverVertical" id="rBW-TL-Jvt"/>
                     </connections>
                 </viewController>
