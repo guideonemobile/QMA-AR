@@ -19,7 +19,7 @@
 
 static const CLLocationDegrees qmaLat =  40.746154;
 static const CLLocationDegrees qmaLon = -73.846539;
-static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equivalent to 0.2 miles). If user is farther away from the museum, we consider her to he off-site
+static const NSUInteger maxDistanceFromMuseum = 999320; //In meters (this is equivalent to 0.2 miles). If user is farther away from the museum, we consider her to he off-site
 
 
 @implementation QMAWelcomeVC
