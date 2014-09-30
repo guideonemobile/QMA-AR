@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <results trackingurl="html/resources/TrackingData.zip">
-  <arel><![CDATA[html/index.html?88d1b64904dbc81d48d2d5ea720a9cda]]></arel>
-  <object id="image3">
-    <title><![CDATA[1-GeneralB]]></title>
+  <arel><![CDATA[html/index.html]]></arel>
+  <object id="model2">
+    <title><![CDATA[qma4]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/b0e496f8e43c5a76d38c6e4b1703b54a/b0e496f8e43c5a76d38c6e4b1703b54a.zip]]></model>
+      <model><![CDATA[html/resources/e00e1fdfc7d9f8bbf206391d7202e8b8/e00e1fdfc7d9f8bbf206391d7202e8b8.zip]]></model>
       <transform>
         <translation>
-          <x>-66.1774368286</x>
-          <y>1861.7159423828</y>
-          <z>1.0</z>
+          <x>-165.8646545410</x>
+          <y>0.0000000000</y>
+          <z>70.5092315674</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>59.123500824</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>2.9998500347</x>
-          <y>2.9998500347</y>
-          <z>2.9998500347</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -32,25 +32,118 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image5">
-    <title><![CDATA[2-Staten]]></title>
+  <object id="model3">
+    <title><![CDATA[qma4]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/83c1258d4c37484cfcc33ffd0276fa44/83c1258d4c37484cfcc33ffd0276fa44.zip]]></model>
+      <model><![CDATA[html/resources/e00e1fdfc7d9f8bbf206391d7202e8b8/e00e1fdfc7d9f8bbf206391d7202e8b8.zip]]></model>
       <transform>
         <translation>
-          <x>-125.6368408203</x>
-          <y>61.558757782</y>
-          <z>-1.0</z>
+          <x>-66.1011047363</x>
+          <y>0.0000000000</y>
+          <z>158.8270416260</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>163.7647705078</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>2.4991595745</x>
-          <y>2.4991595745</y>
-          <z>2.4991595745</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>1</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model4">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/e00e1fdfc7d9f8bbf206391d7202e8b8/e00e1fdfc7d9f8bbf206391d7202e8b8.zip]]></model>
+      <transform>
+        <translation>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>49.4317474365</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>1</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model5">
+    <title><![CDATA[qma4]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/e00e1fdfc7d9f8bbf206391d7202e8b8/e00e1fdfc7d9f8bbf206391d7202e8b8.zip]]></model>
+      <transform>
+        <translation>
+          <x>146.3963470459</x>
+          <y>0.0000000000</y>
+          <z>150.4229278564</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
+        </scale>
+      </transform>
+      <properties>
+        <coordinatesystemid>1</coordinatesystemid>
+      </properties>
+    </assets3d>
+    <viewparameters>
+      <visibility>
+        <liveview>false</liveview>
+      </visibility>
+    </viewparameters>
+  </object>
+  <object id="model10">
+    <title><![CDATA[qma5]]></title>
+    <assets3d>
+      <model><![CDATA[html/resources/609e0d07fbd06c1b6876c8bf72005e50/609e0d07fbd06c1b6876c8bf72005e50.zip]]></model>
+      <transform>
+        <translation>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>1.0000000000</z>
+        </translation>
+        <rotation type="eulerdeg">
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
+        </rotation>
+        <scale>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -63,180 +156,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image20">
-    <title><![CDATA[Verrazano]]></title>
+  <object id="model13">
+    <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/a21fbf742054d33ae14a1515dfb56385/a21fbf742054d33ae14a1515dfb56385.zip]]></model>
+      <model><![CDATA[html/resources/609e0d07fbd06c1b6876c8bf72005e50/609e0d07fbd06c1b6876c8bf72005e50.zip]]></model>
       <transform>
         <translation>
-          <x>176.212310791</x>
-          <y>736.7857666016</y>
-          <z>2.0000038147</z>
+          <x>-63.9024658203</x>
+          <y>136.3447875977</y>
+          <z>12.9835815430</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image21">
-    <title><![CDATA[GeorgeTerminal]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/37cf190fafde49979e006f7e31ca2c41/37cf190fafde49979e006f7e31ca2c41.zip]]></model>
-      <transform>
-        <translation>
-          <x>-355.9030761719</x>
-          <y>822.2418823242</y>
-          <z>2.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image22">
-    <title><![CDATA[ConeyIsland]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/69d2b53a8df30938867cc57bab887028/69d2b53a8df30938867cc57bab887028.zip]]></model>
-      <transform>
-        <translation>
-          <x>345.8826293945</x>
-          <y>887.6616821289</y>
-          <z>2.0000007153</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>2.3323099613</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image23">
-    <title><![CDATA[Brooklyn]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/f3bb99028a8fefb46cb66c9653762099/f3bb99028a8fefb46cb66c9653762099.zip]]></model>
-      <transform>
-        <translation>
-          <x>140.2946929932</x>
-          <y>1087.9176025391</y>
-          <z>100.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0000152588</x>
-          <y>0.0000079041</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image24">
-    <title><![CDATA[StatenIsland]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/b6ef89c6f10e34166d38a4fc7bf0309a/b6ef89c6f10e34166d38a4fc7bf0309a.zip]]></model>
-      <transform>
-        <translation>
-          <x>-74.1049194336</x>
-          <y>234.0735778809</y>
-          <z>100.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0000305176</x>
-          <y>0.0000110991</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image25">
-    <title><![CDATA[Brooklyn]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/f3bb99028a8fefb46cb66c9653762099/f3bb99028a8fefb46cb66c9653762099.zip]]></model>
-      <transform>
-        <translation>
-          <x>-686.6331176758</x>
-          <y>147.5628051758</y>
-          <z>100.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0000228882</x>
-          <y>0.0000068302</y>
-          <z>26.5253639221</z>
-        </rotation>
-        <scale>
-          <x>0.8500000238</x>
-          <y>0.8500000238</y>
-          <z>0.8500000238</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -249,25 +187,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image26">
-    <title><![CDATA[StatenIsland]]></title>
+  <object id="model14">
+    <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/b6ef89c6f10e34166d38a4fc7bf0309a/b6ef89c6f10e34166d38a4fc7bf0309a.zip]]></model>
+      <model><![CDATA[html/resources/609e0d07fbd06c1b6876c8bf72005e50/609e0d07fbd06c1b6876c8bf72005e50.zip]]></model>
       <transform>
         <translation>
-          <x>600.1722412109</x>
-          <y>359.373046875</y>
-          <z>100.0000152588</z>
+          <x>-241.5579833984</x>
+          <y>0.0000000000</y>
+          <z>1.0000000000</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>90.0000305176</x>
-          <y>0.0000104587</y>
-          <z>-4.6648449898</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.8500000238</x>
-          <y>0.8500000238</y>
-          <z>0.8500000238</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -280,25 +218,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image28">
-    <title><![CDATA[LowerNYBay]]></title>
+  <object id="model15">
+    <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/74e2e9bd1d150366f1c4e32fdce615d9/74e2e9bd1d150366f1c4e32fdce615d9.zip]]></model>
+      <model><![CDATA[html/resources/609e0d07fbd06c1b6876c8bf72005e50/609e0d07fbd06c1b6876c8bf72005e50.zip]]></model>
       <transform>
         <translation>
-          <x>-10.4762954712</x>
-          <y>708.2438964844</y>
-          <z>2.0000033379</z>
+          <x>133.9323577881</x>
+          <y>0.0000000000</y>
+          <z>2.0908203125</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>7.1355848312</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -311,87 +249,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="image29">
-    <title><![CDATA[GeorgeTerminal]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/37cf190fafde49979e006f7e31ca2c41/37cf190fafde49979e006f7e31ca2c41.zip]]></model>
-      <transform>
-        <translation>
-          <x>64.3445587158</x>
-          <y>-209.09034729</y>
-          <z>1.9999980927</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>6.8000001907</z>
-        </rotation>
-        <scale>
-          <x>0.5</x>
-          <y>0.5</y>
-          <z>0.5</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image36">
-    <title><![CDATA[LowerManhattan]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/30b1e59b00649b8c8f7da9a114e9d25b/30b1e59b00649b8c8f7da9a114e9d25b.zip]]></model>
-      <transform>
-        <translation>
-          <x>-342.9892883301</x>
-          <y>-44.1626968384</y>
-          <z>1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>135.5845336914</z>
-        </rotation>
-        <scale>
-          <x>2.3699998856</x>
-          <y>2.3699998856</y>
-          <z>2.3699998856</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model37">
+  <object id="model16">
     <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
+      <model><![CDATA[html/resources/9ba6c9e50264377e83016f0b913a7a62/9ba6c9e50264377e83016f0b913a7a62.zip]]></model>
       <transform>
         <translation>
-          <x>-137.403793335</x>
-          <y>-14.4333744049</y>
-          <z>1.0</z>
+          <x>319.4904174805</x>
+          <y>0.0000000000</y>
+          <z>1.0000000000</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -404,25 +280,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="model38">
+  <object id="model17">
     <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
+      <model><![CDATA[html/resources/9ba6c9e50264377e83016f0b913a7a62/9ba6c9e50264377e83016f0b913a7a62.zip]]></model>
       <transform>
         <translation>
-          <x>-257.2981262207</x>
-          <y>145.7875976562</y>
-          <z>1.0</z>
+          <x>-95.0268554688</x>
+          <y>0.0000000000</y>
+          <z>-40.7503852844</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -435,25 +311,25 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="model39">
+  <object id="model18">
     <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
+      <model><![CDATA[html/resources/9ba6c9e50264377e83016f0b913a7a62/9ba6c9e50264377e83016f0b913a7a62.zip]]></model>
       <transform>
         <translation>
-          <x>73.7394866943</x>
-          <y>-0.5780029297</y>
-          <z>0.9999961853</z>
+          <x>-95.2886657715</x>
+          <y>0.0000000000</y>
+          <z>120.3395843506</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
@@ -466,1207 +342,29 @@
       </visibility>
     </viewparameters>
   </object>
-  <object id="model40">
+  <object id="model19">
     <title><![CDATA[qma5]]></title>
     <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
+      <model><![CDATA[html/resources/9ba6c9e50264377e83016f0b913a7a62/9ba6c9e50264377e83016f0b913a7a62.zip]]></model>
       <transform>
         <translation>
-          <x>65.7925949097</x>
-          <y>334.0078735352</y>
-          <z>1.0</z>
+          <x>197.4810485840</x>
+          <y>0.0000000000</y>
+          <z>144.4898376465</z>
         </translation>
         <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
+          <x>0.0000000000</x>
+          <y>0.0000000000</y>
+          <z>0.0000000000</z>
         </rotation>
         <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
+          <x>25.0000000000</x>
+          <y>25.0000000000</y>
+          <z>25.0000000000</z>
         </scale>
       </transform>
       <properties>
         <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image38">
-    <title><![CDATA[Manhattan]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/256375e8b35788615958d0d6aa2ca7ad/256375e8b35788615958d0d6aa2ca7ad.zip]]></model>
-      <transform>
-        <translation>
-          <x>-389.6844482422</x>
-          <y>-205.8922119141</y>
-          <z>114.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0</x>
-          <y>0.0000025613</y>
-          <z>25.8849639893</z>
-        </rotation>
-        <scale>
-          <x>0.8424002528</x>
-          <y>0.8424002528</y>
-          <z>0.8424002528</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image39">
-    <title><![CDATA[EastRiver]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/ea2caa9111d4b9315343c2fa80ddc0cc/ea2caa9111d4b9315343c2fa80ddc0cc.zip]]></model>
-      <transform>
-        <translation>
-          <x>-578.1373291016</x>
-          <y>122.4708862305</y>
-          <z>2.0000610352</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>39.4614982605</z>
-        </rotation>
-        <scale>
-          <x>1.2000000477</x>
-          <y>1.2000000477</y>
-          <z>1.2000000477</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image40">
-    <title><![CDATA[HudsonRiver]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/c48888d1ae3593aca14c08fd45345ad9/c48888d1ae3593aca14c08fd45345ad9.zip]]></model>
-      <transform>
-        <translation>
-          <x>-170.9190979004</x>
-          <y>-447.8477783203</y>
-          <z>2.0000076294</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>36.4431686401</z>
-        </rotation>
-        <scale>
-          <x>1.2000000477</x>
-          <y>1.2000000477</y>
-          <z>1.2000000477</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image41">
-    <title><![CDATA[BrooklynBridge]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/1f4e6c08c3b1e11502cc34029fd0c7e8/1f4e6c08c3b1e11502cc34029fd0c7e8.zip]]></model>
-      <transform>
-        <translation>
-          <x>22.3781738281</x>
-          <y>147.9183044434</y>
-          <z>1.9999992847</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.4499999881</x>
-          <y>0.4499999881</y>
-          <z>0.4499999881</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image42">
-    <title><![CDATA[Financial]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/0a85e53f33a699b524ba1697b78568c2/0a85e53f33a699b524ba1697b78568c2.zip]]></model>
-      <transform>
-        <translation>
-          <x>111.9505081177</x>
-          <y>-59.1256256104</y>
-          <z>2.0000052452</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image43">
-    <title><![CDATA[Chinatown]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/2ff67344826578c8c5e255d2e8079ff2/2ff67344826578c8c5e255d2e8079ff2.zip]]></model>
-      <transform>
-        <translation>
-          <x>-106.6002807617</x>
-          <y>-64.9425201416</y>
-          <z>2.0000033379</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image44">
-    <title><![CDATA[LES]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/7421600111cb2e544cf4009265821653/7421600111cb2e544cf4009265821653.zip]]></model>
-      <transform>
-        <translation>
-          <x>-217.3969573975</x>
-          <y>86.3439331055</y>
-          <z>2.0000071526</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image45">
-    <title><![CDATA[Williamsburg]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/83040159772c066d949b85379ed86416/83040159772c066d949b85379ed86416.zip]]></model>
-      <transform>
-        <translation>
-          <x>-406.5014648438</x>
-          <y>485.6221618652</y>
-          <z>2.0000071526</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image46">
-    <title><![CDATA[BrooklynHeights]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/7fc66633f2894e8b2e0c7d2bc3aa7917/7fc66633f2894e8b2e0c7d2bc3aa7917.zip]]></model>
-      <transform>
-        <translation>
-          <x>106.0609130859</x>
-          <y>276.3017578125</y>
-          <z>2.0000071526</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>26.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image48">
-    <title><![CDATA[UpperNYBay]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/2212cfb17a64ef1988b2c23254369b9a/2212cfb17a64ef1988b2c23254369b9a.zip]]></model>
-      <transform>
-        <translation>
-          <x>897.8272705078</x>
-          <y>176.1766052246</y>
-          <z>2.0000610352</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>16.2225933075</z>
-        </rotation>
-        <scale>
-          <x>1.2000000477</x>
-          <y>1.2000000477</y>
-          <z>1.2000000477</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image50">
-    <title><![CDATA[StatueLiberty]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/3c3f24225eb4809d3411098c14de3ad2/3c3f24225eb4809d3411098c14de3ad2.zip]]></model>
-      <transform>
-        <translation>
-          <x>657.7222900391</x>
-          <y>-51.1166038513</y>
-          <z>2.0000071526</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>20.0</z>
-        </rotation>
-        <scale>
-          <x>0.5796005726</x>
-          <y>0.5796005726</y>
-          <z>0.5796005726</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image52">
-    <title><![CDATA[Brooklyn]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/f3bb99028a8fefb46cb66c9653762099/f3bb99028a8fefb46cb66c9653762099.zip]]></model>
-      <transform>
-        <translation>
-          <x>-267.4935302734</x>
-          <y>722.7034912109</y>
-          <z>114.1102905273</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0000228882</x>
-          <y>0.0000110991</y>
-          <z>19.4157276154</z>
-        </rotation>
-        <scale>
-          <x>0.8424002528</x>
-          <y>0.8424002528</y>
-          <z>0.8424002528</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image53">
-    <title><![CDATA[Queens]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/fa9db8e9cfb07eff48c019c3e455ca80/fa9db8e9cfb07eff48c019c3e455ca80.zip]]></model>
-      <transform>
-        <translation>
-          <x>-1192.5596923828</x>
-          <y>194.0767822266</y>
-          <z>114.1102905273</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0000305176</x>
-          <y>0.0000051226</y>
-          <z>39.6863861084</z>
-        </rotation>
-        <scale>
-          <x>0.8424002528</x>
-          <y>0.8424002528</y>
-          <z>0.8424002528</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image27">
-    <title><![CDATA[Verrazano]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/a21fbf742054d33ae14a1515dfb56385/a21fbf742054d33ae14a1515dfb56385.zip]]></model>
-      <transform>
-        <translation>
-          <x>-42.6011695862</x>
-          <y>431.5947265625</y>
-          <z>2.0000305176</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>6.8461651802</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image30">
-    <title><![CDATA[ConeyIsland]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/4d37f66333175773c2ae84bba7ae2956/4d37f66333175773c2ae84bba7ae2956.zip]]></model>
-      <transform>
-        <translation>
-          <x>-501.6130371094</x>
-          <y>882.9456787109</y>
-          <z>1.9999847412</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>7.0</z>
-        </rotation>
-        <scale>
-          <x>1.25</x>
-          <y>1.25</y>
-          <z>1.25</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model42">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-246.9528198242</x>
-          <y>114.2955780029</y>
-          <z>-1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image55">
-    <title><![CDATA[BayRidge]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/1802820dbc20600d65d8c0cb8d2e630b/1802820dbc20600d65d8c0cb8d2e630b.zip]]></model>
-      <transform>
-        <translation>
-          <x>-244.5710906982</x>
-          <y>50.7200012207</y>
-          <z>2.0000305176</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>6.8461651802</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model43">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>560.1469116211</x>
-          <y>214.2955780029</y>
-          <z>-1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model44">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>381.835144043</x>
-          <y>-271.3692016602</y>
-          <z>-1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image57">
-    <title><![CDATA[UpperNYBay]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/2212cfb17a64ef1988b2c23254369b9a/2212cfb17a64ef1988b2c23254369b9a.zip]]></model>
-      <transform>
-        <translation>
-          <x>-290.7882385254</x>
-          <y>-541.3208007812</y>
-          <z>2.0000033379</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>7.1355848312</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image56">
-    <title><![CDATA[TodtHill]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/e73de24882a6900580aac8507e25208e/e73de24882a6900580aac8507e25208e.zip]]></model>
-      <transform>
-        <translation>
-          <x>567.2126464844</x>
-          <y>160.8658599854</y>
-          <z>2.0000305176</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>6.8461651802</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model45">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-194.598449707</x>
-          <y>452.6707458496</y>
-          <z>-1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model46">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-428.162109375</x>
-          <y>609.3252563477</y>
-          <z>-0.9999847412</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image58">
-    <title><![CDATA[SnugHarbor]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/27dab947036806e219b63d20be649948/27dab947036806e219b63d20be649948.zip]]></model>
-      <transform>
-        <translation>
-          <x>388.9106445312</x>
-          <y>-323.9425964355</y>
-          <z>2.0000305176</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>6.8461651802</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>2</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image59">
-    <title><![CDATA[SnugHarbor]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/27dab947036806e219b63d20be649948/27dab947036806e219b63d20be649948.zip]]></model>
-      <transform>
-        <translation>
-          <x>-423.2540893555</x>
-          <y>541.4327392578</y>
-          <z>1.9999694824</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image60">
-    <title><![CDATA[TodtHill]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/e73de24882a6900580aac8507e25208e/e73de24882a6900580aac8507e25208e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-189.4484710693</x>
-          <y>391.1291809082</y>
-          <z>1.9999732971</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image61">
-    <title><![CDATA[BayRidge]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/1802820dbc20600d65d8c0cb8d2e630b/1802820dbc20600d65d8c0cb8d2e630b.zip]]></model>
-      <transform>
-        <translation>
-          <x>-95.9234008789</x>
-          <y>891.3071899414</y>
-          <z>1.9999694824</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.5799999833</x>
-          <y>0.5799999833</y>
-          <z>0.5799999833</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model47">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-106.2582855225</x>
-          <y>946.1956176758</y>
-          <z>-1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image62">
-    <title><![CDATA[LowerNYBay]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/74e2e9bd1d150366f1c4e32fdce615d9/74e2e9bd1d150366f1c4e32fdce615d9.zip]]></model>
-      <transform>
-        <translation>
-          <x>356.3969726562</x>
-          <y>554.9586181641</y>
-          <z>2.0000338554</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image63">
-    <title><![CDATA[UpperNYBay]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/2212cfb17a64ef1988b2c23254369b9a/2212cfb17a64ef1988b2c23254369b9a.zip]]></model>
-      <transform>
-        <translation>
-          <x>-407.4252319336</x>
-          <y>982.9391479492</y>
-          <z>2.0000953674</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image64">
-    <title><![CDATA[StatueLiberty]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/3c3f24225eb4809d3411098c14de3ad2/3c3f24225eb4809d3411098c14de3ad2.zip]]></model>
-      <transform>
-        <translation>
-          <x>-490.8268432617</x>
-          <y>1132.1899414062</y>
-          <z>2.0000069141</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>0.75</x>
-          <y>0.75</y>
-          <z>0.75</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>1</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="image47">
-    <title><![CDATA[EmpireState]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/8ba4d22fbc3b1bd0b1c3ad4e80b357f5/8ba4d22fbc3b1bd0b1c3ad4e80b357f5.zip]]></model>
-      <transform>
-        <translation>
-          <x>-655.7735595703</x>
-          <y>-304.7635498047</y>
-          <z>71.3360595703</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>90.0</x>
-          <y>0.0000008538</y>
-          <z>27.0096626282</z>
-        </rotation>
-        <scale>
-          <x>0.349999994</x>
-          <y>0.349999994</y>
-          <z>0.349999994</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model48">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-442.4859313965</x>
-          <y>544.1151733398</y>
-          <z>1.0</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>30.0</x>
-          <y>30.0</y>
-          <z>30.0</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>3</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model55">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-59.2561950684</x>
-          <y>-5.7601623535</y>
-          <z>19.1857757568</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>17.9999980927</x>
-          <y>17.9999980927</y>
-          <z>17.9999980927</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>4</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model56">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>134.7884216309</x>
-          <y>94.2398376465</y>
-          <z>107.8539886475</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>17.9999980927</x>
-          <y>17.9999980927</y>
-          <z>17.9999980927</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>4</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model57">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>147.3648376465</x>
-          <y>38.8554382324</y>
-          <z>-21.0322418213</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>17.9999980927</x>
-          <y>17.9999980927</y>
-          <z>17.9999980927</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>4</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model58">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>21.6155090332</x>
-          <y>44.5169067383</y>
-          <z>74.2275238037</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>17.9999980927</x>
-          <y>17.9999980927</y>
-          <z>17.9999980927</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>4</coordinatesystemid>
-      </properties>
-    </assets3d>
-    <viewparameters>
-      <visibility>
-        <liveview>false</liveview>
-      </visibility>
-    </viewparameters>
-  </object>
-  <object id="model59">
-    <title><![CDATA[qma5]]></title>
-    <assets3d>
-      <model><![CDATA[html/resources/408d1f9b8f7bcf9cf6fc884eb00b4d5e/408d1f9b8f7bcf9cf6fc884eb00b4d5e.zip]]></model>
-      <transform>
-        <translation>
-          <x>-42.7194519043</x>
-          <y>-26.2617492676</y>
-          <z>-43.2638092041</z>
-        </translation>
-        <rotation type="eulerdeg">
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </rotation>
-        <scale>
-          <x>17.9999980927</x>
-          <y>17.9999980927</y>
-          <z>17.9999980927</z>
-        </scale>
-      </transform>
-      <properties>
-        <coordinatesystemid>4</coordinatesystemid>
       </properties>
     </assets3d>
     <viewparameters>
