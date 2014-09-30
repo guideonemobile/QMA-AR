@@ -9,7 +9,7 @@ namespace metaio
 {
 
 /**
- * This class encapsulates a single geometry and provides additional 
+ * This class encapulates a single geometry and provides additional 
  * functionalities such as selecting geometries, applying geometry
  * transformations etc. It it used in conjunction with the GestureHandler
  * class for the implementation of gestures on geometries.
@@ -42,7 +42,7 @@ public:
     /**
      * \brief Constructor for the class GeometryExtension.
      * \param geometry A pointer to the geometry.
-     * \param group Specify the group number of the geometry.
+     * \param group Specity the group number of the geometry.
      */
     GeometryExtension(metaio::IGeometry* geometry, int group);
     
@@ -55,7 +55,7 @@ public:
     
     /**
      * \brief Get the pointer to the geometry.
-     * \return m_geometry The pointer to the geometry.
+     * \return m_geometry The pointer to the geoemtry.
      */
     metaio::IGeometry* getGeometry();
     
@@ -88,7 +88,7 @@ public:
     
     /**
      * \brief Get the selected state of the geometry.
-     * \return True if the geometry is selected, false otherwise.
+     * \return True if the goemtry is selected, false othewise.
      */
     bool isSelected();
     
@@ -101,7 +101,7 @@ public:
     
     
     /**
-     * \brief Move the geometry if selected.
+     * \brief Move the geoemtry if selected.
      * \param metaioSDK A pointer to the metaioSDK.
      * \param x The x coordinate of the touch point.
      * \param y The y coordinate of the touch point.

@@ -4,9 +4,7 @@
 
 #include <string>
 #include <vector>
-
-#include <metaioSDK/ImageStruct.h>
-#include <metaioSDK/RenderEvent.h>
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/STLCompatibility.h>
 #include <metaioSDK/TrackingValues.h>
 
@@ -84,7 +82,7 @@ public:
 
 
 	/**
-	 * Callback that notifies that camera image has been saved.
+	 * Callback that notifies that camera image has been saved
 	 *
 	 * To request this callback, call requestCameraFrame(filepath, width, height)
 	 *
@@ -139,7 +137,7 @@ public:
 	virtual void onTrackingEvent(const metaio::stlcompat::Vector<metaio::TrackingValues>& trackingValues) {};
 
 	/**
-	* Callback to notify the application about an instant tracker event.
+	* Callback to notify the application about an instant tracker event
 	*
 	*	If "success" is true, "file" will contain a file name you either specified
 	*	when starting the instant tracking or a temporarily result.

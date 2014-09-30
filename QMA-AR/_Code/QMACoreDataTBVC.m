@@ -85,15 +85,12 @@
 	 forChangeType:(NSFetchedResultsChangeType)type {
     
     if (!self.suspendAutoTracking) {
-        switch(type) {
-            case NSFetchedResultsChangeInsert:
+        if (type == NSFetchedResultsChangeInsert) {
                 [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex]
                               withRowAnimation:UITableViewRowAnimationFade];
-                break;
-            case NSFetchedResultsChangeDelete:
+        } else if (type == NSFetchedResultsChangeDelete) {
                 [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex]
                               withRowAnimation:UITableViewRowAnimationFade];
-                break;
         }
     }
 }

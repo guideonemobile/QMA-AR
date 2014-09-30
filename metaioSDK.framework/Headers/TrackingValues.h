@@ -2,10 +2,9 @@
 #ifndef _AS_TRACKINGVALUES_H_
 #define _AS_TRACKINGVALUES_H_
 
-#include <metaioSDK/LLACoordinate.h>
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/Rotation.h>
 #include <metaioSDK/STLCompatibility.h>
-#include <metaioSDK/Vector3d.h>
 
 namespace metaio
 {
@@ -34,12 +33,6 @@ namespace metaio
  * "Event-States" do not necessarily correspond to a complete frame but can be used to 
  * flag individual tracking events or replace tracking states to clarify their context:
  *  ETS_NOT_TRACKING -> ETS_REGISTERED -> ETS_FOUND for edge based initialization
- *
- * The methods like SLAM need an initialization phase (e.g. requiring the user to do a special
- * movement). This phase can also go wrong, and then the user of the SDK can re-start the 
- * initialization phase completely.
- *  ETS_NOT_TRACKING -> ETS_INITIALIZATION_FAILED
- *  ETS_TRACKING -> ETS_INITIALIZATION_FAILED
  */
 enum ETRACKING_STATE
 {
@@ -49,10 +42,9 @@ enum ETRACKING_STATE
 	ETS_LOST		 = 3,	///< Target lost
 	ETS_FOUND		 = 4,	///< Target found
 	ETS_EXTRAPOLATED = 5,	///< Tracking by extrapolating
-	ETS_INITIALIZED	 = 6,	///< The tracking configuration has just been loaded.
+	ETS_INITIALIZED	 = 6,	///< The tracking has just been loaded
 
- 	ETS_REGISTERED	 = 7,	///< Event-State: Pose was just registered for tracking
-    ETS_INITIALIZATION_FAILED = 8 ///< e.g. SLAM initialization failed
+ 	ETS_REGISTERED	 = 7	///< Event-State: Pose was just registered for tracking
 };
 
 /** Static helper class for conversion to/from ETRACKING_STATE.
@@ -73,7 +65,7 @@ class TrackingState
 
 	/** Converts a string value to an \a ETRACKING_STATE.
 	*
-	* \param state the state as upper-case string of the enum value name (e.g. "ETS_FOUND")
+	* \param state the state as uppercase string of the enum value name (e.g. "ETS_FOUND")
 	* \param outValidState optional output flag that is set true if the string is valid (corresponds to an enum value), false if not
 	* \return  converted state, or "ETS_UNKNOWN" if the string is invalid 
 	*/
@@ -81,7 +73,7 @@ class TrackingState
 	/** Converts an \a ETRACKING_STATE to a string.
 	*
 	* \param state the tracking state to convert
-	* \return upper-case string of the enum value name (e.g. "ETS_FOUND")
+	* \return uppercase string of the enum value name (e.g. "ETS_FOUND")
 	*/
 	static std::string trackingStateToString(ETRACKING_STATE state);
 };

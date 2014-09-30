@@ -94,7 +94,7 @@ namespace metaio
 /**
  * \brief Add a geometry to the gesture handler.
  * \param geometry A pointer to the geometry to be added.
- * \param group The group number to which the geometry belongs.
+ * \param group The group number to which the goemetry belongs.
  */
 - (void) addObject: (metaio::IGeometry*)geometry andGroup: (int)group;
 

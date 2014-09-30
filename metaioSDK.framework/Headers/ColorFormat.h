@@ -30,13 +30,11 @@ enum ECOLOR_FORMAT
     */
     ECF_V8Y8U8Y8 = 6,
     ECF_V8A8U8Y8 = 7,		///< same as ECF_V8Y8U8Y8 except for second Y is used for 8bit alpha value
-	ECF_YUV420SP = 8,		///< 12 bit semi-planar YUV image format (4:2:0 Y-plane + UV-plane)
+	ECF_YUV420SP = 8,		///< 12 bit semi-planar YUV image format (4:2:0 Yplane + UVplane)
 	ECF_YV12 = 9,			///< 12 bit YV12 planar YUV image format
     ECF_GRAY = 10,			///< 8 bit gray image format
     ECF_HSV = 11,			///< HSV color format
     ECF_D16 = 100,	        ///< depth format, 2-byte unsigned shorts for depth(usually measure in mm)
-	ECF_U32V32 = 101,		///< UV Map, 2 floats for each component (U,V coordinates)
-	ECF_FLIR8 = 200,		///< FLIR (thermal vision) 1 byte
 	ECF_UNKNOWN = 999		///< unknown image format
 };
 

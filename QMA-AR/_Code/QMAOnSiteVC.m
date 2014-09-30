@@ -39,7 +39,6 @@
     self.arLabelString = self.arLabel.text;
     self.arLabel.text = @"";
     self.arLabel.textColor = [UIColor whiteColor];
-    //QMALog(@"%@", self.navigationController.viewControllers);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

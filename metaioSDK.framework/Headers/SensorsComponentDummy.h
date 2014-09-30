@@ -3,6 +3,7 @@
 #define __AS_SENSORSCOMPONENTWIN32_H__
 
 #include <metaioSDK/STLCompatibility.h>
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/ISensorsComponent.h>
 
 namespace metaio

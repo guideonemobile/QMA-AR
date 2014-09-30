@@ -2,6 +2,7 @@
 #ifndef __AS_SENSORSCOMPONENTIOS_H__
 #define __AS_SENSORSCOMPONENTIOS_H__
 
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/ISensorsComponent.h>
 #import <CoreMotion/CoreMotion.h>
 #import <CoreLocation/CoreLocation.h>
@@ -17,12 +18,12 @@
 @interface SensorsComponentImpl : NSObject <CLLocationManagerDelegate>
 {
 	NSOperationQueue *		m_motionQueue;			//!< Pointer to a motion queue that processes the user acceleration readings
-	int						m_activeSensors;		//!< Which sensors are currently running?
+	int						m_activeSensors;		//!< Which sensors are currenlty running?
 	CLLocation*			overwriteLocation;		//!< Can be used to overwrite the real location
 	
 	metaio::SensorValues	m_sensorValues;		//!< Holds the current state of all sensor values
 	
-	float					m_deviceMovementStatus;	//!< Low-pass filter for device movement
+	float					m_deviceMovementStatus;	//!< Low-pass filter for devicemovement
 	
 	// following members are provided as 'thread local' storage for the dispatched blocks of the motion queue.
 	std::vector<metaio::SensorReading> m_gyroscopeSamples;	//!< Samples of the device rotation
@@ -45,7 +46,7 @@
 @property (assign)	BOOL shouldDisplayHeadingCalibration;		//!< Indicates of the heading calibration message should be displayed
 @property (assign)  BOOL locationIsDisabled;					//!< Property you can set to make sure no location objects are accessed
 @property (assign)  BOOL ignoreResetLocationOverwrite;			//!< If this is set, resetLocationOverride calls will be ignored
-@property (assign)  CLLocationDistance				locationDistanceFilter;	//!< Distance filter
+@property (assign)  CLLocationDistance				locationDistanceFilter;	//!< Distancefilter
 @property (nonatomic, retain)	NSString*			purposeLocation;	//!< If set, this will indicate the purpose of the location usage
 
 @property (nonatomic, assign)	NSObject<CLLocationManagerDelegate>*		locationManagerDelegate;	//!< You can set this delegate to be also informed about changes
@@ -82,7 +83,7 @@
 - (metaio::Vector3d) getGravity;
 
 
-/** Updates and returns the current Sensor values structure. 
+/** Return the current Sensor values structure
  * \return the current sensor values
  */
 - (metaio::SensorValues) getSensorValues;
@@ -123,8 +124,6 @@ namespace metaio
         virtual Vector3d getGravity() const;
         virtual float getHeading() const;
         virtual SensorValues getSensorValues();
-		virtual SensorValues getLastSensorValues() const {return m_lastSensorValues;};
-
 		
 		/** Return a pointer to the objective C object that you can work with
 		 * \return pointer to obj-c object
@@ -140,7 +139,6 @@ namespace metaio
 
 	private:
 		SensorsComponentImpl*		m_pSensorsComponent;	//!<	Objective-C object that contains all code
-		SensorValues m_lastSensorValues; //!< cache for getLastSensorValues, to not block external readers...
     };
 	
 }

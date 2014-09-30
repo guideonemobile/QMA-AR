@@ -3,7 +3,6 @@
 #define _AS_IANNOTATEDGEOMETRIESGROUP_H_
 
 #include <metaioSDK/SensorValues.h>
-#include <metaioSDK/Vector2d.h>
 
 namespace metaio
 {
@@ -27,7 +26,7 @@ public:
 	virtual ~IAnnotatedGeometriesGroupCallback() {}
 
 	/**
-	 * Callback should load an annotation or update an existing one.
+	 * Callback should load an annotation or update an existing one
 	 *
 	 * If a different pointer than existingAnnotation is returned, the callback implementation is
 	 * responsible for destroying the old annotation geometry (just as with
@@ -47,7 +46,7 @@ public:
 	virtual IGeometry* loadUpdatedAnnotation(IGeometry* geometry, void* userData, IGeometry* existingAnnotation) = 0;
 
 	/**
-	 * Focus state of a geometry changed (and thus its annotation's visibility).
+	 * Focus state of a geometry changed (and thus its annotation's visibility)
 	 *
 	 * Always called in renderer thread.
 	 *
@@ -103,18 +102,6 @@ public:
 	virtual bool addGeometry(IGeometry* geometry, void* userData) = 0;
 
 	/**
-	 * Get annotation currently associated with a geometry
-	 *
-	 * Not thread-safe. It is recommended to not call this while other SDK functions are called
-	 * (such as rendering).
-	 *
-	 * \param geometry	Geometry for which to retrieve the associated annotation
-	 * \return			Associated annotation, or NULL if none associated or if geometry not
-	 *					contained in the group
-	 */
-	virtual IGeometry* getAnnotationForGeometry(IGeometry* geometry) = 0;
-
-	/**
 	 * Sets or unsets the callback
 	 *
 	 * \param callback Callback implementation or NULL to unset it
@@ -122,7 +109,7 @@ public:
 	virtual void registerCallback(IAnnotatedGeometriesGroupCallback* callback) = 0;
 
 	/**
-	 * Removes geometry from the group.
+	 * Removes geometry from the group
 	 *
 	 * Caller is responsible for destroying both the geometry and its annotation (which is not used
 	 * anymore by this class after this call) after calling this method!

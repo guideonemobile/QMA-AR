@@ -39,9 +39,9 @@ enum E_IOS_DEVICETYPE
 E_IOS_DEVICETYPE getDeviceType();
 	
 /**
- * Returns true if the GPU of the device is capable of rendering
+ * Returens true if the GPU of the device is capable of rendering
  * with advanced rendering features.
- * \return true if capable of performing advanced rendering, false otherwise
+ * \return true if capable of performing advanced rendring, false otherwise
  * \sa isAdvancedRenderingSupported in com.metaio.tools.SystemInfo for Android
  */
 bool isAdvancedRenderingSupported();

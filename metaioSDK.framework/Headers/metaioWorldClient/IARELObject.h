@@ -2,7 +2,7 @@
 #ifndef IARELOBJECT_H
 #define IARELOBJECT_H
 
-#include <metaioSDK/LLACoordinate.h>
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/STLCompatibility.h>
 
 namespace metaio

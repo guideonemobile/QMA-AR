@@ -69,8 +69,8 @@ public:
 	 * away from the camera in the range [nearValue, farValue].
 	 * The distance between each poi within this range is linear.
 	 *
-	 * \param nearValue Minimum poi to camera distance in meters (default is 0.5m)
-	 * \param farValue Maximum poi to camera distance in meters (default is 3.0m)
+	 * \param nearValue Minimum poi to camera distance
+	 * \param farValue Maximum poi to camera distance
 	*/
 	virtual void setViewCompressionValues(float nearValue, float farValue) = 0;
 

@@ -2,7 +2,7 @@
 #ifndef __AS_IRADAR_H_INCLUDED__
 #define __AS_IRADAR_H_INCLUDED__
 
-#include <metaioSDK/ImageStruct.h>
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/IGeometry.h>
 #include <metaioSDK/STLCompatibility.h>
 
@@ -45,7 +45,7 @@ public:
 	virtual void removeAll() = 0;
 
 	/**
-	 * Set background texture of the radar from then given file path.
+	 * Set background texture of the radar from then given file path
 	 *
 	 *	Supported formats are PNG and JPG.
 	 *
@@ -77,7 +77,7 @@ public:
 	virtual bool setObjectsDefaultTexture(const stlcompat::String& texturePath) = 0;
 
 	/**
-	 * Set default texture of the radar objects from the given image structure.
+	 * Set default texture of the radar objects from the given image structure
 	 * The new texture is applied to all radar objects in case of success.
 	 *
 	 * \param textureName A name that should be assigned to the texture (for reuse).
@@ -102,7 +102,7 @@ public:
 	virtual bool setObjectTexture(IGeometry* geometry, const stlcompat::String& texturePath) = 0;
 
 	/**
-	 * Set default texture of the radar objects from the given image structure.
+	 * Set default texture of the radar objects from the given image structure
 	 * The new texture is applied to all radar objects in case of success.
 	 *
 	 * \param geometry Geometry for which corresponding object's texture is set

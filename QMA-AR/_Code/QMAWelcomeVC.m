@@ -60,6 +60,7 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     self.locationManager.distanceFilter = 100; //Without setting this property, the locationManager:didUpdateToLocation:fromLocation: delegate method gets called twice, even though we call stopUpdatingLocation in it
     
+    [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
 }
 
@@ -75,7 +76,7 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     UIViewController *vc;
-    if (distanceFromMuseum < maxDistanceFromMuseum) {
+    if (YES || distanceFromMuseum < maxDistanceFromMuseum) {
         vc = [storyboard instantiateViewControllerWithIdentifier:@"OnSiteViewController"];
     } else {
         vc = [storyboard instantiateViewControllerWithIdentifier:@"OffSiteViewController"];

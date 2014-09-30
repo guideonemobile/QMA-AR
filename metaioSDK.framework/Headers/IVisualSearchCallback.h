@@ -2,8 +2,8 @@
 #ifndef __AS_VISUALSEARCH_CALLBACK__
 #define __AS_VISUALSEARCH_CALLBACK__
 
+#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/STLCompatibility.h>
-#include <metaioSDK/VisualSearchResponse.h>
 
 #include <vector>
 
@@ -42,7 +42,7 @@ public:
 	* (with IMetaioSDK::requestVisualSearch) and received the result from the server.
 	*
 	* \param response All found results. If response.size() > 0 the search has found something.
-	* \param errorCode if > 0, then an error has occurred. 
+	* \param errorCode if > 0, then an error has occured. 
 	* \sa IMetaioSDK::requestVisualSearch
 	*/
 	virtual void onVisualSearchResult(const stlcompat::Vector<metaio::VisualSearchResponse>& response, int errorCode) {}

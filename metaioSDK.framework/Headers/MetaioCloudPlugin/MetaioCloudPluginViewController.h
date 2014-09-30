@@ -147,10 +147,4 @@ static const int ANCHOR_BR = ANCHOR_BOTTOM|ANCHOR_RIGHT;			///< Anchor to the Bo
 - (void) onTrackingEvent: (const metaio::stlcompat::Vector<metaio::TrackingValues>&)poses;
 
 
-
-/**  If you are handling your own POI detail view, you have to call
- * this method after the poi-detail view is closed
- */
-- (void) onDetailViewClosed;
-
 @end
