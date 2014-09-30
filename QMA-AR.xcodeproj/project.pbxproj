@@ -53,6 +53,7 @@
 		2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601B19398094003CB15C /* QMAPoiTableViewCell.m */; };
 		25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576601F193984F2003CB15C /* UIColor+QMARGB.m */; };
 		2576602419398CB7003CB15C /* QMAPoiDisplayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */; };
+		257A727F19DB2E35004E3BAC /* QMAXcode6Fix.c in Sources */ = {isa = PBXBuildFile; fileRef = 257A727D19DB2E35004E3BAC /* QMAXcode6Fix.c */; };
 		25B85982193E42C500F201F1 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8597F193E42C500F201F1 /* DACircularProgressView.m */; };
 		25B8598F193E7AD900F201F1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B8598E193E7AD900F201F1 /* Accelerate.framework */; };
 		25B85993193E925D00F201F1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B85992193E925D00F201F1 /* UIImage+ImageEffects.m */; };
@@ -140,6 +141,8 @@
 		2576601F193984F2003CB15C /* UIColor+QMARGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QMARGB.m"; path = "_Code/UIColor+QMARGB.m"; sourceTree = "<group>"; };
 		2576602219398CB7003CB15C /* QMAPoiDisplayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMAPoiDisplayVC.h; path = _Code/QMAPoiDisplayVC.h; sourceTree = "<group>"; };
 		2576602319398CB7003CB15C /* QMAPoiDisplayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMAPoiDisplayVC.m; path = _Code/QMAPoiDisplayVC.m; sourceTree = "<group>"; };
+		257A727D19DB2E35004E3BAC /* QMAXcode6Fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QMAXcode6Fix.c; sourceTree = "<group>"; };
+		257A727E19DB2E35004E3BAC /* QMAXcode6Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAXcode6Fix.h; sourceTree = "<group>"; };
 		25B8597E193E42C500F201F1 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = _Code/ThirdParty/DACircularProgress/DACircularProgressView.h; sourceTree = "<group>"; };
 		25B8597F193E42C500F201F1 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACircularProgressView.m; path = _Code/ThirdParty/DACircularProgress/DACircularProgressView.m; sourceTree = "<group>"; };
 		25B8598E193E7AD900F201F1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -254,6 +257,8 @@
 			children = (
 				041B0B161896A2200061A3E2 /* InfoPlist.strings */,
 				041B0B151896A2200061A3E2 /* QMA-AR-Info.plist */,
+				257A727E19DB2E35004E3BAC /* QMAXcode6Fix.h */,
+				257A727D19DB2E35004E3BAC /* QMAXcode6Fix.c */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				25766020193984F2003CB15C /* UIColor+QMARGB.m in Sources */,
 				2576601C19398094003CB15C /* QMAPoiTableViewCell.m in Sources */,
 				252C1A11195394E500F76849 /* QMAWebViewController.m in Sources */,
+				257A727F19DB2E35004E3BAC /* QMAXcode6Fix.c in Sources */,
 				25EEEDD5193F585200F9727F /* QMAGalleryItem.m in Sources */,
 				250AD0E618D0F9FE0072D718 /* EAGLView.mm in Sources */,
 				250AD0EF18D0FDC60072D718 /* QMAAppDelegate.mm in Sources */,

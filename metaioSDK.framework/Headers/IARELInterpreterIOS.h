@@ -5,9 +5,14 @@
 #include "IARELInterpreter.h"
 #include <Foundation/Foundation.h>
 
+namespace metaio {
+    class IARELObject;  // fwd decl.
+}
+
 // forward declaration
 @class UIWebView;
 @class UIViewController;
+@class UIImage;
 
 /** Delegate to handle AREL callbacks
  */
@@ -36,13 +41,26 @@
  * Called after scene options were loaded from AREL XML file (always called even if there are no
  * scene options)
  */
--(void) onSceneOptionsParsed:(const metaio::stlcompat::Vector<metaio::ARELSceneOption>&) sceneOptions;
+-(void) onSceneOptionsParsed:(metaio::stlcompat::Vector<metaio::ARELSceneOption>&) sceneOptions;
 
 /**
 * This is triggered as soon as the AREL is ready, including the loading of XML geometries. 
 */
 -(void) onSceneReady;
 
+
+/** Take a snapshot and open the share screen
+ * \param image the image to save
+ * \param options saveToGalleryWithoutDialog true if we should just save the image to the gallery
+ * without displaying the sharing dialog
+ */
+- (void) shareScreenshot:(UIImage*) image options:(bool) saveToGalleryWithoutDialog;
+
+
+/** Open the detail screen for a POi
+ * \param poi the poi
+ */
+- (void) openPOIDetail:  (const metaio::IARELObject*) poi;
 
 @end
 
@@ -66,7 +84,7 @@ namespace metaio
     };
     
 /**
-* Create a IARELInterpreter for IOS
+* Create a IARELInterpreter for IOS.
 *
 *	This functions should be only called on iOS platforms
 *

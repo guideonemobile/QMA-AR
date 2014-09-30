@@ -21,10 +21,7 @@ namespace metaio {
 
 @interface POIDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-	const metaio::IARELObject*       m_pPoi;
 
-    NSObject<POIDetailViewControllerDelegate>* delegate;
-    UILabel *                                m_textView;
 }
 
 @property (nonatomic, assign ) IBOutlet NSObject<POIDetailViewControllerDelegate>* delegate;

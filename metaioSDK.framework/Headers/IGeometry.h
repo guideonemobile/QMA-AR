@@ -2,8 +2,10 @@
 #ifndef __AS_IGEOMETRY_H_INCLUDED__
 #define __AS_IGEOMETRY_H_INCLUDED__
 
-#include <metaioSDK/MobileStructs.h>
+#include <metaioSDK/BoundingBox.h>
 #include <metaioSDK/ColorFormat.h>
+#include <metaioSDK/ImageStruct.h>
+#include <metaioSDK/LLACoordinate.h>
 #include <metaioSDK/Rotation.h>
 #include <metaioSDK/STLCompatibility.h>
 
@@ -196,7 +198,7 @@ public:
 	virtual bool isDynamicLightingEnabled() const = 0;
 
 	/**
-	 * Set whether this geometry is affected by dynamic lights
+	 * Set whether this geometry is affected by dynamic lights.
 	 *
 	 * If lighting is disabled for a geometry, it will be rendered with 0 lights, i.e. lights will
 	 * not affect the geometry color.
@@ -353,18 +355,26 @@ public:
 	virtual const metaio::IGeometry* getParentGeometry() const = 0;
 
 	/**
+	 * Gets the currently assigned shader material
+	 *
+	 * \return Assigned shader material name, or an empty string if not using a custom shader
+	 */
+	virtual stlcompat::String getShaderMaterial() const = 0;
+
+	/**
 	 * Assigns a shader material defined by the given name to this geometry
 	 *
 	 * \param shaderMaterialName Shader material name as previously loaded through
 	 *                           IMetaioSDK::loadShaderMaterials
-	 * \return bool True on success, false on error
+	 * \sa getShaderMaterial
 	 * \sa IMetaioSDK::loadShaderMaterials
+	 * \return bool True on success, false on error
 	 */
 	virtual bool setShaderMaterial(const stlcompat::String& shaderMaterialName) = 0;
 
 
 	/**
-	 * Sets the callback handler that will be triggered every time before this geometry is rendered
+	 * Sets the callback handler that will be triggered every time before this geometry is rendered.
 	 *
 	 * This callback is optional - the SDK will automatically pass a set of default constants to the
 	 * shaders. Use this if you want to provide own constants to vertex or fragment shader.
@@ -400,14 +410,14 @@ public:
 	virtual bool isVisible() const = 0;
 
 	/**
-	 * Triggers application pause actions
+	 * Triggers application pause actions.
 	 *
 	 * You don't need to call this directly, use IMetaioSDK::pause() instead!
 	 */
 	virtual void onApplicationPause() {};
 
 	/**
-	 * Triggers application resume actions
+	 * Triggers application resume actions.
 	 *
 	 * You don't need to call this directly, use IMetaioSDK::resume() instead!
 	 */
@@ -457,7 +467,7 @@ public:
 	virtual unsigned int getTriangleCount() const = 0;
 
 	/**
-	 * Set the rendering order of the geometry
+	 * Set the rendering order of the geometry.
 	 *
 	 * This method should be used for compositing, e.g. if a geometry should be drawn before or after other geometries.
 	 * The ordering depends on the value of the level that is passed, the lower levels are drawn before higher levels,
@@ -596,7 +606,7 @@ public:
 	 * Get the (axis-aligned) bounding box of the geometry.
 	 * \param inObjectCoordinates If true (default behaviour) the bounding box
 	          will be returned in the coordinate system of the object, if false
-			  it will be returned in the camera coordinate system
+			  it will be returned in the geometry's coordinate system
 	 * \return The bounding box of the geometry.
 	 */
 	virtual BoundingBox getBoundingBox(bool inObjectCoordinates = true) const = 0;
@@ -805,7 +815,7 @@ public:
 	virtual void setSelectionBoxVisibility(bool visible) = 0;
 
 	/**
-	* Returns whether hardware skinning for this geometry has been enabled
+	* Returns whether hardware skinning for this geometry has been enabled.
 	* Hardware skinning can only be enabled for 3D geometry with joint animation
 	* \return true if hardware skinning for this geometry has been enabled, false otherwise
 	* \sa setHardwareSkinning to enable/disable hardware skinning
@@ -813,7 +823,7 @@ public:
 	virtual bool isHardwareSkinning() const = 0;
 
 	/**
-	* Enable/Disable Hardware Skinning for this geometry
+	* Enable/Disable Hardware Skinning for this geometry.
 	* Hardware skinning can only be enabled for 3D geometry with joint animation
 	* Hardware skinning currently only works on devices featuring 256+ vertex uniform vectors
 	* On other devices, enabling hardware skinning may lead to undefined behavior.

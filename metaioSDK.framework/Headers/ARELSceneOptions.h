@@ -2,7 +2,6 @@
 #ifndef _ARELSCENEOPTIONS_H_
 #define _ARELSCENEOPTIONS_H_
 
-#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/STLCompatibility.h>
 
 namespace metaio
@@ -18,11 +17,15 @@ enum EAREL_SCENE_OPTION
 	/**
 	 * Defines the desired camera index, e.g. 0 (back facing camera on mobile devices), 1 (front
 	 * facing camera on mobile devices, else second camera), etc.
+	 *
+	 * \deprecated Support for this scene option was removed. Use EARELSO_CAMERA instead.
 	 */
 	EARELSO_CAMERA_INDEX = 0,
 
 	/**
 	 * Defines the desired camera resolution for capturing, e.g. "640x480"
+	 *
+	 * \deprecated Support for this scene option was removed. Use EARELSO_CAMERA instead.
 	 */
 	EARELSO_CAMERA_RESOLUTION = 1,
 
@@ -44,24 +47,29 @@ enum EAREL_SCENE_OPTION
 	 */
 	EARELSO_RENDER_FPS = 4,
 	
-	
 	/** 
 	 * Defines a path to the shader materials file that should be set to the SDK
 	 */
 	EARELSO_SHADER_MATERIALS = 5,
-    
-    
-    /**
-     * If this flag is set to true,  the old billboard visualization will be used
-     */
-    EARELSO_USE_LEGACY_VISUALIZATION = 6,
+
+	/**
+	 * If this flag is set to true, the old billboard visualization will be used
+	 */
+	EARELSO_USE_LEGACY_VISUALIZATION = 6,
 
 	/**
 	 * Defines padding on bottom of screen to use with annotations in case of location-based channel
 	 *
 	 * \sa IAnnotatedGeometriesGroup::setBottomPadding
 	 */
-	EARELSO_PADDING_TO_ANNOTATIONS = 7
+	EARELSO_PADDING_TO_ANNOTATIONS = 7,
+
+	/**
+	 * Defines the desired camera for capturing as JSON string, e.g. {"index" : 0}
+	 *
+	 * This supersedes the old scene options EARELSO_CAMERA_INDEX and EARELSO_CAMERA_RESOLUTION.
+	 */
+	EARELSO_CAMERA = 8
 };
 
 } // end of namespace metaio::common
@@ -76,7 +84,7 @@ struct ARELSceneOption
 	common::EAREL_SCENE_OPTION	key;
 
 	/**
-	 * Trimmed string value of the option as defined in the AREL file
+	 * Trimmed string value of the option as defined in the AREL file.
 	 *
 	 * This must be parsed according to the type of option (e.g. integer for EARELSO_CAMERA_INDEX).
 	 *

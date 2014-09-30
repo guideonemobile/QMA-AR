@@ -2,9 +2,10 @@
 #ifndef _AS_SENSORVALUES_H_
 #define _AS_SENSORVALUES_H_
 
-#include <metaioSDK/MobileStructs.h>
+#include <metaioSDK/LLACoordinate.h>
 #include <metaioSDK/Rotation.h>
 #include <metaioSDK/STLCompatibility.h>
+#include <metaioSDK/Vector3d.h>
 
 namespace metaio
 {
@@ -20,6 +21,12 @@ struct SensorReading
 	/** Default constructor */
 	SensorReading(): timestamp(0.0), accuracy(0)
 	{
+	}
+
+	// Sensor readings should be sorted by timestamp
+	bool operator<(SensorReading const& rhs)
+	{
+		return timestamp < rhs.timestamp;
 	}
 };
 

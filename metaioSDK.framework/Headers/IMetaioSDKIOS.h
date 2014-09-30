@@ -4,7 +4,6 @@
 
 
 #include "IMetaioSDK.h"
-#include "MobileStructs.h"
 #include "DeviceInfoIOS.h"
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
@@ -186,7 +185,7 @@ namespace metaio
 		 * Use this to get a pointer to a AVCaptureVideoPreviewLayer that 
 		 * is created based on the current camera session. You can use this 
 		 * to draw the camera image in the background and add a transparent
-		 * EAGLView on top of this. To prevent sdk from drawing the
+		 * EAGLView on top of this. To prevent metaioSDK from drawing the
 		 * background in OpenGL you can activate the see-through mode.
 		 *
 		 * \code 	
@@ -199,7 +198,7 @@ namespace metaio
 		 *			[myUIView.layer addSublayer:previewLayer];
 		 * \endcode
 		 *
-		 * \sa Set sdk to see through mode using setSeeThrough ( 1 )
+		 * \sa Set metaioSDK to see through mode using setSeeThrough ( 1 )
 		 * \sa Start capturing using activateCamera ( index )
 		 * \sa You can deactivate the capturing again with stopCamera()
 		 *
@@ -228,7 +227,7 @@ namespace metaio
         /**
          * @brief Helper function to convert an ImageStruct image to UIImage
          *
-         * @param imgStruct Sourse image to be converted
+         * @param imgStruct Source image to be converted
          * @param rotate Specify if the converted image should be rotated according to screen rotation
          * @return pointer to UIImage
          */

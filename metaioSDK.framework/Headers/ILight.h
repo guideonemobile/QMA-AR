@@ -2,7 +2,7 @@
 #ifndef _METAIOSDK_ILIGHT_H_
 #define _METAIOSDK_ILIGHT_H_
 
-#include <metaioSDK/MobileStructs.h>
+#include <metaioSDK/Vector3d.h>
 
 namespace metaio
 {
@@ -73,7 +73,7 @@ public:
 	virtual Vector3d getDirection() const = 0;
 
 	/**
-	 * Get radius
+	 * Get radius.
 	 *
 	 * Only valid for spot lights.
 	 *
@@ -82,7 +82,7 @@ public:
 	virtual float getRadiusDegrees() const = 0;
 
 	/**
-	 * Get radius
+	 * Get radius.
 	 *
 	 * Only valid for spot lights.
 	 *
@@ -113,7 +113,7 @@ public:
 	virtual void setAmbientColor(const Vector3d& color) = 0;
 
 	/**
-	 * Set constant, linear and quadratic attenuation
+	 * Set constant, linear and quadratic attenuation.
 	 *
 	 * Only valid for point and spot lights, not for directional lights. Note that the SDK uses
 	 * millimeters as unit, so the attenuation should be set accordingly. The formula for the
@@ -124,7 +124,7 @@ public:
 	virtual void setAttenuation(const Vector3d& attenuation) = 0;
 
 	/**
-	 * Assigns light to a coordinate system
+	 * Assigns light to a coordinate system.
 	 *
 	 * Just like geometries, lights can be assigned either to the camera's coordinate system (COS 0,
 	 * origin is the real camera, -Z axis facing the viewing direction) or a tracked coordinate
@@ -143,7 +143,7 @@ public:
 	virtual void setDiffuseColor(const Vector3d& color) = 0;
 
 	/**
-	 * Set light direction
+	 * Set light direction.
 	 *
 	 * Only valid for spot and directional lights.
 	 *
@@ -152,14 +152,14 @@ public:
 	virtual void setDirection(const Vector3d& direction) = 0;
 
 	/**
-	 * Enable/disable the light
+	 * Enable/disable the light.
 	 *
 	 * \param enable Whether the light should be enabled or disabled
 	 */
 	virtual void setEnabled(bool enable) = 0;
 
 	/**
-	 * Set radius
+	 * Set radius.
 	 *
 	 * Only valid for spot lights.
 	 *
@@ -168,7 +168,7 @@ public:
 	virtual void setRadiusDegrees(float radius) = 0;
 
 	/**
-	 * Set radius
+	 * Set radius.
 	 *
 	 * Only valid for spot lights.
 	 *

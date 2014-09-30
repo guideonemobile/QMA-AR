@@ -2,9 +2,9 @@
 #ifndef _AS_IARELINTERPRETER_
 #define _AS_IARELINTERPRETER_
 
-#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/IARELInterpreterCallback.h>
 #include <metaioSDK/STLCompatibility.h>
+#include <metaioSDK/Vector3d.h>
 
 //forward declaration
 class QGraphicsWebView;
@@ -37,7 +37,7 @@ public:
 
 
 	/**
-	* Update the AREL layer
+	* Update the AREL layer.
 	*
 	*	Update should be called each render cycle, it will capture, track, render and handle other events within
 	*	this loop.
@@ -56,10 +56,10 @@ public:
 	* Load a AREL file
 	* \param file the filename to load
 	*/
-	virtual void loadARELFile(const stlcompat::String& file) = 0;
+	virtual bool loadARELFile(const stlcompat::String& file) = 0;
 
 	/**
-	* Load an AREL by junaio channel ID
+	* Load an AREL by junaio channel ID.
 	*
 	* Note: This function is not included in the SDK release
 	*
@@ -82,6 +82,11 @@ public:
      * \param scale metaio::Vector3d scale vector
      */
     virtual void setRadarProperties( int anchor, metaio::Vector3d translation, metaio::Vector3d scale) = 0;
+    
+    
+	/** This method should be called when POI detail view is closed
+	 */
+	virtual void onDetailViewClosed() = 0;
     
 	/**
 	* Register a callback class

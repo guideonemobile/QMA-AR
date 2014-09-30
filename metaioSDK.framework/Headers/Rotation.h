@@ -2,7 +2,8 @@
 #ifndef _AS_ROTATIONMATRIX_H_
 #define _AS_ROTATIONMATRIX_H_
 
-#include <metaioSDK/MobileStructs.h>
+#include <metaioSDK/Vector3d.h>
+#include <metaioSDK/Vector4d.h>
 
 #include <assert.h>
 #include <memory>
@@ -47,14 +48,14 @@ public:
 	explicit Rotation(const Vector4d& quaternion);
 
 	/**
-	 * \brief Constructor with initialization from euler angles (radians)
+	 * \brief Constructor with initialization from Euler angles (radians)
 	 *
-	 * \param eulerAngle rotation as euler angles in radians
+	 * \param eulerAngle rotation as Euler angles in radians
 	 */
 	explicit Rotation(const Vector3d& eulerAngle);
 
 	/**
-	 * \brief Constructor with initialization from euler angles (radians)
+	 * \brief Constructor with initialization from Euler angles (radians)
 	 *
 	 * \param x Euler angle (radians) around x-axis
 	 * \param y Euler angle (radians) around y-axis

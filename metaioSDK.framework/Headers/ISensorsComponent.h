@@ -2,7 +2,6 @@
 #ifndef __AS_ISENSORSCOMPONENT_H__
 #define __AS_ISENSORSCOMPONENT_H__
 
-#include <metaioSDK/MobileStructs.h>
 #include <metaioSDK/SensorValues.h>
 #include <metaioSDK/STLCompatibility.h>
 
@@ -114,7 +113,7 @@ public:
 	 */
 	virtual LLACoordinate getLocation() const = 0;
 
-	/** Gets the gravity values provided in the metaio camera coordinate system used by metaio SDK.
+	/** Gets the gravity values provided in the metaio camera coordinate system used by metaioSDK.
 	 *	The metaio camera-COS is defined as follows: if the device is hold in landscape mode
 	 *	with button to the right and the touch screen facing you, then the positive X-axis points
 	 *	right, the positive Y-axis points up and the positive Z-axis points to you
@@ -185,6 +184,15 @@ public:
 	 * \return sensor values
 	 */
 	virtual SensorValues getSensorValues() = 0;
+	
+	
+	/** Returns the last sensor values (i.e. belonging to the last camera image captured);
+	 * \return The last sensor values.
+	 * \sa getSensorValues for semantics.
+	 */
+	virtual SensorValues getLastSensorValues() const {return SensorValues();};
+	
+
 
 };
 
