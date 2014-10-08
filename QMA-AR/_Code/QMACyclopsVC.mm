@@ -178,6 +178,11 @@ typedef NS_ENUM(NSUInteger, MenuSelectionState) {
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self openWebsiteWithUrl:@"poiTouchEnded=CentralPark-1" inExternalApp:NO];
+}
+
 #pragma mark - Menu
 
 - (IBAction)didTapToShowMenu:(UIButton *)sender {
