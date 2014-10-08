@@ -60,7 +60,9 @@ static const NSUInteger maxDistanceFromMuseum = 320; //In meters (this is equiva
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     self.locationManager.distanceFilter = 100; //Without setting this property, the locationManager:didUpdateToLocation:fromLocation: delegate method gets called twice, even though we call stopUpdatingLocation in it
     
-    [self.locationManager requestWhenInUseAuthorization];
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
     [self.locationManager startUpdatingLocation];
 }
 
