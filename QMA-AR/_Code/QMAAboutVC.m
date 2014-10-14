@@ -13,6 +13,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.webView.scrollView.bounces = NO;
     [self loadHTMLContent];
 }
 

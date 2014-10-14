@@ -257,7 +257,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -582,16 +582,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1yv-Pg-7Wg" userLabel="Invisible Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="1yv-Pg-7Wg" userLabel="Invisible Button">
                                 <rect key="frame" x="234" y="200" width="100" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="89o-2V-KNI" kind="push" id="Klx-9m-sgA"/>
+                                    <action selector="didTapToViewPanorama:" destination="R5c-xP-QUv" eventType="touchUpInside" id="Dga-IB-oiz"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="HrI-hI-nz6">
+                                <rect key="frame" x="266" y="271" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -599,6 +604,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="cameraFeedView" destination="VvC-r1-Cxk" id="A92-gU-RhG"/>
+                        <outlet property="spinner" destination="HrI-hI-nz6" id="YbJ-3F-fCb"/>
+                        <segue destination="89o-2V-KNI" kind="push" identifier="GotoPanorama" id="Dnc-3a-puc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QqL-VT-0AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -804,16 +811,21 @@
                                     <action selector="didTapToSeeWebSite:" destination="Ye8-4l-Anl" eventType="touchUpInside" id="8sS-7o-UPo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qxz-vN-Cyn" userLabel="Invisible Button - Got It">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="qxz-vN-Cyn" userLabel="Invisible Button - Got It">
                                 <rect key="frame" x="234" y="210" width="100" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="89o-2V-KNI" kind="push" id="QrI-Lm-8Pj"/>
+                                    <action selector="didTapToViewPanorama:" destination="Ye8-4l-Anl" eventType="touchUpInside" id="36C-hM-iYP"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="Duu-yH-6Fc">
+                                <rect key="frame" x="266" y="277" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -821,6 +833,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="cameraFeedView" destination="YNS-BM-RXq" id="hY6-Ma-QsV"/>
+                        <outlet property="spinner" destination="Duu-yH-6Fc" id="4DC-U9-Fg2"/>
+                        <segue destination="89o-2V-KNI" kind="push" identifier="GotoPanorama" id="0PU-69-KiH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcL-lX-rf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -938,6 +952,28 @@
                                 <rect key="frame" x="67" y="55" width="434" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="79h-Lt-RWt">
+                                <rect key="frame" x="67" y="55" width="210" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToShare:" destination="ZOt-hc-YMM" eventType="touchUpInside" id="DuH-Yu-V9n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="RUw-ua-Fr2">
+                                <rect key="frame" x="291" y="55" width="210" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToRate:" destination="ZOt-hc-YMM" eventType="touchUpInside" id="Lkb-XZ-z2X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -974,8 +1010,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="QrI-Lm-8Pj"/>
         <segue reference="rBW-TL-Jvt"/>
+        <segue reference="Dnc-3a-puc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.23137254901960785" green="0.72156862745098038" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
 </document>

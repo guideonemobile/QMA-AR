@@ -6,6 +6,7 @@
 @interface QMAInstructionsVC ()
 
 @property (nonatomic, weak) IBOutlet UIView *cameraFeedView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
 
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *cvpl;
@@ -39,6 +40,7 @@
     }
     
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(adjustVideoOrientation)
                                                  name:UIDeviceOrientationDidChangeNotification
@@ -102,21 +104,31 @@
     [self.session startRunning];
 }
 
-#pragma mark - Segue
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [self.session stopRunning];
-    if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {
-        [(id)segue.destinationViewController setManagedDocument:self.managedDocument];
-    }
-}
-
 #pragma mark - Target Action
 
 static NSString *const kQMAURL = @"http://www.queensmuseum.org/pano";
 
 - (IBAction)didTapToSeeWebSite:(UIButton *)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kQMAURL]];
+}
+
+- (IBAction)didTapToViewPanorama:(UIButton *)sender {
+    [self.spinner startAnimating];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self.session stopRunning];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.spinner stopAnimating];
+            [self performSegueWithIdentifier:@"GotoPanorama" sender:self];
+        });
+    });
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController respondsToSelector:@selector(setManagedDocument:)]) {
+        [(id)segue.destinationViewController setManagedDocument:self.managedDocument];
+    }
 }
 
 @end
