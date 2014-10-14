@@ -203,7 +203,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wwK-ks-QYk">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                <rect key="frame" x="10" y="10" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-menu-white">
@@ -246,7 +246,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2Ph-q8-9w9" userLabel="Button - Close">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                <rect key="frame" x="10" y="10" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-close">
@@ -497,18 +497,20 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="jAC-EE-bOk">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="ihE-DR-W9w" userLabel="Frame">
+                                        <rect key="frame" x="15" y="15" width="538" height="290"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caption-gradient" id="1yr-v5-Bpm" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="273" width="568" height="47"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="ihE-DR-W9w" userLabel="Frame">
-                                <rect key="frame" x="15" y="15" width="538" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ssj-XF-qCR" userLabel="Button - Close">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                <rect key="frame" x="10" y="10" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-close">
@@ -625,7 +627,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="VYc-sS-rSt">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                    <rect key="frame" x="10" y="10" width="80" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" image="icon-close-black">
@@ -761,7 +763,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="OxO-7P-hN6" userLabel="Button - Close">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                <rect key="frame" x="10" y="10" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-close-black">
@@ -938,7 +940,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="015-C7-61h" userLabel="Button - Close">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                <rect key="frame" x="10" y="10" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-close-black">
