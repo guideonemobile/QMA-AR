@@ -29,13 +29,13 @@
 							<key>Image</key>
 							<string>poi_gallery_Williamsburg_1</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>Street scene, Williamsburg</string>
 						</dict>
 						<dict>
 							<key>Image</key>
 							<string>poi_gallery_Williamsburg_2</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>Street scene, Williamsburg</string>
 						</dict>
 					</array>
 				</dict>
@@ -60,13 +60,13 @@
 							<key>Image</key>
 							<string>poi_gallery_Tompkinsville_1</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>Tompkinsville Park.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
 							<string>poi_gallery_Tompkinsville_2</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>Tompkinsville Park.</string>
 						</dict>
 					</array>
 				</dict>
@@ -91,13 +91,13 @@
 							<key>Image</key>
 							<string>poi_gallery_JacksonHeights_1</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>Local market, Jackson Heights.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
 							<string>poi_gallery_JacksonHeights_2</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est.</string>
+							<string>74th Street and Broadway subway station</string>
 						</dict>
 					</array>
 				</dict>
@@ -128,13 +128,13 @@
 							<key>Image</key>
 							<string>poi_gallery_Corona_2</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est</string>
+							<string>No caption.</string>
 						</dict>
 						<dict>
 							<key>Image</key>
 							<string>poi_gallery_Corona_3</string>
 							<key>Caption</key>
-							<string>Lorem ipsum dolor est</string>
+							<string>Our Lady of Sorrows Church, 37th Avenue</string>
 						</dict>
 					</array>
 				</dict>
@@ -159,7 +159,7 @@
 							<key>Image</key>
 							<string>poi_gallery_Woodside_1</string>
 							<key>Caption</key>
-							<string>Lorem ipsum</string>
+							<string>Street scene, Woodside.</string>
 						</dict>
 					</array>
 				</dict>
