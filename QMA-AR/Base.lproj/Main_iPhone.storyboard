@@ -246,7 +246,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2Ph-q8-9w9" userLabel="Button - Close">
-                                <rect key="frame" x="10" y="10" width="80" height="60"/>
+                                <rect key="frame" x="7" y="8" width="80" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="icon-close">
