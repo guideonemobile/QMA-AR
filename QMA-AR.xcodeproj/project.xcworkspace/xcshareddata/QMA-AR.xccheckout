@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6BE0C847-65AC-4C8F-B445-B1B4FD01F52C</string>
+	<string>4A819FF9-3495-485C-8E1E-D1FA8692BDE8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>QMA-AR</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/guideonemobile/QMA-AR.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QMA-AR.xcodeproj/project.xcworkspace</string>
+	<string>QMA-AR.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>66E3CC4078F544F1F75F499FDB9D8CB1A2F9F530</key>
